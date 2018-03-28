@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  aplikasi_web_di_dalam_docker:
+    build: .
+    command: >
+      gunicorn -b 0.0.0.0:6565
+      --access-logfile -
+      --reload
+      "web_app.app:create_app()"
+
+    volumes:
+      - '.:/web_app_docker'
+
+    ports:
+      - '7575:6565'
+
+  service_postgresql_di_dalam_docker:
+    image: 'postgres:9.6'
+
+    environment:
+      POSTGRES_USER: 'ta'
+      POSTGRES_PASSWORD: '12345'
+
+    volumes:
+      - '/var/lib/postgresql/data'
+
+    ports:
+      - '5433:5432'
