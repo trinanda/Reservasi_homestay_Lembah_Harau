@@ -1,5 +1,8 @@
+import imghdr
+
 from flask_admin.contrib.sqla import ModelView
-from wtforms import TextAreaField
+from flask_admin.form import FileUploadField
+from wtforms import TextAreaField, ValidationError
 from wtforms.widgets import TextArea
 
 
@@ -24,3 +27,26 @@ class PageModelView(ModelView):
 
 class MenuModelView(ModelView):
     pass
+
+
+class UserAdminView(ModelView):
+
+   def picture_validation(form, field):
+      if field.data:
+         filename = field.data.filename
+         if filename[-4:] != '.jpg':
+            raise ValidationError('file must be .jpg')
+         if imghdr.what(field.data) != 'jpeg':
+            raise ValidationError('file must be a valid jpeg image.')
+      field.data = field.data.stream.read()
+      return True
+
+   form_columns = ['id','url_pic', 'pic']
+   column_labels = dict(id='ID', url_pic="Picture's URL", pic='Picture')
+
+   def pic_formatter(view, context, model, name):
+       return 'NULL' if len(getattr(model, name)) == 0 else 'a picture'
+
+   column_formatters =  dict(pic=pic_formatter)
+   form_overrides = dict(pic= FileUploadField)
+   form_args = dict(pic=dict(validators=[picture_validation]))

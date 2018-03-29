@@ -1,7 +1,8 @@
 from flask import Flask, render_template
 from flask_admin import Admin
 
-from web_app.views import PageModelView, MenuModelView
+from web_app.models import User
+from web_app.views import PageModelView, MenuModelView, UserAdminView
 
 
 def create_app():
@@ -17,11 +18,25 @@ def create_app():
     admin = Admin(flask_objek, name='Administrator', template_mode='bootstrap3')
     admin.add_view(PageModelView(Page, database.session))
     admin.add_view(MenuModelView(Menu, database.session))
+    admin.add_view(UserAdminView(User, database.session))
 
 
     @flask_objek.route('/')
-    def index():
+    @flask_objek.route('/<uri>')
+    def index(uri=None):
+        page = Page()
+        print('yang di tes ini', uri)
+        if uri is not None:
+            page = Page.query.filter_by(url=uri).first()
+        else:
+            pass
 
-        return render_template('index.html')
+        konten = 'Homepage'
+        if page is not None:
+            konten = page.konten
+
+        menu = Menu.query.order_by('urutan')
+
+        return render_template('index.html', CONTENT=konten, menu=menu)
 
     return flask_objek

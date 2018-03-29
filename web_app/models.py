@@ -1,5 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import Column, Integer, String, ForeignKey
+from sqlalchemy import Column, Integer, String, ForeignKey, LargeBinary
 from sqlalchemy.orm import relationship, backref
 
 database = SQLAlchemy()
@@ -23,3 +23,9 @@ class Menu(database.Model):
 
     def __repr__(self):
         return self.title
+
+class User(database.Model):
+   __tablename__ = 'users'
+   id = Column(Integer, primary_key=True)
+   url_pic = Column(String(50), nullable=False)
+   pic = Column(LargeBinary, nullable=False)
