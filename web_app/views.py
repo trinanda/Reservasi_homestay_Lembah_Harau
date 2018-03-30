@@ -2,13 +2,13 @@ from flask_admin.contrib.sqla import ModelView
 from wtforms import TextAreaField, form
 from wtforms.widgets import TextArea
 from jinja2 import Markup
-from flask_admin import Admin, form
+from flask_admin import form
 from flask_admin.contrib import sqla
 from sqlalchemy.event import listens_for
 import os
 import os.path as op
-from flask import Flask, url_for
-from web_app.models import Image
+from flask import url_for
+from web_app.models import PilihKamar
 
 
 class CKEditorWidget(TextArea):
@@ -27,10 +27,11 @@ class PageModelView(ModelView):
 
     create_template = 'admin/ckeditor.html'
     edit_template = 'admin/ckeditor.html'
-    list_kolom = ('title' 'tag')
+    column_list = ('judul', 'tag')
 
 
 class MenuModelView(ModelView):
+    column_list = ('title', 'urutan')
     pass
 
 
@@ -43,7 +44,7 @@ except OSError:
 
 
 # Delete hooks for models, delete files if models are getting deleted
-@listens_for(Image, 'after_delete')
+@listens_for(PilihKamar, 'after_delete')
 def del_image(mapper, connection, target):
     if target.path:
         # Delete image
@@ -61,7 +62,7 @@ def del_image(mapper, connection, target):
 
 
 # Administrative views
-class ImageView(sqla.ModelView):
+class PilihKamarView(sqla.ModelView):
     def _list_thumbnail(view, context, model, name):
         if not model.path:
             return ''

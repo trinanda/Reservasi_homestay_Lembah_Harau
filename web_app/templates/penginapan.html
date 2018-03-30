@@ -1,0 +1,54 @@
+{% extends "index.html" %}
+{% block content %}
+<!-- tittle heading -->
+<h3 class="tittle-w3l">Pilih Kamar
+	<span class="heading-style">
+		<i></i>
+		<i></i>
+		<i></i>
+	</span>
+</h3>
+<!-- //tittle heading -->
+<!-- product ketiga-->
+
+<div class="col-xs-4 product-men">
+	<div class="men-pro-item simpleCart_shelfItem">
+		<div class="men-thumb-item">
+			<img src="{{FOTO_KAMAR}}" alt="">
+			<div class="men-cart-pro">
+				<div class="inner-men-cart-pro">
+					<!--<a href="http://localhost//templates/template_tugas_akhir/grocery_shoppy_web/single.html" class="link-product-add-cart">Quick View</a>-->
+					<a href="#" class="link-product-add-cart">Lihat Kamar</a>
+				</div>
+			</div>
+			<!--<span class="product-new-top">New</span>-->
+			</div>
+		<div class="item-info-product ">
+			<h4>
+				<a href="#">{{ NAMA_KAMAR }}</a>
+			</h4>
+			<div class="info-product-price">
+				<span class="item_price">{{ HARGA_KAMAR }}</span>
+			</div>
+			<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+				<form action="#" method="post">
+					<fieldset>
+						<input type="hidden" name="cmd" value="_cart" />
+						<input type="hidden" name="add" value="1" />
+						<input type="hidden" name="business" value=" " />
+						<input type="hidden" name="item_name" value="Lipton Green Tea, 100 Pieces" />
+						<input type="hidden" name="amount" value="384.00" />
+						<input type="hidden" name="discount_amount" value="1.00" />
+						<input type="hidden" name="currency_code" value="USD" />
+						<input type="hidden" name="return" value=" " />
+						<input type="hidden" name="cancel_return" value=" " />
+						<!--<input type="submit" name="submit" value="Add to cart" class="button" />-->
+					</fieldset>
+				</form>
+			</div>
+
+		</div>
+	</div>
+</div>
+{% endblock %}
+

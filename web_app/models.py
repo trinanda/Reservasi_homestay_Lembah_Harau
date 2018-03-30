@@ -13,6 +13,9 @@ class Page(database.Model):
     konten = Column(String)
     url = Column(String)
 
+    def __repr__(self):
+        return self.judul
+
 class Menu(database.Model):
     __tablename__ = 'menu'
     id_menu = Column(Integer, primary_key=True)
@@ -26,9 +29,11 @@ class Menu(database.Model):
         return self.title
 
 
-class Image(database.Model):
-    id = database.Column(database.Integer, primary_key=True)
-    name = database.Column(database.Unicode(64))
+class PilihKamar(database.Model):
+    __tablename__ = 'pilih_kamar'
+    id_kamar = database.Column(database.Integer, primary_key=True)
+    nama_kamar = database.Column(database.Unicode(64))
+    harga_kamar = database.Column(database.Integer)
     path = database.Column(database.Unicode(128))
 
     def __unicode__(self):
