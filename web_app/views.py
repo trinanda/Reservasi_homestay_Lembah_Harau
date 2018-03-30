@@ -1,9 +1,14 @@
-import imghdr
-
 from flask_admin.contrib.sqla import ModelView
-from flask_admin.form import FileUploadField
-from wtforms import TextAreaField, ValidationError
+from wtforms import TextAreaField, form
 from wtforms.widgets import TextArea
+from jinja2 import Markup
+from flask_admin import Admin, form
+from flask_admin.contrib import sqla
+from sqlalchemy.event import listens_for
+import os
+import os.path as op
+from flask import Flask, url_for
+from web_app.models import Image
 
 
 class CKEditorWidget(TextArea):
@@ -29,24 +34,49 @@ class MenuModelView(ModelView):
     pass
 
 
-class UserAdminView(ModelView):
+# Create directory for file fields to use
+file_path = op.join(op.dirname(__file__), 'files')
+try:
+    os.mkdir(file_path)
+except OSError:
+    pass
 
-   def picture_validation(form, field):
-      if field.data:
-         filename = field.data.filename
-         if filename[-4:] != '.jpg':
-            raise ValidationError('file must be .jpg')
-         if imghdr.what(field.data) != 'jpeg':
-            raise ValidationError('file must be a valid jpeg image.')
-      field.data = field.data.stream.read()
-      return True
 
-   form_columns = ['id','url_pic', 'pic']
-   column_labels = dict(id='ID', url_pic="Picture's URL", pic='Picture')
+# Delete hooks for models, delete files if models are getting deleted
+@listens_for(Image, 'after_delete')
+def del_image(mapper, connection, target):
+    if target.path:
+        # Delete image
+        try:
+            os.remove(op.join(file_path, target.path))
+        except OSError:
+            pass
 
-   def pic_formatter(view, context, model, name):
-       return 'NULL' if len(getattr(model, name)) == 0 else 'a picture'
+        # Delete thumbnail
+        try:
+            os.remove(op.join(file_path,
+                              form.thumbgen_filename(target.path)))
+        except OSError:
+            pass
 
-   column_formatters =  dict(pic=pic_formatter)
-   form_overrides = dict(pic= FileUploadField)
-   form_args = dict(pic=dict(validators=[picture_validation]))
+
+# Administrative views
+class ImageView(sqla.ModelView):
+    def _list_thumbnail(view, context, model, name):
+        if not model.path:
+            return ''
+
+        return Markup('<img src="%s">' % url_for('static',
+                                                 filename=form.thumbgen_filename(model.path)))
+
+    column_formatters = {
+        'path': _list_thumbnail
+    }
+
+    # Alternative way to contribute field is to override it completely.
+    # In this case, Flask-Admin won't attempt to merge various parameters for the field.
+    form_extra_fields = {
+        'path': form.ImageUploadField('Image',
+                                      base_path=file_path,
+                                      thumbnail_size=(100, 100, True))
+    }
