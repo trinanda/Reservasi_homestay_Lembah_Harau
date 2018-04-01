@@ -1,2 +1,2 @@
-# Reservasi_homestay_Lembah_Harau
+# Reservasi homestay Lembah Harau
 Project Tugas Akhir
