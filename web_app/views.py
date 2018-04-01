@@ -8,7 +8,7 @@ from sqlalchemy.event import listens_for
 import os
 import os.path as op
 from flask import url_for
-from web_app.models import PilihKamar
+from web_app.models import Kamar
 
 
 class CKEditorWidget(TextArea):
@@ -44,7 +44,7 @@ except OSError:
 
 
 # Delete hooks for models, delete files if models are getting deleted
-@listens_for(PilihKamar, 'after_delete')
+@listens_for(Kamar, 'after_delete')
 def del_image(mapper, connection, target):
     if target.path:
         # Delete image

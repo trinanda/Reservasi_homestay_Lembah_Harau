@@ -29,15 +29,23 @@ class Menu(database.Model):
         return self.title
 
 
-class PilihKamar(database.Model):
-    __tablename__ = 'pilih_kamar'
-    id_kamar = database.Column(database.Integer, primary_key=True)
-    nama_kamar = database.Column(database.Unicode(64))
-    harga_kamar = database.Column(database.Integer)
-    path = database.Column(database.Unicode(128))
+class Kamar(database.Model):
+    __tablename__ = 'kamar'
+    id_kamar = Column(Integer, primary_key=True)
+    nama_kamar = Column(String)
+    harga_kamar = Column(Integer)
+    path = Column(database.Unicode(128))
+
+
+    # def __repr__(self):
+    #     return self.nama_kamar
 
     def __unicode__(self):
         return self.name
+
+
+    def __repr__(self):
+        return '{}'.format(self.nama_kamar)
 
 
 
