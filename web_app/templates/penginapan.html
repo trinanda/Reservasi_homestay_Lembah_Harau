@@ -10,11 +10,11 @@
 </h3>
 <!-- //tittle heading -->
 <!-- product ketiga-->
-
+{% for ROOMS in KAMARS %}
 <div class="col-xs-4 product-men">
 	<div class="men-pro-item simpleCart_shelfItem">
 		<div class="men-thumb-item">
-			<img src="files/{{ FOTO_KAMAR }}" alt="" style="width: 150px; height:150px">
+			<img src="files/{{ ROOMS.path }}" alt="" style="width: 180px; height: 180px;">
 			<div class="men-cart-pro">
 				<div class="inner-men-cart-pro">
 					<!--<a href="http://localhost//templates/template_tugas_akhir/grocery_shoppy_web/single.html" class="link-product-add-cart">Quick View</a>-->
@@ -23,12 +23,13 @@
 			</div>
 			<!--<span class="product-new-top">New</span>-->
 			</div>
+
 		<div class="item-info-product ">
 			<h4>
-				<a href="#">{{ NAMA_KAMAR }}</a>
+				<a href="#">{{ ROOMS.nama_kamar }}</a>
 			</h4>
 			<div class="info-product-price">
-				<span class="item_price">{{ HARGA_KAMAR }}</span>
+				<span class="item_price">Rp. {{ ROOMS.harga_kamar }} / Malam</span>
 			</div>
 			<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
 				<form action="#" method="post">
@@ -47,8 +48,11 @@
 				</form>
 			</div>
 
+
+
 		</div>
 	</div>
 </div>
+{% endfor %}
 {% endblock %}
 

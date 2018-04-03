@@ -58,9 +58,9 @@ def create_app():
         else:
             pass
 
-        room_foto = Kamar.query.first()
-        room_foto = room_foto.path
-        print('coba tes pat ini', room_foto)
+        # room_foto = Kamar.query.first()
+        # room_foto = room_foto.path
+        # print('coba tes pat ini', room_foto)
 
         bedroom_name = "bedroom"
         room_price = "price"
@@ -73,8 +73,11 @@ def create_app():
             room_foto = Kamar.query.first()
             room_foto = room_foto.path
 
+        urutan_kamar = Kamar.query.order_by('urutan_kamar')
+
         return render_template('penginapan.html', CONTENT=konten, MENU=menu,
-                               NAMA_KAMAR=bedroom_name, HARGA_KAMAR=room_price, FOTO_KAMAR=room_foto)
+                               NAMA_KAMAR=bedroom_name, HARGA_KAMAR=room_price, FOTO_KAMAR=room_foto,
+                               KAMARS=urutan_kamar)
 
 
     return flask_objek

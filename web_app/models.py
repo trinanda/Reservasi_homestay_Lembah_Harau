@@ -35,6 +35,7 @@ class Kamar(database.Model):
     nama_kamar = Column(String)
     harga_kamar = Column(Integer)
     path = Column(database.Unicode(128))
+    urutan_kamar = Column(Integer)
 
 
     # def __repr__(self):
@@ -46,6 +47,5 @@ class Kamar(database.Model):
 
     def __repr__(self):
         return '{}'.format(self.nama_kamar)
-
 
 
