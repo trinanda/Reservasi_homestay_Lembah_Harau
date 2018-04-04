@@ -79,5 +79,9 @@ def create_app():
                                NAMA_KAMAR=bedroom_name, HARGA_KAMAR=room_price, FOTO_KAMAR=room_foto,
                                KAMARS=urutan_kamar)
 
+    @flask_objek.route('/detail_kamar')
+    def detail_kamar():
+        return render_template('detail_kamar.html')
+
 
     return flask_objek
