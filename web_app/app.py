@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
 from flask_admin import Admin
-from wtforms import form
 
 from web_app.views import PageModelView, MenuModelView, PilihKamarView
 
@@ -60,7 +59,7 @@ def create_app():
         else:
             pass
 
-        # template penginapan
+
         bedroom_name = "bedroom"
         room_price = "price"
         room_foto = 'foto kamar nya gimana..?'
@@ -74,20 +73,19 @@ def create_app():
             room_foto = room_foto.path
             room_id = Kamar.query.first()
             room_id = room_id.id_kamar
-        # // penginapan
+
         urutan_kamar = Kamar.query.order_by('urutan_kamar')
 
         if request.method == "POST":
-            if form.validate():
-                room_price = Kamar.query.first()
-                room_price = room_price.harga_kamar
-                bedroom_name = Kamar.query.first()
-                bedroom_name = bedroom_name.nama_kamar
-                room_foto = Kamar.query.first()
-                room_foto = room_foto.path
-                room_id = Kamar.query.first()
-                room_id = room_id.id_kamar
-                return render_template("detail_kamar.html", NAMA_KAMAR=bedroom_name, HARGA_KAMAR=room_price,
+            room_price = Kamar.query.first()
+            room_price = room_price.harga_kamar
+            bedroom_name = Kamar.query.first()
+            bedroom_name = bedroom_name.nama_kamar
+            room_foto = Kamar.query.first()
+            room_foto = room_foto.path
+            room_id = Kamar.query.first()
+            room_id = room_id.id_kamar
+            return render_template("detail_kamar.html", NAMA_KAMAR=bedroom_name, HARGA_KAMAR=room_price,
                                    GAMBAR=room_foto, GAMBAR1=room_foto, id_kamar=room_id)
         else:
             pass
