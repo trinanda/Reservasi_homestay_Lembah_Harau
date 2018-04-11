@@ -34,6 +34,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<link rel="stylesheet" type="text/css" href="https://trinanda.github.io/grocery_shoppy_web/css/jquery-ui1.css">
 	<!-- fonts -->
 	<link href="fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+	<!-- flexslider -->
+	<link rel="stylesheet" href="https://trinanda.github.io/grocery_shoppy_web/css/flexslider.css" type="text/css" media="screen" />
+	<!-- fonts -->
 </head>
 
 <body>
@@ -412,6 +415,57 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- for bootstrap working -->
 	<script src="https://trinanda.github.io/grocery_shoppy_web/js/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
+
+
+	<!-- imagezoom -->
+	<script src="https://trinanda.github.io/grocery_shoppy_web/js/imagezoom.js"></script>
+	<!-- //imagezoom -->
+
+	<!-- FlexSlider -->
+	<script src="https://trinanda.github.io/grocery_shoppy_web/js/jquery.flexslider.js"></script>
+	<script>
+		// Can also be used with $(document).ready()
+		$(window).load(function () {
+			$('.flexslider').flexslider({
+				animation: "slide",
+				controlNav: "thumbnails"
+			});
+		});
+	</script>
+	<!-- //FlexSlider-->
+
+	<!-- flexisel (for special offers) -->
+	<script src="https://trinanda.github.io/grocery_shoppy_web/js/jquery.flexisel.js"></script>
+	<script>
+		$(window).load(function () {
+			$("#flexiselDemo1").flexisel({
+				visibleItems: 3,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: {
+					portrait: {
+						changePoint: 480,
+						visibleItems: 1
+					},
+					landscape: {
+						changePoint: 640,
+						visibleItems: 2
+					},
+					tablet: {
+						changePoint: 768,
+						visibleItems: 2
+					}
+				}
+			});
+
+		});
+	</script>
+	<!-- //flexisel (for special offers) -->
+
+
 	<!-- //js-files -->
 
 

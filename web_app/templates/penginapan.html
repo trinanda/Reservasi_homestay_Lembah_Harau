@@ -24,7 +24,7 @@
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
 											<!--<a href="http://localhost//templates/template_tugas_akhir/grocery_shoppy_web/single.html" class="link-product-add-cart">Quick View</a>-->
-											<a href="#" class="link-product-add-cart">Lihat Kamar</a>
+											<a href="{{ ButtonPressed1 }}" class="link-product-add-cart">Lihat Kamar</a>
 										</div>
 									</div>
 								</div>
@@ -35,19 +35,10 @@
 									<div class="info-product-price">
 										<span class="item_price">Rp. {{ ROOMS.harga_kamar }} / Malam</span>
 									</div>
-									<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
+									<div class="snipcart-details">
+										<form action="http://localhost:7575/detail_kamar/{{ id_kamar }}" method="post">
 											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" />
-												<input type="hidden" name="add" value="1" />
-												<input type="hidden" name="business" value=" " />
-												<input type="hidden" name="item_name" value="Lipton Green Tea, 100 Pieces" />
-												<input type="hidden" name="amount" value="384.00" />
-												<input type="hidden" name="discount_amount" value="1.00" />
-												<input type="hidden" name="currency_code" value="USD" />
-												<input type="hidden" name="return" value=" " />
-												<input type="hidden" name="cancel_return" value=" " />
-												<!--<input type="submit" name="submit" value="Add to cart" class="button" />-->
+												<input type="submit" name="submit" value="Lihat Detail" class="button" />
 											</fieldset>
 										</form>
 									</div>
