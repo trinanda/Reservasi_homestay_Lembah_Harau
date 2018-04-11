@@ -95,22 +95,12 @@ def create_app():
                                KAMARS=urutan_kamar, room_id=room_id)
 
 
-    # @flask_objek.route('/detail_kamar/<id_kamar>')
-    # def detail_kamar(id_kamar=None):
-    #     return render_template('detail_kamar.html',id_kamar=id_kamar)
-
-
-
-
-
-
-
-
-
-
-
-    # @flask_objek.route('/data_single')
-    # def data_single():
-    #     return render_template('single.html')
+    @flask_objek.route('/detail_kamar/<id_kamar>')
+    def detail_kamar(id_kamar):
+        kamar = Kamar()
+        id_kamar = 'id kamar'
+        if kamar is not None:
+            id_kamar = Kamar.id_kamar
+        return render_template('detail_kamar.html',id_kamar=id_kamar)
 
     return flask_objek
