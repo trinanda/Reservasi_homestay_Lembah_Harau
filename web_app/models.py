@@ -34,7 +34,7 @@ class Kamar(database.Model):
     id_kamar = Column(Integer, primary_key=True)
     nama_kamar = Column(String)
     room_description = Column(String)
-    path = Column(database.Unicode(128))
+    room_images = Column(database.Unicode(128))
     harga_kamar = Column(Integer)
     urutan_kamar = Column(Integer)
 

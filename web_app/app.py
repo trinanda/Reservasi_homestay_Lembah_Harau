@@ -58,20 +58,17 @@ def create_app():
         else:
             pass
 
-
-        bedroom_name = "bedroom"
-        room_price = "price"
-        room_foto = 'foto kamar nya gimana..?'
-        room_id = 'disini ID'
         if kamar is not None:
             room_price = Kamar.query.first()
             room_price = room_price.harga_kamar
             bedroom_name = Kamar.query.first()
             bedroom_name = bedroom_name.nama_kamar
             room_foto = Kamar.query.first()
-            room_foto = room_foto.path
+            room_foto = room_foto.room_images
             room_id = Kamar.query.first()
             room_id = room_id.id_kamar
+            keterangan_kamar = Kamar.query.first()
+            keterangan_kamar = keterangan_kamar.room_description
 
         urutan_kamar = Kamar.query.order_by('urutan_kamar')
 
@@ -81,84 +78,30 @@ def create_app():
             bedroom_name = Kamar.query.first()
             bedroom_name = bedroom_name.nama_kamar
             room_foto = Kamar.query.first()
-            room_foto = room_foto.path
+            room_foto = room_foto.room_images
             room_id = Kamar.query.first()
             room_id = room_id.id_kamar
+            keterangan_kamar = Kamar.query.first()
+            keterangan_kamar = keterangan_kamar.room_description
             return render_template("detail_kamar.html", NAMA_KAMAR=bedroom_name, HARGA_KAMAR=room_price,
-                                   GAMBAR=room_foto, GAMBAR1=room_foto)
+                                   room_images=room_foto, room_description=keterangan_kamar)
         else:
             pass
 
         return render_template('penginapan.html', CONTENT=konten, MENU=menu,
-                               nama_kamar=bedroom_name, harga_kamar=room_price, foto_kamar=room_foto,
-                               KAMARS=urutan_kamar, room_id=room_id)
+                               nama_kamar=bedroom_name, harga_kamar=room_price, room_images=room_foto,
+                               KAMARS=urutan_kamar, room_id=room_id, room_description=keterangan_kamar)
 
 
     @flask_objek.route('/detail_kamar/<id_kamar>', methods = ["GET", "POST"])
-    def detail_kamar(id_kamar=None, nama_kamar=None):
-
-
-        id_kamar = request.args.get("id_kamar")
-        nama_kamar = request.args.get("nama_kamar")
-        harga_kamar = request.args.get("harga_kamar")
+    def detail_kamar(id_kamar=None, nama_kamar=None, keterangan_kamar=None):
+        id_kamar = request.args.get('id_kamar')
+        nama_kamar = request.args.get('nama_kamar')
+        harga_kamar = request.args.get('harga_kamar')
+        keterangan_kamar = request.args.get('room_description')
+        room_images1= request.args.get('room_images')
+        print('coba print ini deh', keterangan_kamar)
         return render_template("detail_kamar.html", NAMA_KAMAR=nama_kamar, id_kamar=id_kamar,
-                               HARGA_KAMAR=harga_kamar)
+                               HARGA_KAMAR=harga_kamar, room_description=keterangan_kamar, room_images=room_images1)
     return flask_objek
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# bedroom_name = "bedroom"
-#         room_price = "price"
-#         room_foto = 'foto kamar nya gimana..?'
-#         room_id = 'disini ID'
-#
-#         if kamar is not None:
-#             room_price = Kamar.query.first()
-#             room_price = room_price.harga_kamar
-#             bedroom_name = Kamar.query.first()
-#             bedroom_name = bedroom_name.nama_kamar
-#             room_foto = Kamar.query.first()
-#             room_foto = room_foto.path
-#             room_id = Kamar.query.first()
-#             room_id = room_id.id_kamar
-#
-#             if request.method == "get":
-#                 room_price = Kamar.query.first()
-#                 room_price = room_price.harga_kamar
-#                 bedroom_name = Kamar.query.first()
-#                 bedroom_name = bedroom_name.nama_kamar
-#                 room_foto = Kamar.query.first()
-#                 room_foto = room_foto.path
-#                 room_id = Kamar.query.first()
-#                 room_id = room_id.id_kamar
-#                 return render_template("detail_kamar.html", NAMA_KAMAR=bedroom_name, HARGA_KAMAR=room_price,
-#                                        GAMBAR=room_foto, GAMBAR1=room_foto, id_kamar=room_id)

@@ -18,9 +18,9 @@
 				<div class="grid images_3_of_2">
 					<div class="flexslider">
 						<ul class="slides">
-							<li data-thumb="files/{{ GAMBAR }}">
+							<li data-thumb="files/{{ room_images }}">
 								<div class="thumb-image">
-									<img src="files/{{ GAMBAR }}" data-imagezoom="true" class="img-responsive" alt=""> </div>
+									<img src="files/{{ room_images }}" data-imagezoom="true" class="img-responsive" alt="files/{{ room_images }}"> </div>
 							</li>
 							<!--<li data-thumb="{{ GAMBAR }}">-->
 								<!--<div class="thumb-image">-->
@@ -78,7 +78,7 @@
 						<label>Tersedia </label>:</p>
 					<ul>
 						<li>
-							#Misalnya disini#, Kamar Mandi.
+							{{ room_description | striptags }}
 						</li>
 						<!--<li>-->
 							<!--After cooking, Zeeba Basmati rice grains attain an extra ordinary length of upto 2.4 cm/~1 inch.-->

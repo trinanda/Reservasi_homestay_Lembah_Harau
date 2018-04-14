@@ -48,7 +48,7 @@ except OSError:
 # Delete hooks for models, delete files if models are getting deleted
 @listens_for(Kamar, 'after_delete')
 def del_image(mapper, connection, target):
-    if target.path:
+    if target.room_images:
         # Delete image
         try:
             os.remove(op.join(file_path, target.path))
@@ -68,22 +68,22 @@ class PilihKamarView(sqla.ModelView):
     form_overrides = dict(room_description=CKEditorField)
     create_template = 'admin/ckeditor.html'
     edit_template = 'admin/ckeditor.html'
-    column_list = ('nama_kamar', 'Image', 'harga_kamar')
+    column_list = ('nama_kamar', 'room_images', 'harga_kamar')
     def _list_thumbnail(view, context, model, name):
-        if not model.path:
+        if not model.room_images:
             return ''
 
         return Markup('<img src="%s">' % url_for('static',
-                                                 filename=form.thumbgen_filename(model.path)))
+                                                 filename=form.thumbgen_filename(model.room_images)))
 
     column_formatters = {
-        'path': _list_thumbnail
+        'room_images': _list_thumbnail
     }
 
     # Alternative way to contribute field is to override it completely.
     # In this case, Flask-Admin won't attempt to merge various parameters for the field.
     form_extra_fields = {
-        'path': form.ImageUploadField('Image',
+        'room_images': form.ImageUploadField('Room Images',
                                       base_path=file_path,
                                       thumbnail_size=(100, 100, True))
     }

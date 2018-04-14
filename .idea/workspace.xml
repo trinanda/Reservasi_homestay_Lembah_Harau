@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3fda5f8a-d2f4-4567-96cf-3ac732436be6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/204117f143e5_inisialisasi_database.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/71602b74bdf2_inisialisasi_database.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/web_app/app.py" afterPath="$PROJECT_DIR$/web_app/app.py" />
-      <change beforePath="$PROJECT_DIR$/web_app/files/Homestay_puti_sari_banilai-1140x530.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web_app/files/Homestay_puti_sari_banilai-1140x530_thumb.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web_app/files/rumah-adat-sarasah-bunta.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web_app/files/rumah-adat-sarasah-bunta_thumb.jpg" afterPath="" />
       <change beforePath="$PROJECT_DIR$/web_app/models.py" afterPath="$PROJECT_DIR$/web_app/models.py" />
+      <change beforePath="$PROJECT_DIR$/web_app/templates/base-template.html" afterPath="$PROJECT_DIR$/web_app/templates/base-template.html" />
       <change beforePath="$PROJECT_DIR$/web_app/templates/detail_kamar.html" afterPath="$PROJECT_DIR$/web_app/templates/detail_kamar.html" />
       <change beforePath="$PROJECT_DIR$/web_app/templates/penginapan.html" afterPath="$PROJECT_DIR$/web_app/templates/penginapan.html" />
       <change beforePath="$PROJECT_DIR$/web_app/views.py" afterPath="$PROJECT_DIR$/web_app/views.py" />
@@ -26,8 +23,8 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_app/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="104" column="43" lean-forward="false" selection-start-line="104" selection-start-column="43" selection-end-line="104" selection-end-column="43" />
+            <state relative-caret-position="-1479">
+              <caret line="8" column="54" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="54" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -35,33 +32,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base-template.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_app/templates/base-template.html">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+            <state relative-caret-position="224">
+              <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web_app/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="70" column="39" lean-forward="false" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail_kamar.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="detail_kamar.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web_app/templates/detail_kamar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="57" column="63" lean-forward="false" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="63" />
+            <state relative-caret-position="203">
+              <caret line="22" column="107" lean-forward="false" selection-start-line="22" selection-start-column="107" selection-end-line="22" selection-end-column="107" />
               <folding />
             </state>
           </provider>
@@ -70,8 +55,8 @@
       <file leaf-file-name="penginapan.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_app/templates/penginapan.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="42" column="85" lean-forward="false" selection-start-line="42" selection-start-column="85" selection-end-line="42" selection-end-column="85" />
+            <state relative-caret-position="143">
+              <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -89,17 +74,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Free delivery</find>
-      <find>Zeeba Premium Basmati Rice - 5 KG</find>
-      <find>$</find>
-      <find>1 offer from $950.00</find>
-      <find>1 offer from</find>
-      <find>All food products are non-returnable</find>
-      <find>returnable</find>
-      <find>Vegetarian</find>
-      <find>Cash</find>
-      <find>kamars</find>
-      <find>HARGA_KAMAR</find>
       <find>NAMA_KAMAR</find>
       <find>KAMARS</find>
       <find>flexslider</find>
@@ -114,11 +88,22 @@
       <find>Misalnya</find>
       <find>950</find>
       <find>harga_kamar</find>
-      <find>foto_kamar</find>
       <find>lihat kamar</find>
       <find>act</find>
       <find>src</find>
       <find>homepage</find>
+      <find>image</find>
+      <find>room_foto.path</find>
+      <find>images</find>
+      <find>path</find>
+      <find>urutan</find>
+      <find>urutan_kamar</find>
+      <find>index.html</find>
+      <find>room_price.harga_kamar</find>
+      <find>facilities</find>
+      <find>r</find>
+      <find>foto_kamar</find>
+      <find>room_images</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/web_app/templates/templates_from_grocery_shoppy_web</dir>
@@ -161,16 +146,16 @@
         <option value="$PROJECT_DIR$/web_app/testing.py" />
         <option value="$PROJECT_DIR$/web_app/query.py" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/web_app/templates/base-template.html" />
         <option value="$PROJECT_DIR$/web_app/templates/single.html" />
         <option value="$PROJECT_DIR$/web_app/tes.py" />
         <option value="$PROJECT_DIR$/web_app/templates/student.html" />
         <option value="$PROJECT_DIR$/web_app/templates/result.html" />
-        <option value="$PROJECT_DIR$/web_app/templates/penginapan.html" />
-        <option value="$PROJECT_DIR$/web_app/templates/detail_kamar.html" />
-        <option value="$PROJECT_DIR$/web_app/app.py" />
-        <option value="$PROJECT_DIR$/web_app/models.py" />
         <option value="$PROJECT_DIR$/web_app/views.py" />
+        <option value="$PROJECT_DIR$/web_app/models.py" />
+        <option value="$PROJECT_DIR$/web_app/templates/base-template.html" />
+        <option value="$PROJECT_DIR$/web_app/templates/penginapan.html" />
+        <option value="$PROJECT_DIR$/web_app/app.py" />
+        <option value="$PROJECT_DIR$/web_app/templates/detail_kamar.html" />
       </list>
     </option>
   </component>
@@ -411,6 +396,26 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34539473" sideWeight="0.50860137" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32730263" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29605263" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35049835" sideWeight="0.49139866" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1809382" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24944155" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -534,67 +539,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web_app/templates/single.html" />
     <entry file="file://$PROJECT_DIR$/web_app/templates/result.html" />
     <entry file="file://$PROJECT_DIR$/web_app/templates/student.html" />
     <entry file="file://$PROJECT_DIR$/web_app/tes.py" />
     <entry file="file://$PROJECT_DIR$/web_app/test.py" />
-    <entry file="file://$PROJECT_DIR$/web_app/templates/penginapan.html">
+    <entry file="file://$PROJECT_DIR$/web_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="42" column="85" lean-forward="false" selection-start-line="42" selection-start-column="85" selection-end-line="42" selection-end-column="85" />
-          <folding />
+        <state relative-caret-position="132">
+          <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web_app/templates/base-template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        <state relative-caret-position="202">
+          <caret line="48" column="50" lean-forward="false" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/templates/detail_kamar.html">
+    <entry file="file://$PROJECT_DIR$/web_app/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="57" column="63" lean-forward="false" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="63" />
+        <state relative-caret-position="34">
+          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/penginapan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web_app/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="44" column="23" lean-forward="true" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+        <state relative-caret-position="224">
+          <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web_app/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="104" column="43" lean-forward="false" selection-start-line="104" selection-start-column="43" selection-end-line="104" selection-end-column="43" />
+        <state relative-caret-position="-1479">
+          <caret line="8" column="54" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="54" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/views.py">
+    <entry file="file://$PROJECT_DIR$/web_app/templates/detail_kamar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="70" column="39" lean-forward="false" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="203">
+          <caret line="22" column="107" lean-forward="false" selection-start-line="22" selection-start-column="107" selection-end-line="22" selection-end-column="107" />
+          <folding />
         </state>
       </provider>
     </entry>
