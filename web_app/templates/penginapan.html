@@ -36,8 +36,11 @@
 										<span class="item_price">Rp. {{ ROOMS.harga_kamar }} / Malam</span>
 									</div>
 									<div class="snipcart-details">
-										<form action="http://localhost:7575/detail_kamar/{{ id_kamar }}" method="post">
+										<form action="http://localhost:7575/detail_kamar/{{ ROOMS.id_kamar }}" method="get">
 											<fieldset>
+												<input type="hidden" name="nama_kamar" value="{{ ROOMS.nama_kamar }}" />
+												<input type="hidden" name="harga_kamar" value="{{ ROOMS.harga_kamar }}" />
+												<!--<input type="hidden" name="fasilitas" value="USD" />-->
 												<input type="submit" name="submit" value="Lihat Detail" class="button" />
 											</fieldset>
 										</form>

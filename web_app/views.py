@@ -10,7 +10,7 @@ import os.path as op
 from flask import url_for
 from web_app.models import Kamar
 
-
+# cekdeitor
 class CKEditorWidget(TextArea):
     def __call__(self, field, **kwargs):
         if kwargs.get('class'):
@@ -21,6 +21,8 @@ class CKEditorWidget(TextArea):
 
 class CKEditorField(TextAreaField):
     widget = CKEditorWidget()
+
+# cekdeitor
 
 class PageModelView(ModelView):
     form_overrides = dict(konten=CKEditorField)
@@ -63,6 +65,10 @@ def del_image(mapper, connection, target):
 
 # Administrative views
 class PilihKamarView(sqla.ModelView):
+    form_overrides = dict(room_description=CKEditorField)
+    create_template = 'admin/ckeditor.html'
+    edit_template = 'admin/ckeditor.html'
+    column_list = ('nama_kamar', 'Image', 'harga_kamar')
     def _list_thumbnail(view, context, model, name):
         if not model.path:
             return ''

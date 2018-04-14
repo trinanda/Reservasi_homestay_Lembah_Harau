@@ -39,7 +39,6 @@ def create_app():
 
     @flask_objek.route('/penginapan', methods = ["GET", "POST"])
     @flask_objek.route('/<uri>')
-    @flask_objek.route('/<id_kamar>')
     def kamar(uri=None, room=None, id_kamar=None):
         page = Page()
         if uri is not None:
@@ -76,7 +75,7 @@ def create_app():
 
         urutan_kamar = Kamar.query.order_by('urutan_kamar')
 
-        if request.method == "POST":
+        if request.method == "get":
             room_price = Kamar.query.first()
             room_price = room_price.harga_kamar
             bedroom_name = Kamar.query.first()
@@ -86,7 +85,7 @@ def create_app():
             room_id = Kamar.query.first()
             room_id = room_id.id_kamar
             return render_template("detail_kamar.html", NAMA_KAMAR=bedroom_name, HARGA_KAMAR=room_price,
-                                   GAMBAR=room_foto, GAMBAR1=room_foto, id_kamar=room_id)
+                                   GAMBAR=room_foto, GAMBAR1=room_foto)
         else:
             pass
 
@@ -95,12 +94,71 @@ def create_app():
                                KAMARS=urutan_kamar, room_id=room_id)
 
 
-    @flask_objek.route('/detail_kamar/<id_kamar>')
-    def detail_kamar(id_kamar):
-        kamar = Kamar()
-        id_kamar = 'id kamar'
-        if kamar is not None:
-            id_kamar = Kamar.id_kamar
-        return render_template('detail_kamar.html',id_kamar=id_kamar)
+    @flask_objek.route('/detail_kamar/<id_kamar>', methods = ["GET", "POST"])
+    def detail_kamar(id_kamar=None, nama_kamar=None):
 
+
+        id_kamar = request.args.get("id_kamar")
+        nama_kamar = request.args.get("nama_kamar")
+        harga_kamar = request.args.get("harga_kamar")
+        return render_template("detail_kamar.html", NAMA_KAMAR=nama_kamar, id_kamar=id_kamar,
+                               HARGA_KAMAR=harga_kamar)
     return flask_objek
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# bedroom_name = "bedroom"
+#         room_price = "price"
+#         room_foto = 'foto kamar nya gimana..?'
+#         room_id = 'disini ID'
+#
+#         if kamar is not None:
+#             room_price = Kamar.query.first()
+#             room_price = room_price.harga_kamar
+#             bedroom_name = Kamar.query.first()
+#             bedroom_name = bedroom_name.nama_kamar
+#             room_foto = Kamar.query.first()
+#             room_foto = room_foto.path
+#             room_id = Kamar.query.first()
+#             room_id = room_id.id_kamar
+#
+#             if request.method == "get":
+#                 room_price = Kamar.query.first()
+#                 room_price = room_price.harga_kamar
+#                 bedroom_name = Kamar.query.first()
+#                 bedroom_name = bedroom_name.nama_kamar
+#                 room_foto = Kamar.query.first()
+#                 room_foto = room_foto.path
+#                 room_id = Kamar.query.first()
+#                 room_id = room_id.id_kamar
+#                 return render_template("detail_kamar.html", NAMA_KAMAR=bedroom_name, HARGA_KAMAR=room_price,
+#                                        GAMBAR=room_foto, GAMBAR1=room_foto, id_kamar=room_id)

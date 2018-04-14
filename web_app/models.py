@@ -33,17 +33,14 @@ class Kamar(database.Model):
     __tablename__ = 'kamar'
     id_kamar = Column(Integer, primary_key=True)
     nama_kamar = Column(String)
-    harga_kamar = Column(Integer)
+    room_description = Column(String)
     path = Column(database.Unicode(128))
+    harga_kamar = Column(Integer)
     urutan_kamar = Column(Integer)
 
 
     # def __repr__(self):
     #     return self.nama_kamar
-
-    def __unicode__(self):
-        return self.name
-
 
     def __repr__(self):
         return '{}'.format(self.nama_kamar)
