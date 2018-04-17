@@ -88,6 +88,8 @@ def create_app():
         else:
             pass
 
+
+
         return render_template('penginapan.html', CONTENT=konten, MENU=menu,
                                nama_kamar=bedroom_name, harga_kamar=room_price, room_images=room_foto,
                                KAMARS=urutan_kamar, room_id=room_id, room_description=keterangan_kamar)

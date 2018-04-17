@@ -14,13 +14,14 @@
 				</span>
 			</h3>
 			<!-- //tittle heading -->
+
 			<div class="col-md-5 single-right-left ">
 				<div class="grid images_3_of_2">
 					<div class="flexslider">
 						<ul class="slides">
-							<li data-thumb="files/{{ room_images }}">
+							<li data-thumb="{{ room_images }}">
 								<div class="thumb-image">
-									<img src="files/{{ room_images }}" data-imagezoom="true" class="img-responsive" alt="files/{{ room_images }}"> </div>
+									<img src="{{ room_images }}" data-imagezoom="true" class="img-responsive" alt="files/{{ room_images }}"> </div>
 							</li>
 							<!--<li data-thumb="{{ GAMBAR }}">-->
 								<!--<div class="thumb-image">-->
@@ -35,7 +36,6 @@
 					</div>
 				</div>
 			</div>
-
 
 			<div class="col-md-7 single-right-left simpleCart_shelfItem">
 				<h3>{{ NAMA_KAMAR }}</h3>

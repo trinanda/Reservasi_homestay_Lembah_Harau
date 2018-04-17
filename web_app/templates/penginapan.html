@@ -41,8 +41,8 @@
 												<input type="value" name="nama_kamar" value="{{ ROOMS.nama_kamar }}" />
 												<input type="value" name="harga_kamar" value="{{ ROOMS.harga_kamar }}" />
 												<input type="value" name="room_description" value="{{ ROOMS.room_description | striptags }}" />
-												<input type="value" name="room_images" value="files/{{ ROOMS.room_images }}" />
-												<!--<input type="hidden" name="fasilitas" value="USD" />-->
+												<input type="value" name="room_images" value="http://localhost:7575/files/{{ ROOMS.room_images }}" />
+                                                <!--<input type="hidden" name="fasilitas" value="USD" />-->
 												<input type="submit" name="submit" value="Lihat Detail" class="button" />
 											</fieldset>
 										</form>
