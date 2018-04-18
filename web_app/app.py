@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 from flask_admin import Admin
 
 from web_app.views import PageModelView, MenuModelView, PilihKamarView
@@ -28,14 +28,13 @@ def create_app():
         else:
             pass
 
-        konten = 'Homepage!!!'
+        konten = 'Hello!!!'
         if page is not None:
             konten = page.konten
 
         menu = Menu.query.order_by('urutan')
 
         return render_template('index.html', CONTENT=konten, MENU=menu)
-
 
     @flask_objek.route('/penginapan', methods = ["GET", "POST"])
     @flask_objek.route('/<uri>')
@@ -53,6 +52,13 @@ def create_app():
         menu = Menu.query.order_by('urutan')
 
         kamar = Kamar()
+
+        try:
+            room_price = Kamar.query.first()
+            room_price = room_price.harga_kamar
+        except AttributeError:
+            return "Kamar belum ditambahkan pada database"
+
         if room is not None:
             kamar = Kamar.query.filter_by(nama_kamar=room).first()
         else:
@@ -87,8 +93,6 @@ def create_app():
                                    room_images=room_foto, room_description=keterangan_kamar)
         else:
             pass
-
-
 
         return render_template('penginapan.html', CONTENT=konten, MENU=menu,
                                nama_kamar=bedroom_name, harga_kamar=room_price, room_images=room_foto,

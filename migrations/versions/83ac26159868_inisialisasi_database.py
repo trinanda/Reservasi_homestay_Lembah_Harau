@@ -1,8 +1,8 @@
 """inisialisasi database
 
-Revision ID: 7c22c381e582
+Revision ID: 83ac26159868
 Revises: 
-Create Date: 2018-04-14 09:27:41.845759
+Create Date: 2018-04-18 09:52:49.967682
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '7c22c381e582'
+revision = '83ac26159868'
 down_revision = None
 branch_labels = None
 depends_on = None
