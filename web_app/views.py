@@ -1,4 +1,5 @@
 from flask_admin.contrib.sqla import ModelView
+
 from wtforms import TextAreaField, form
 from wtforms.widgets import TextArea
 from jinja2 import Markup
@@ -87,3 +88,4 @@ class PilihKamarView(sqla.ModelView):
                                       base_path=file_path,
                                       thumbnail_size=(100, 100, True))
     }
+

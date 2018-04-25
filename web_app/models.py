@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship, backref
-
 from flask_sqlalchemy import SQLAlchemy
+
 
 database = SQLAlchemy()
 
@@ -38,11 +38,8 @@ class Kamar(database.Model):
     harga_kamar = Column(Integer)
     urutan_kamar = Column(Integer)
 
-
-    # def __repr__(self):
-    #     return self.nama_kamar
-
     def __repr__(self):
         return '{}'.format(self.nama_kamar)
+
 
 

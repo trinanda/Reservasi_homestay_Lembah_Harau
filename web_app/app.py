@@ -106,8 +106,29 @@ def create_app():
         harga_kamar = request.args.get('harga_kamar')
         keterangan_kamar = request.args.get('room_description')
         room_images1= request.args.get('room_images')
-        print('coba print ini deh', keterangan_kamar)
+
+        if request.method == "post":
+            id_kamar = request.args.get('id_kamar')
+            nama_kamar = request.args.get('nama_kamar')
+            harga_kamar = request.args.get('harga_kamar')
+            keterangan_kamar = request.args.get('room_description')
+            room_images1 = request.args.get('room_images')
+
+            lama_menginap = None
+
+            harga_lama_menginap = harga_kamar * lama_menginap
+            if lama_menginap is None:
+                lama_menginap = 1
+            print('coba print init', harga_lama_menginap)
+            return render_template("checkout.html", LAMA_MENGINAP=lama_menginap, HARGA_LAMA_MENGINAP=harga_lama_menginap)
+        else:
+            pass
         return render_template("detail_kamar.html", NAMA_KAMAR=nama_kamar, id_kamar=id_kamar,
                                HARGA_KAMAR=harga_kamar, room_description=keterangan_kamar, room_images=room_images1)
+
+
+    @flask_objek.route('/checkout', methods = ["GET", "POST"])
+    def checkout():
+        return render_template("checkout.html")
     return flask_objek
 

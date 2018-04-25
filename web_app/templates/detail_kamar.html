@@ -27,10 +27,10 @@
 								<!--<div class="thumb-image">-->
 									<!--<img src="{{ GAMBAR }}" data-imagezoom="true" class="img-responsive" alt=""> </div>-->
 							<!--</li>-->
-							<li data-thumb="https://trinanda.github.io/grocery_shoppy_web/images/si3.jpg">
-								<div class="thumb-image">
-									<img src="https://trinanda.github.io/grocery_shoppy_web/images/si3.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
-							</li>
+							<!--<li style="display: none;" data-thumb="https://trinanda.github.io/grocery_shoppy_web/images/si3.jpg">-->
+								<!--<div class="thumb-image">-->
+									<!--<img src="https://trinanda.github.io/grocery_shoppy_web/images/si3.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>-->
+							<!--</li>-->
 						</ul>
 						<div class="clearfix"></div>
 					</div>
@@ -54,11 +54,22 @@
 						<!--<label for="rating1">1</label>-->
 					<!--</span>-->
 				<!--</div>-->
+			<div class="occasion-cart">
+					<div class="top_brand_home_details item_add single-item hvr-outline-out">
+						<form action="http://192.168.100.3:7575/checkout" method="post">
+							<fieldset>
+								<!--<input type="value" name="cmd" value="_cart" />-->
 				<p>
 					<span class="item_price">Rp. {{ HARGA_KAMAR }}</span>
 					<label>Per Malam</label>
 				</p>
-				<!--<div class="single-infoagile">-->
+                <!--<input type="number" name="add" value="1" style="width: 50px;"/>-->
+                 <div class="col-10">
+                     <label style="font-size: 12px;">Anda ingin menginap berapa malam?</label>
+                    <input class="form-control" type="number" value="{{ LAMA_MENGINAP }}" id="example-number-input" style="width: 70px;">
+                 </div>
+
+                                <!--<div class="single-infoagile">-->
 					<!--<ul>-->
 						<!--<li>-->
 							<!--Cash on Delivery Eligible.-->
@@ -69,13 +80,12 @@
 						<!--<li>-->
 							<!--Sold and fulfilled by Supple Tek (3.6 out of 5 | 8 ratings).-->
 						<!--</li>-->
-
 					<!--</ul>-->
 				<!--</div>-->
 				<div class="product-single-w3l">
 					<p>
-						<i class="fa fa-hand-o-right" aria-hidden="true"></i>Fasilitas yang
-						<label>Tersedia </label>:</p>
+						<i class="fa fa-hand-o-right" aria-hidden="true"></i>Deskripsi
+						<label>Kamar </label>:</p>
 					<ul>
 						<li>
 							{{ room_description | striptags }}
@@ -86,29 +96,37 @@
 						<!--<li>-->
 							<!--Zeeba Basmati rice adheres to the highest food afety standards as your health is paramount to us.-->
 						<!--</li>-->
-						<!--<li>-->
-							<!--Contains only the best and purest grade of basmati rice grain of Export quality.-->
-						<!--</li>-->
 					</ul>
 					<p>
-						<i class="fa fa-refresh" aria-hidden="true"></i>Pesan Kamar
-						<label>Sekarang Juga.</label>
+						<i class="fa fa-refresh" aria-hidden="true"></i>Lokasi
+						<label>Homestay.</label>
+						<ul>
+							<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8074337840903!2d100.65922441435008!3d-0.13384633549136665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2aad768ee3391d%3A0xaf35949edaaf7d20!2sJalan+Raya+Tarantang%2C+Tarantang%2C+Harau%2C+Kabupaten+Lima+Puluh+Kota%2C+Sumatera+Barat+26271!5e0!3m2!1sid!2sid!4v1524061392045" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+
+							<!--&lt;!&ndash; mapbox &ndash;&gt;-->
+							<!--<div id='map' style='width: 400px; height: 300px;'></div>-->
+							<!--<script>-->
+							<!--mapboxgl.accessToken = 'pk.eyJ1IjoidHJpbmFuZGEzIiwiYSI6ImNqZzZwMzB1dTBlOHcyeHFsaGxremFoMXUifQ.eIIDnevmMnASYpTODw6lOg';-->
+							<!--var map = new mapboxgl.Map({-->
+							<!--container: 'map',-->
+							<!--style: 'mapbox://styles/mapbox/streets-v10'-->
+							<!--});-->
+							<!--</script>-->
+							<!--&lt;!&ndash; /mapbox &ndash;&gt;-->
+							<li><del><i>Masih dalam tahap pengembagan</i></del></li>
+						</ul>
 					</p>
 				</div>
-				<div class="occasion-cart">
-					<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-						<form action="#" method="post">
-							<fieldset>
-								<!--<input type="hidden" name="cmd" value="_cart" />-->
-								<!--<input type="hidden" name="add" value="1" />-->
-								<!--<input type="hidden" name="business" value=" " />-->
-								<!--<input type="hidden" name="item_name" value="Zeeba Premium Basmati Rice - 5 KG" />-->
-								<!--<input type="hidden" name="amount" value="950.00" />-->
-								<!--<input type="hidden" name="discount_amount" value="1.00" />-->
-								<!--<input type="hidden" name="currency_code" value="USD" />-->
-								<!--<input type="hidden" name="return" value=" " />-->
-								<!--<input type="hidden" name="cancel_return" value=" " />-->
-								<input type="submit" name="submit" value="Booking Kamar" class="button" />
+
+								<!--<input type="value" name="add" value="1" />-->
+								<!--<input type="value" name="business" value=" " />-->
+								<!--<input type="value" name="item_name" value="Zeeba Premium Basmati Rice - 5 KG" />-->
+								<!--<input type="value" name="amount" value="950.00" />-->
+								<!--<input type="value" name="discount_amount" value="1.00" />-->
+								<!--<input type="value" name="currency_code" value="USD" />-->
+								<!--<input type="value" name="return" value=" " />-->
+								<!--<input type="value" name="cancel_return" value=" " />-->
+								<input type="submit" name="submit" value="Booking Kamar" class="btn btn-primary btn-lg" />
 							</fieldset>
 						</form>
 					</div>
