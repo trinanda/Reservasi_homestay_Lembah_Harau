@@ -18,4 +18,4 @@ RUN pip install -r requirements_docker.txt
 
 COPY . .
 
-CMD gunicorn -b 0.0.0.0:6565 --access-logfile - "web_app.app:create_app()"
+CMD gunicorn -b 0.0.0.0:80 --access-logfile - "web_app.app:create_app()"

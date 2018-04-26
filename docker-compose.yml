@@ -4,7 +4,7 @@ services:
   aplikasi_web_di_dalam_docker:
     build: .
     command: >
-      gunicorn -b 0.0.0.0:6565
+      gunicorn -b 0.0.0.0:80
       --access-logfile -
       --reload
       "web_app.app:create_app()"
@@ -13,7 +13,7 @@ services:
       - '.:/web_app_docker'
 
     ports:
-      - '7575:6565'
+      - '7575:80'
 
   service_postgresql_di_dalam_docker:
     image: 'postgres:9.6'
