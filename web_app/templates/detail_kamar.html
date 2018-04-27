@@ -56,7 +56,7 @@
 				<!--</div>-->
 			<div class="occasion-cart">
 					<div class="top_brand_home_details item_add single-item hvr-outline-out">
-						<form action="http://192.168.100.3:7575/checkout" method="post">
+						<form action="http://192.168.100.3:7575/checkout/{{ id_kamar }}" method="get">
 							<fieldset>
 								<!--<input type="value" name="cmd" value="_cart" />-->
 				<p>
@@ -65,8 +65,9 @@
 				</p>
                 <!--<input type="number" name="add" value="1" style="width: 50px;"/>-->
                  <div class="col-10">
+
                      <label style="font-size: 12px;">Anda ingin menginap berapa malam?</label>
-                    <input class="form-control" type="number" value="{{ LAMA_MENGINAP }}" id="example-number-input" style="width: 70px;">
+                    <input class="form-control" type="number" name="lama_menginap" value="{{ LAMA_MENGINAP }}" placeholder="1" id="example-number-input" style="width: 70px;">
                  </div>
 
                                 <!--<div class="single-infoagile">-->
@@ -117,7 +118,8 @@
 						</ul>
 					</p>
 				</div>
-
+								<input type="hidden" name="harga_kamar" value="{{ HARGA_KAMAR }}" />
+								<input type="hidden" name="nama_kamar" value="{{ NAMA_KAMAR }}" style="width: 70px;">
 								<!--<input type="value" name="add" value="1" />-->
 								<!--<input type="value" name="business" value=" " />-->
 								<!--<input type="value" name="item_name" value="Zeeba Premium Basmati Rice - 5 KG" />-->
