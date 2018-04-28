@@ -114,15 +114,14 @@ def create_app():
             room_price = room_price.harga_kamar
             bedroom_name = Kamar.query.first()
             bedroom_name = bedroom_name.nama_kamar
+            room_foto = Kamar.query.first()
+            room_foto = room_foto.room_images
 
             lama_menginap = 1
             total_harga_penginapan = room_price * int(lama_menginap)
-            try:
-                total_harga_penginapan = int(harga_kamar) * 1
-            except ValueError:
-                return 'lama menginap belum dimasukan'
+
             return render_template("checkout.html", TOTAL_HARGA_PENGINAPAN=total_harga_penginapan, NAMA_KAMAR=bedroom_name,
-                                   LAMA_HARI=lama_menginap )
+                                   LAMA_HARI=lama_menginap, ROOM_IMAGES= room_foto)
 
         return render_template("detail_kamar.html", NAMA_KAMAR=nama_kamar, id_kamar=id_kamar,
                                HARGA_KAMAR=harga_kamar, room_description=keterangan_kamar, room_images=room_images1)
@@ -132,15 +131,13 @@ def create_app():
     def checkout(id_kamar=None):
         harga_kamar = request.args.get('harga_kamar')
         nama_kamar = request.args.get('nama_kamar')
+        foto_kamar = request.args.get('foto_kamar')
         lama_hari = request.args.get('lama_menginap')
         lama_menginap = request.args.get('lama_menginap')
         total_harga_penginapan = int(harga_kamar) * int(lama_menginap)
-        try:
-            total_harga_penginapan = int(harga_kamar) * 1
-        except ValueError:
-            return 'lama menginap belum dimasukan'
+
         return render_template("checkout.html", TOTAL_HARGA_PENGINAPAN=total_harga_penginapan, NAMA_KAMAR=nama_kamar,
-                               LAMA_HARI=lama_hari)
+                               LAMA_HARI=lama_hari, ROOM_IMAGES=foto_kamar)
 
 
     # @flask_objek.route('/testes')
