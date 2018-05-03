@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>besok UAS</title>
+
+		<script type="text/javascript">
+
+			function pilih_bank(){
+
+				var form_bank = document.form_bank;
+
+				var nama_bank = form_bank.bank.value;
+
+				if (nama_bank == "BCA") {
+					form_bank.nomor_rekening.value = "081231209231";
+				}
+				else if (nama_bank == "BRI") {
+					form_bank.nomor_rekening.value = "12312389384";
+				}
+				else {
+					form_bank.nomor_rekening.value= "98234234";
+				}
+
+			}
+
+		</script>
+	</head>
+
+	<body>
+		<form name="form_bank">
+			<input type="radio" value="BCA" name="bank" onchange="pilih_bank()">BCA
+			<input type="radio" value="BRI" name="bank" onchange="pilih_bank()">BRI
+			<input type="radio" value="BNI" name="bank" onchange="pilih_bank()">BNI
+			<p>No. Rek</p>
+			<output name="nomor_rekening"></output>
+				<!--<input type="text" name="nomor_rekening" style="width: 98%;" readonly>-->
+		</form>
+	</body>
+</html>

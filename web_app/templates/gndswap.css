@@ -1,0 +1,108 @@
+html, body, div, span, iframe, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body
+{
+    font: 13px/1.231 sans-serif;
+    font-size: small;
+}
+body
+{
+/*    background-color: #f4f4f4;*/
+	background-color: #C0C0C0;
+    color: #464646;
+    text-shadow: white 0 1px 0;
+	text-align: center;
+}
+a
+{
+    color: #0095cd;
+    text-decoration: none;
+	font: 13px/1.231 sans-serif;
+	font-weight: bold;
+}
+a:hover
+{
+    outline: none;
+}
+a:active
+{
+    outline: none;
+    color: #0095cd;
+}
+a:visited
+{
+    color: #0095cd;
+}
+a:hover
+{
+    color: #40c2f3;
+}
+header
+{
+	width: 752px;
+    height: 80px;
+    margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+footer
+{
+	height: 165px;
+}
+footer img
+{
+	margin-top: 20px;
+	padding: 5px;
+}
+.bold
+{
+	font-weight: bold;
+	line-height: 1.75em;
+	padding-top: 5px;
+}
+.size24
+{
+	font-size: 24px;
+}
+.size20
+{
+	font-size: 20px;
+}
+.size16
+{
+	font-size: 16px;
+}
+.sitegreen
+{
+    color: #6ba51b;
+}
+
+
+body.offers input[type="radio"]
+{
+    position: absolute;
+    left: -9999px;
+    vertical-align: text-bottom;
+	margin-right: 3px;
+}
+
+body.offers #main
+{
+    margin: 0 auto;
+    width: 750px;
+    background: #fff;
+    border: 1px solid #969696;
+    -moz-box-shadow: #808080 0 0 2px inset;
+    -webkit-box-shadow: #808080 0 0 2px inset;
+    -o-box-shadow: #808080 0 0 2px inset;
+    box-shadow: #808080 0 0 2px inset;
+}

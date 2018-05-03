@@ -140,10 +140,13 @@ def create_app():
                                LAMA_HARI=lama_hari, ROOM_IMAGES=foto_kamar)
 
 
-    # @flask_objek.route('/testes')
-    # def tes_checkout():
-    #     return render_template("checkout.html")
+    @flask_objek.route('/testes')
+    def tes_checkout():
+        return render_template("payment.html")
 
+    @flask_objek.route('/besokuas')
+    def besokuas():
+        return render_template("besokuas.html")
 
     return flask_objek
 
