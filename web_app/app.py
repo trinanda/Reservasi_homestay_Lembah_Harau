@@ -43,12 +43,11 @@ def create_app():
     @flask_objek.route('/<uri>')
     def homepage():
         page = Page()
-        if page is not None:
-            homepage = Page.query.first()
-            homepage = homepage.konten
+
+        isi_konten = Page.query.filter_by(id_halaman=2).first()
 
         menu = Menu.query.order_by('urutan')
-        return render_template('homepage.html', HOMEPAGE=homepage, MENU=menu)
+        return render_template('homepage.html',MENU=menu, HOMEPAGE=isi_konten.konten)
 
     @flask_objek.route('/penginapan', methods = ["GET", "POST"])
     @flask_objek.route('/<uri>')
