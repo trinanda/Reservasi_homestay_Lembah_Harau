@@ -16,15 +16,16 @@
 <!--<div class="agileinfo-ads-display col-md-7 w3l-rightpro">-->
 		<!--<div class="wrapper">-->
 				<!--<div class="product-sec1">-->
-
+					<form action="http://192.168.100.3:7575/detail_kamar/{{ ROOMS.id_kamar }}" method="get">
 						<div class="col-xs-4 product-men">
-							<div class="men-pro-item simpleCart_shelfItem">
+							<div class="simpleCart_shelfItem">
 								<div class="men-thumb-item">
 									<img src="files/{{ ROOMS.room_images }}" alt="" style="width: 180px; height: 180px;">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
 											<!--<a href="http://localhost//templates/template_tugas_akhir/grocery_shoppy_web/single.html" class="link-product-add-cart">Quick View</a>-->
-											<a href="{{ ButtonPressed1 }}" class="link-product-add-cart">Lihat Kamar</a>
+											<!--<a href="" class="link-product-add-cart">Lihat Kamar</a>-->
+											<input type="submit" value="Lihat Kamar" class="link-product-add-cart">
 										</div>
 									</div>
 								</div>
@@ -36,7 +37,6 @@
 										<span class="item_price">Rp. {{ ROOMS.harga_kamar }} / Malam</span>
 									</div>
 									<div class="snipcart-details">
-										<form action="http://192.168.100.3:7575/detail_kamar/{{ ROOMS.id_kamar }}" method="get">
 											<fieldset>
 												<input type="hidden" name="nama_kamar" value="{{ ROOMS.nama_kamar }}" />
 												<input type="hidden" name="harga_kamar" value="{{ ROOMS.harga_kamar }}" />

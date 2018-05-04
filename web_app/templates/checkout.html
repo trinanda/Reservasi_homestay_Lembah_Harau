@@ -67,22 +67,22 @@
 			<div class="checkout-left">
 				<div class="address_form_agile">
 					<h4>Informasi Anda</h4>
-					<form action="#" method="post" class="creditly-card-form agileinfo_form">
+					<form action="http://192.168.100.3:7575/payment" method="post" class="creditly-card-form agileinfo_form">
 						<div class="creditly-wrapper wthree, w3_agileits_wrapper">
 							<div class="information-wrapper">
 								<div class="first-row">
 									<div class="controls">
-										<input class="billing-address-name" type="text" name="name" placeholder="Nama Lengkap" required="">
+										<input class="billing-address-name" type="text" name="name" placeholder="Nama Lengkap" required="" style="color: black;">
 									</div>
 									<div class="w3_agileits_card_number_grids">
 										<div class="w3_agileits_card_number_grid_left">
 											<div class="controls">
-												<input type="text" placeholder="Nomor Telepon" name="number" required="">
+												<input type="text" placeholder="Nomor Telepon" name="number" required="" style="color: black;">
 											</div>
 										</div>
 										<div class="w3_agileits_card_number_grid_right">
 											<div class="controls">
-												<input type="text" placeholder="Email" name="landmark" required="">
+												<input type="text" placeholder="Email" name="landmark" required="" style="color: black;">
 											</div>
 										</div>
 										<div class="clear"> </div>
@@ -100,7 +100,8 @@
 										<!--</select>-->
 									<!--</div>-->
 								</div>
-								<button class="submit check_out">Pilih Metode Pembayaran</button>
+								<!--<button class="submit check_out">Pilih Metode Pembayaran</button>-->
+								<input type="submit" name="submit" value="Pilih Metode Pembayaran" class="btn btn-primary btn-lg" style="width: 220px;"/>
 							</div>
 						</div>
 					</form>

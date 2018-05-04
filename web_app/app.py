@@ -18,7 +18,6 @@ def create_app():
     admin.add_view(MenuModelView(Menu, database.session))
     admin.add_view(PilihKamarView(Kamar, database.session))
 
-
     @flask_objek.route('/')
     @flask_objek.route('/<uri>')
     def index(uri=None):
@@ -28,13 +27,28 @@ def create_app():
         else:
             pass
 
-        konten = 'Hello!!!'
+        if uri == '/':
+            uri is 'homepage' or redirect('http://localhost:7575/homepage')
+
+        isi_konten = 'test'
         if page is not None:
-            konten = page.konten
+            isi_konten = Page.query.first()
+            isi_konten  = isi_konten .konten
 
         menu = Menu.query.order_by('urutan')
 
-        return render_template('index.html', CONTENT=konten, MENU=menu)
+        return render_template('index.html', CONTENT=isi_konten,  MENU=menu)
+
+    @flask_objek.route('/homepage')
+    @flask_objek.route('/<uri>')
+    def homepage():
+        page = Page()
+        if page is not None:
+            homepage = Page.query.first()
+            homepage = homepage.konten
+
+        menu = Menu.query.order_by('urutan')
+        return render_template('homepage.html', HOMEPAGE=homepage, MENU=menu)
 
     @flask_objek.route('/penginapan', methods = ["GET", "POST"])
     @flask_objek.route('/<uri>')
@@ -101,6 +115,8 @@ def create_app():
 
     @flask_objek.route('/detail_kamar/<id_kamar>', methods = ["GET", "POST"])
     def detail_kamar(id_kamar=None, nama_kamar=None, keterangan_kamar=None):
+        menu = Menu.query.order_by('urutan')
+
         id_kamar = request.args.get('id_kamar')
         nama_kamar = request.args.get('nama_kamar')
         harga_kamar = request.args.get('harga_kamar')
@@ -123,12 +139,14 @@ def create_app():
             return render_template("checkout.html", TOTAL_HARGA_PENGINAPAN=total_harga_penginapan, NAMA_KAMAR=bedroom_name,
                                    LAMA_HARI=lama_menginap, ROOM_IMAGES= room_foto)
 
-        return render_template("detail_kamar.html", NAMA_KAMAR=nama_kamar, id_kamar=id_kamar,
+        return render_template("detail_kamar.html", MENU=menu, NAMA_KAMAR=nama_kamar, id_kamar=id_kamar,
                                HARGA_KAMAR=harga_kamar, room_description=keterangan_kamar, room_images=room_images1)
 
 
     @flask_objek.route('/checkout/<id_kamar>', methods = ["GET", "POST"])
     def checkout(id_kamar=None):
+        menu = Menu.query.order_by('urutan')
+
         harga_kamar = request.args.get('harga_kamar')
         nama_kamar = request.args.get('nama_kamar')
         foto_kamar = request.args.get('foto_kamar')
@@ -136,17 +154,17 @@ def create_app():
         lama_menginap = request.args.get('lama_menginap')
         total_harga_penginapan = int(harga_kamar) * int(lama_menginap)
 
-        return render_template("checkout.html", TOTAL_HARGA_PENGINAPAN=total_harga_penginapan, NAMA_KAMAR=nama_kamar,
+        if request.method == 'post':
+            return render_template("payment.html")
+
+        return render_template("checkout.html", MENU=menu, TOTAL_HARGA_PENGINAPAN=total_harga_penginapan, NAMA_KAMAR=nama_kamar,
                                LAMA_HARI=lama_hari, ROOM_IMAGES=foto_kamar)
 
 
-    @flask_objek.route('/testes')
-    def tes_checkout():
+    @flask_objek.route('/payment')
+    def payment():
         return render_template("payment.html")
 
-    @flask_objek.route('/besokuas')
-    def besokuas():
-        return render_template("besokuas.html")
 
     return flask_objek
 
