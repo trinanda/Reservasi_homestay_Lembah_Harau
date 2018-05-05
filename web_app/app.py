@@ -27,13 +27,18 @@ def create_app():
         else:
             pass
 
-        if uri == '/':
-            uri is 'homepage' or redirect('http://localhost:7575/homepage')
+        try:
+            isi_konten = Page.query.first()
+            isi_konten = isi_konten.konten
+        except AttributeError:
+            return render_template('index.html')
 
         isi_konten = 'test'
         if page is not None:
             isi_konten = Page.query.first()
             isi_konten  = isi_konten .konten
+        else:
+            pass
 
         menu = Menu.query.order_by('urutan')
 
@@ -44,7 +49,7 @@ def create_app():
     def homepage():
         page = Page()
 
-        isi_konten = Page.query.filter_by(id_halaman=2).first()
+        isi_konten = Page.query.filter_by(id_halaman=1).first()
 
         menu = Menu.query.order_by('urutan')
         return render_template('homepage.html',MENU=menu, HOMEPAGE=isi_konten.konten)
@@ -153,7 +158,10 @@ def create_app():
         lama_menginap = request.args.get('lama_menginap')
         total_harga_penginapan = int(harga_kamar) * int(lama_menginap)
 
-        if request.method == 'post':
+        if request.method == 'get':
+            nama_lengkap = request.form.get('NAMA_LENGKAP')
+            nomor_telepon = request.form.get('NOMOR_TELEPON')
+            email_anda = request.form.get('EMAIL_ANDA')
             return render_template("payment.html")
 
         return render_template("checkout.html", MENU=menu, TOTAL_HARGA_PENGINAPAN=total_harga_penginapan, NAMA_KAMAR=nama_kamar,

@@ -3,7 +3,7 @@
     <body>
         {% extends "base-template.html" %}
         {% block content %}
-            {{ CONTENT }}
+            {{ CONTENT|striptags }}
         {% endblock %}
     </body>
 </html>

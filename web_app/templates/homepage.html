@@ -6,8 +6,7 @@
 <body>
     {% extends "index.html" %}
     {% block content %}
-    <p>{{ HOMEPAGE }}</p>
-    <p>Hello testing</p>
+    <p style="color: black;">{{ HOMEPAGE|striptags }}</p>
     {% endblock%}
 </body>
 </html>
