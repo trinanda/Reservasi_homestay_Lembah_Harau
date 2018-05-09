@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fda5f8a-d2f4-4567-96cf-3ac732436be6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Tugas-Akhir.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Tugas-Akhir.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/belajar_python_gmail/Percobaan-04/Buku Flask Budi Rahardjo/01-smtplib/01-SMTP.py" beforeDir="false" afterPath="$PROJECT_DIR$/00_Percobaan/01_python-flask-email/Buku Flask Budi Rahardjo/01-smtplib/01-SMTP.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/belajar_python_gmail/Percobaan-04/Buku Flask Budi Rahardjo/01-smtplib/02-SMTP_SSL.py" beforeDir="false" afterPath="$PROJECT_DIR$/00_Percobaan/01_python-flask-email/Buku Flask Budi Rahardjo/01-smtplib/02-SMTP_SSL.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/belajar_python_gmail/Percobaan-04/Buku Flask Budi Rahardjo/01-smtplib/03-contoh aplikasi dengan flask/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/00_Percobaan/01_python-flask-email/Buku Flask Budi Rahardjo/01-smtplib/03-contoh aplikasi dengan flask/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/belajar_python_gmail/Percobaan-04/Buku Flask Budi Rahardjo/01-smtplib/03-contoh aplikasi dengan flask/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/00_Percobaan/01_python-flask-email/Buku Flask Budi Rahardjo/01-smtplib/03-contoh aplikasi dengan flask/templates/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/belajar_python_gmail/Percobaan-04/Buku Flask Budi Rahardjo/01-smtplib/03-contoh aplikasi dengan flask/templates/kirim_gagal.html" beforeDir="false" afterPath="$PROJECT_DIR$/00_Percobaan/01_python-flask-email/Buku Flask Budi Rahardjo/01-smtplib/03-contoh aplikasi dengan flask/templates/kirim_gagal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/belajar_python_gmail/Percobaan-04/Buku Flask Budi Rahardjo/01-smtplib/03-contoh aplikasi dengan flask/templates/kirim_sukses.html" beforeDir="false" afterPath="$PROJECT_DIR$/00_Percobaan/01_python-flask-email/Buku Flask Budi Rahardjo/01-smtplib/03-contoh aplikasi dengan flask/templates/kirim_sukses.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/belajar_python_gmail/Percobaan-04/Buku Flask Budi Rahardjo/02-flask-mail/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/00_Percobaan/01_python-flask-email/Buku Flask Budi Rahardjo/02-flask-mail/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/belajar_python_gmail/Percobaan-04/Buku Flask Budi Rahardjo/02-flask-mail/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/00_Percobaan/01_python-flask-email/Buku Flask Budi Rahardjo/02-flask-mail/templates/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/belajar_python_gmail/Percobaan-04/Buku Flask Budi Rahardjo/02-flask-mail/templates/kirim_gagal.html" beforeDir="false" afterPath="$PROJECT_DIR$/00_Percobaan/01_python-flask-email/Buku Flask Budi Rahardjo/02-flask-mail/templates/kirim_gagal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/belajar_python_gmail/Percobaan-04/Buku Flask Budi Rahardjo/02-flask-mail/templates/kirim_sukses.html" beforeDir="false" afterPath="$PROJECT_DIR$/00_Percobaan/01_python-flask-email/Buku Flask Budi Rahardjo/02-flask-mail/templates/kirim_sukses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/templates/payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/templates/payment.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,15 +14,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/00_Percobaan/02_generate invoice/02_python-generate-random-numbers-and-data/app.py">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_app/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="307">
+              <caret line="181" lean-forward="true" selection-start-line="181" selection-end-line="181" />
               <folding>
-                <element signature="e#267#280#0" expanded="true" />
-                <marker date="1525867493645" expanded="false" signature="2:260" ph="..." />
+                <element signature="e#0#59#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="transfer.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web_app/templates/transfer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="115" column="107" selection-start-line="115" selection-start-column="107" selection-end-line="115" selection-end-column="107" />
+              <folding>
+                <element signature="e#2832#2838#1" expanded="true" />
+                <element signature="e#2787#2793#1" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#a#0;n#th#0;n#tr#0;n#table#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#a#0;n#th#1;n#tr#0;n#table#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail_kamar.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_app/templates/detail_kamar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="131" column="118" selection-start-line="131" selection-start-column="96" selection-end-line="131" selection-end-column="118" />
             </state>
           </provider>
         </entry>
@@ -42,24 +55,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>minicartk-submit</find>
-      <find>minicartk-footer</find>
-      <find>checkout</find>
-      <find>id_kamar</find>
-      <find>room_id</find>
-      <find>HARGA_KAMAR</find>
-      <find>NAMA_KAMAR</find>
-      <find>harga_kamar</find>
-      <find>localhost</find>
-      <find>images</find>
-      <find>foto_kamar</find>
       <find>credit-card</find>
       <find>easy-responsive-tab</find>
       <find>easy-responsive-tabs</find>
@@ -79,6 +81,17 @@
       <find>gmail_username</find>
       <find>gmail_password</find>
       <find>to</find>
+      <find>bri</find>
+      <find>BRI</find>
+      <find>BL1811BV8NWVINV</find>
+      <find>BL1811BV8NWVIN</find>
+      <find>Pembayaran dapat dilakukan ke salah satu rekening a/n PT Bukalapak.com berikut:</find>
+      <find>lihat tagihan</find>
+      <find>button</find>
+      <find>btn btn-primary btn-lg</find>
+      <find>style.css</find>
+      <find>Phone</find>
+      <find>btn</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/web_app/templates/templates_from_grocery_shoppy_web</dir>
@@ -95,7 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web_app/query.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/web_app/templates/single.html" />
         <option value="$PROJECT_DIR$/web_app/tes.py" />
@@ -127,8 +139,6 @@
         <option value="$PROJECT_DIR$/web_app/templates/homepage.html" />
         <option value="$PROJECT_DIR$/web_app/templates/index.html" />
         <option value="$PROJECT_DIR$/web_app/templates/checkout.html" />
-        <option value="$PROJECT_DIR$/web_app/app.py" />
-        <option value="$PROJECT_DIR$/web_app/templates/payment.html" />
         <option value="$PROJECT_DIR$/belajar_python_gmail/send_email.py" />
         <option value="$PROJECT_DIR$/belajar_python_gmail/config.py" />
         <option value="$PROJECT_DIR$/belajar_python_gmail/Percobaan-02/quickstart.py" />
@@ -146,6 +156,9 @@
         <option value="$PROJECT_DIR$/belajar_python_gmail/Percobaan-04/Buku Flask Budi Rahardjo/02-flask-mail/app.py" />
         <option value="$PROJECT_DIR$/00_Percobaan/02_generate invoice/invoice_flask/app.py" />
         <option value="$PROJECT_DIR$/00_Percobaan/02_generate invoice/02_python-generate-random-numbers-and-data/app.py" />
+        <option value="$PROJECT_DIR$/web_app/templates/payment.html" />
+        <option value="$PROJECT_DIR$/web_app/app.py" />
+        <option value="$PROJECT_DIR$/web_app/templates/transfer.html" />
       </list>
     </option>
   </component>
@@ -182,6 +195,17 @@
               <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
               <item name="00_Percobaan" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
+              <item name="web_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
+              <item name="web_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -348,17 +372,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="795" width="1366" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2637854" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18554397" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5067064" side_tool="true" weight="0.295302" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32730263" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49329358" visible="true" weight="0.41107383" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49329358" weight="0.41107383" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24944155" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4875549" weight="0.37583894" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4875549" visible="true" weight="0.23489933" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -435,27 +460,6 @@
     <entry file="file://$PROJECT_DIR$/web_app/test_app.py" />
     <entry file="file://$PROJECT_DIR$/web_app/templates/besokuas.html" />
     <entry file="file://$PROJECT_DIR$/web_app/templates/gndswap.css" />
-    <entry file="file://$PROJECT_DIR$/web_app/templates/detail_kamar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1965">
-          <caret line="131" column="101" selection-start-line="131" selection-start-column="96" selection-end-line="131" selection-end-column="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/templates/penginapan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="34" lean-forward="true" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/templates/base-template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2850">
-          <caret line="190" column="65" selection-start-line="190" selection-start-column="61" selection-end-line="190" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/migrations/versions/33a53fade27e_inisialisasi_database.py" />
     <entry file="file://$PROJECT_DIR$/scripts/reset_migration.sh">
       <provider selected="true" editor-type-id="text-editor">
@@ -482,20 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/templates/payment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="104" column="69" selection-start-line="104" selection-start-column="69" selection-end-line="104" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/templates/checkout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="69" column="80" selection-start-line="69" selection-start-column="80" selection-end-line="69" selection-end-column="80" />
         </state>
       </provider>
     </entry>
@@ -565,13 +555,6 @@
     <entry file="file://$PROJECT_DIR$/00_Percobaan/02_generate invoice/Facture/app/__init__.py" />
     <entry file="file://$PROJECT_DIR$/00_Percobaan/02_generate invoice/Facture/app/models.py" />
     <entry file="file://$PROJECT_DIR$/00_Percobaan/02_generate invoice/Facture/requirements.txt" />
-    <entry file="file://$PROJECT_DIR$/web_app/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2565">
-          <caret line="171" column="18" selection-start-line="171" selection-start-column="18" selection-end-line="171" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python3/dist-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
@@ -603,6 +586,64 @@
           <folding>
             <element signature="e#267#280#0" expanded="true" />
             <marker date="1525867493645" expanded="false" signature="2:260" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="181" lean-forward="true" selection-start-line="181" selection-end-line="181" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/checkout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="103" column="128" selection-start-line="103" selection-start-column="106" selection-end-line="103" selection-end-column="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/base-template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/penginapan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="45" column="64" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/payment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="105" column="91" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/detail_kamar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="131" column="118" selection-start-line="131" selection-start-column="96" selection-end-line="131" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/transfer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="115" column="107" selection-start-line="115" selection-start-column="107" selection-end-line="115" selection-end-column="107" />
+          <folding>
+            <element signature="e#2832#2838#1" expanded="true" />
+            <element signature="e#2787#2793#1" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#a#0;n#th#0;n#tr#0;n#table#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#a#0;n#th#1;n#tr#0;n#table#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

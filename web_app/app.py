@@ -173,5 +173,9 @@ def create_app():
         return render_template("payment.html")
 
 
+    @flask_objek.route('/transfer')
+    def transfer():
+        return render_template('transfer.html')
+
     return flask_objek
 

@@ -11,6 +11,7 @@
 
 				if (nama_bank == "BCA") {
 					form_bank.nomor_rekening.value = "081231209231";
+					<!--document.getElemenById(081231209231).checked = true;-->
 				}
 				else if (nama_bank == "BRI") {
 					form_bank.nomor_rekening.value = "12312389384";
@@ -71,15 +72,15 @@
 										<div class="check_box_one">
 											<div class="radio_one">
 												<label>
-													<input type="radio" name="bank" checked="" value="BRI" onchange="pilih_bank()">
-													<i></i>BRI</label>
+													<input type="radio" name="bank" checked="checked" value="BCA" onchange="pilih_bank()">
+													<i></i>BCA</label>
 											</div>
 										</div>
 										<div class="check_box_one">
 											<div class="radio_one">
 												<label>
-													<input type="radio" name="bank" value="BCA" onchange="pilih_bank()">
-													<i></i>BCA</label>
+													<input type="radio" name="bank" value="BRI" onchange="pilih_bank()">
+													<i></i>BRI</label>
 											</div>
 										</div>
 										<div class="check_box_one">
@@ -105,7 +106,7 @@
 										<a class="btn btn-primary">Chgeckout via Paypal</a>
 									</div>
 									<div class="col-md-6 number-paymk">
-										<form class="cc-form">
+										<form class="cc-form" action="" method="post">
 											<div class="clearfix">
 												<div class="form-group form-group-cc-number">
 													<label>Card Number</label>
