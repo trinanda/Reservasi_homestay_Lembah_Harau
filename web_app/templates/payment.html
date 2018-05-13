@@ -50,7 +50,7 @@
 
 						<div>
 							<div class="vertical_post">
-								<form action="#" method="post" name="form_bank">
+								<form action="http://192.168.100.3:7575/transfer" method="get">
 									<table border="0">
 										<tr>
 											<td style="width: 500px;">
@@ -89,6 +89,9 @@
 													<input type="radio" name="bank" value="BNI" onchange="pilih_bank()">
 													<i></i>BNI</label>
 											</div>
+										</div>
+										<div>
+											<input type="text" name="NAMA_KAMAR" value="{{ NAMA_KAMAR }}">
 										</div>
 										<div class="clearfix"></div>
 									</div>

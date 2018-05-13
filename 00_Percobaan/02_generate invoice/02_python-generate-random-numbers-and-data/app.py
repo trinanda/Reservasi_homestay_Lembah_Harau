@@ -1,19 +1,3 @@
-# import random
-#
-# words = ['Kucing','Kambing','Harimau','Gajah','Jerapah']
-#
-# # numbers =
-#
-# value1 = random.randint(1,20)
-# value2 = random.uniform(1,20)
-# value3 = random.random()
-#
-# print(value1)
-# print(value2)
-# print(value3)
-# print(value1 + value2)
-
-
 import string
 import random
 

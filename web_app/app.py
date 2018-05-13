@@ -162,6 +162,7 @@ def create_app():
             nama_lengkap = request.form.get('NAMA_LENGKAP')
             nomor_telepon = request.form.get('NOMOR_TELEPON')
             email_anda = request.form.get('EMAIL_ANDA')
+            nama_kamar = request.form.get('NAMA_KAMAR')
             return render_template("payment.html")
 
         return render_template("checkout.html", MENU=menu, TOTAL_HARGA_PENGINAPAN=total_harga_penginapan, NAMA_KAMAR=nama_kamar,
@@ -170,12 +171,39 @@ def create_app():
 
     @flask_objek.route('/payment')
     def payment():
-        return render_template("payment.html")
+        menu = Menu.query.order_by('urutan')
+
+        nama_kamar = request.args.get('NAMA_KAMAR')
+
+        if request.method == 'get':
+            nama_kamar = request.form.get('NAMA_KAMAR')
+
+            return render_template('transfer.html')
+
+        return render_template("payment.html", MENU=menu, NAMA_KAMAR=nama_kamar)
 
 
     @flask_objek.route('/transfer')
     def transfer():
-        return render_template('transfer.html')
+
+        #get current date
+        import time
+        tanggal_pemesanan = time.strftime("%d/%m/%Y")
+        # /get current date
+
+        # get invoice number
+        import string
+        import random
+        def generator_random(size=10, chars=string.ascii_uppercase + string.digits):
+            return ''.join(random.choice(chars) for x in range(size))
+        generate_invoice = 'HR' + generator_random() + 'INV'
+        print(generate_invoice)
+        # /get invoice number
+
+        nama_kamar = request.args.get('NAMA_KAMAR')
+        print('coba tes print ini', nama_kamar)
+        return render_template('transfer.html', NAMA_KAMAR=nama_kamar, TANGGAL_PEMESANAN=tanggal_pemesanan,
+                               NOMOR_INVOICE=generate_invoice)
 
     return flask_objek
 

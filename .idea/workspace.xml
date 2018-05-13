@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fda5f8a-d2f4-4567-96cf-3ac732436be6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00_Percobaan/02_generate invoice/02_python-generate-random-numbers-and-data/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/00_Percobaan/02_generate invoice/02_python-generate-random-numbers-and-data/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/templates/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/templates/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/templates/payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/templates/payment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/templates/transfer.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/templates/transfer.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,10 +18,35 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/00_Percobaan/03_sms-gateway/02_twilo/app.py">
+        <entry file="file://$PROJECT_DIR$/web_app/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+            <state relative-caret-position="266">
+              <caret line="205" column="61" selection-start-line="205" selection-start-column="61" selection-end-line="205" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="transfer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_app/templates/transfer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="57" column="21" lean-forward="true" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="34" />
+              <folding>
+                <element signature="e#2687#2693#1" expanded="true" />
+                <element signature="e#2717#2723#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/00_Percobaan/02_generate invoice/02_python-generate-random-numbers-and-data/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="15" lean-forward="true" selection-end-line="8" selection-end-column="15" />
+              <folding>
+                <element signature="e#263#276#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,10 +63,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>easy-responsive-tab</find>
-      <find>easy-responsive-tabs</find>
-      <find>easy-responsive-tabs.css</find>
-      <find>href</find>
       <find />
       <find>COD</find>
       <find>Important</find>
@@ -65,6 +89,10 @@
       <find>Phone</find>
       <find>btn</find>
       <find>Messages</find>
+      <find>nama_kamar</find>
+      <find>NAMA_KAMAR</find>
+      <find>acme</find>
+      <find>custom</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/web_app/templates/templates_from_grocery_shoppy_web</dir>
@@ -81,7 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web_app/test_form.py" />
         <option value="$PROJECT_DIR$/web_app/templates/tes_nilai.html" />
         <option value="$PROJECT_DIR$/web_app/templates/response.html" />
         <option value="$PROJECT_DIR$/web_app/templates/form.html" />
@@ -92,7 +119,6 @@
         <option value="$PROJECT_DIR$/web_app/templates/penginapan.html" />
         <option value="$PROJECT_DIR$/web_app/templates/homepage.html" />
         <option value="$PROJECT_DIR$/web_app/templates/index.html" />
-        <option value="$PROJECT_DIR$/web_app/templates/checkout.html" />
         <option value="$PROJECT_DIR$/belajar_python_gmail/send_email.py" />
         <option value="$PROJECT_DIR$/belajar_python_gmail/config.py" />
         <option value="$PROJECT_DIR$/belajar_python_gmail/Percobaan-02/quickstart.py" />
@@ -109,10 +135,6 @@
         <option value="$PROJECT_DIR$/belajar_python_gmail/Percobaan-04/Buku Flask Budi Rahardjo/02-flask-mail/templates/form.html" />
         <option value="$PROJECT_DIR$/belajar_python_gmail/Percobaan-04/Buku Flask Budi Rahardjo/02-flask-mail/app.py" />
         <option value="$PROJECT_DIR$/00_Percobaan/02_generate invoice/invoice_flask/app.py" />
-        <option value="$PROJECT_DIR$/00_Percobaan/02_generate invoice/02_python-generate-random-numbers-and-data/app.py" />
-        <option value="$PROJECT_DIR$/web_app/templates/payment.html" />
-        <option value="$PROJECT_DIR$/web_app/app.py" />
-        <option value="$PROJECT_DIR$/web_app/templates/transfer.html" />
         <option value="$PROJECT_DIR$/00_Percobaan/03_sms-gateway/app.py" />
         <option value="$PROJECT_DIR$/00_Percobaan/03_sms-gateway/01_sinch_com.py" />
         <option value="$PROJECT_DIR$/00_Percobaan/03_sms-gateway/01_text-magic/app.py" />
@@ -132,6 +154,12 @@
         <option value="$PROJECT_DIR$/00_Percobaan/03_sms-gateway/01_nexmo/app.py" />
         <option value="$PROJECT_DIR$/00_Percobaan/03_sms-gateway/02_twilo-sudah/app.py" />
         <option value="$PROJECT_DIR$/00_Percobaan/03_sms-gateway/02_twilo/app.py" />
+        <option value="$PROJECT_DIR$/web_app/templates/checkout.html" />
+        <option value="$PROJECT_DIR$/web_app/templates/payment.html" />
+        <option value="$PROJECT_DIR$/00_Percobaan/04_datetime-now/app.py" />
+        <option value="$PROJECT_DIR$/00_Percobaan/02_generate invoice/02_python-generate-random-numbers-and-data/app.py" />
+        <option value="$PROJECT_DIR$/web_app/templates/transfer.html" />
+        <option value="$PROJECT_DIR$/web_app/app.py" />
       </list>
     </option>
   </component>
@@ -146,6 +174,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Tugas-Akhir" type="cbb8eebc:String" user="Tugas-Akhir" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,43 +201,19 @@
               <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
               <item name="00_Percobaan" type="462c0819:PsiDirectoryNode" />
-              <item name="03_sms-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="02_generate invoice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
               <item name="00_Percobaan" type="462c0819:PsiDirectoryNode" />
-              <item name="03_sms-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="01_nexmo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
-              <item name="00_Percobaan" type="462c0819:PsiDirectoryNode" />
-              <item name="03_sms-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="02_twilo" type="462c0819:PsiDirectoryNode" />
+              <item name="02_generate invoice" type="462c0819:PsiDirectoryNode" />
+              <item name="02_python-generate-random-numbers-and-data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
               <item name="web_app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
-              <item name="web_app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Tugas-Akhir" type="cbb8eebc:String" user="Tugas-Akhir" />
             </path>
           </expand>
           <select />
@@ -242,8 +257,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.app (4)">
-    <configuration name="app (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.app (3)">
+    <configuration name="app (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Tugas-Akhir" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -251,11 +266,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/00_Percobaan/03_sms-gateway/01_nexmo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/00_Percobaan/04_datetime-now" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/00_Percobaan/03_sms-gateway/01_nexmo/app.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/00_Percobaan/04_datetime-now/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -269,11 +284,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/00_Percobaan/03_sms-gateway/02_twilo-sudah-fix" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/00_Percobaan/02_generate invoice/02_python-generate-random-numbers-and-data" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/00_Percobaan/03_sms-gateway/02_twilo-sudah-fix/app.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/00_Percobaan/02_generate invoice/02_python-generate-random-numbers-and-data/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -334,19 +349,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.app (2)" />
-      <item itemvalue="Python.app (3)" />
       <item itemvalue="Python.app" />
       <item itemvalue="Python.app (5)" />
       <item itemvalue="Python.app (4)" />
+      <item itemvalue="Python.app (1)" />
+      <item itemvalue="Python.app (3)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.app (3)" />
+        <item itemvalue="Python.app (1)" />
         <item itemvalue="Python.app (4)" />
         <item itemvalue="Python.app (5)" />
         <item itemvalue="Python.app" />
-        <item itemvalue="Python.app (2)" />
-        <item itemvalue="Python.app (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -367,51 +382,61 @@
     <frame x="0" y="795" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22727273" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22727273" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5067064" side_tool="true" weight="0.295302" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32605532" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49329358" weight="0.32885906" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49329358" visible="true" weight="0.32885906" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24944155" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4875549" weight="0.48322147" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4875549" weight="0.33892617" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22727273" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24944155" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49329358" weight="0.32885906" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5067064" side_tool="true" weight="0.295302" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32718122" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4875549" weight="0.48322147" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32605532" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2306003" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24944155" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.29605263" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32730263" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.48845866" visible="true" weight="0.27903226" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5115413" side_tool="true" weight="0.30730897" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32730263" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web_app/templates/gndswap.css" />
     <entry file="file://$PROJECT_DIR$/migrations/versions/33a53fade27e_inisialisasi_database.py" />
     <entry file="file://$PROJECT_DIR$/scripts/reset_migration.sh">
       <provider selected="true" editor-type-id="text-editor">
@@ -517,20 +542,6 @@
     <entry file="file://$PROJECT_DIR$/00_Percobaan/02_generate invoice/01-invoice_flask/templates/base.html" />
     <entry file="file://$PROJECT_DIR$/00_Percobaan/02_generate invoice/01-invoice_flask/templates/invoice.html" />
     <entry file="file://$PROJECT_DIR$/00_Percobaan/02_generate invoice/01-invoice_flask/app.py" />
-    <entry file="file://$PROJECT_DIR$/00_Percobaan/02_generate invoice/02_python-generate-random-numbers-and-data/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/templates/checkout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="103" column="128" selection-start-line="103" selection-start-column="106" selection-end-line="103" selection-end-column="128" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web_app/templates/base-template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -545,35 +556,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/templates/payment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="105" column="91" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/templates/detail_kamar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1965">
-          <caret line="131" column="118" selection-start-line="131" selection-start-column="96" selection-end-line="131" selection-end-column="118" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/00_Percobaan/03_sms-gateway/01_sinch_com.py" />
-    <entry file="file://$PROJECT_DIR$/web_app/templates/transfer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="124" column="12" selection-start-line="124" selection-start-column="12" selection-end-line="124" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="181" selection-start-line="181" selection-end-line="181" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/00_Percobaan/03_sms-gateway/01_text-magic/app.py" />
     <entry file="file://$PROJECT_DIR$/00_Percobaan/03_sms-gateway/01_jasmine/jasmin/docker/README.md" />
     <entry file="file://$PROJECT_DIR$/00_Percobaan/03_sms-gateway/pythonsms.py" />
@@ -601,6 +584,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/detail_kamar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="121" column="91" selection-start-line="121" selection-start-column="81" selection-end-line="121" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/checkout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="69" column="67" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/payment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="52" column="80" selection-start-line="52" selection-start-column="80" selection-end-line="52" selection-end-column="80" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/00_Percobaan/04_datetime-now/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/transfer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="57" column="21" lean-forward="true" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="34" />
+          <folding>
+            <element signature="e#2687#2693#1" expanded="true" />
+            <element signature="e#2717#2723#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/00_Percobaan/02_generate invoice/02_python-generate-random-numbers-and-data/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="15" lean-forward="true" selection-end-line="8" selection-end-column="15" />
+          <folding>
+            <element signature="e#263#276#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="205" column="61" selection-start-line="205" selection-start-column="61" selection-end-line="205" selection-end-column="61" />
         </state>
       </provider>
     </entry>
