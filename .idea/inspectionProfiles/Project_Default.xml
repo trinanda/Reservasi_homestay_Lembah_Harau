@@ -1,6 +1,41 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
+    <inspection_tool class="BashAddShebang" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="BashBuiltInVariable" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="BashDuplicateFunction" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="BashEvaluateArithmeticExpression" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="BashEvaluateExpression" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="BashFixShebang" enabled="true" level="TYPO" enabled_by_default="true">
+      <shebang>/bin/bash</shebang>
+      <shebang>/bin/sh</shebang>
+    </inspection_tool>
+    <inspection_tool class="BashFloatArithmetic" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="BashGlobalLocalVarDef" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="BashGloballyRegisteredVariable" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="BashInternalCommandFunctionOverride" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="BashMissingInclude" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="BashReadOnlyVariable" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="BashRecursiveInclusion" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="BashReplaceWithBackquote" enabled="false" level="TYPO" enabled_by_default="false" />
+    <inspection_tool class="BashReplaceWithSubshell" enabled="false" level="TYPO" enabled_by_default="false" />
+    <inspection_tool class="BashSimpleArrayUse" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="BashSimpleVarUsage" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="BashUnknownFileDescriptor" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="BashUnresolvedVariable" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="BashUnusedFunction" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="BashUnusedFunctionParams" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="BashWrapFunction" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="BashWrapWord" enabled="false" level="TYPO" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="smpplib" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
     <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="ignoredIdentifiers">
         <list>
