@@ -37,6 +37,10 @@ class MenuModelView(ModelView):
     column_list = ('title', 'urutan')
     pass
 
+class InvoiceModelView(ModelView):
+    column_list = ('invoice_id', 'example_data')
+    pass
+
 
 # Create directory for file fields to use
 file_path = op.join(op.dirname(__file__), 'files')

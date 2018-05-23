@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
 from flask_admin import Admin
 
-from web_app.views import PageModelView, MenuModelView, PilihKamarView
+from web_app.views import PageModelView, MenuModelView, PilihKamarView, InvoiceModelView
 
 
 def create_app():
@@ -10,13 +10,14 @@ def create_app():
 
     flask_objek.config.from_pyfile('settings.py')
 
-    from web_app.models import database, Page, Menu, Kamar
+    from web_app.models import database, Page, Menu, Kamar, Invoice
     database.init_app(flask_objek)
 
     admin = Admin(flask_objek, name='Administrator', template_mode='bootstrap3')
     admin.add_view(PageModelView(Page, database.session))
     admin.add_view(MenuModelView(Menu, database.session))
     admin.add_view(PilihKamarView(Kamar, database.session))
+    admin.add_view(InvoiceModelView(Invoice, database.session))
 
     @flask_objek.route('/')
     @flask_objek.route('/<uri>')
@@ -212,6 +213,14 @@ def create_app():
         print('coba tes print ini', nama_kamar)
         return render_template('transfer.html', NAMA_KAMAR=nama_kamar, LAMA_HARI=lama_hari, HARGA_KAMAR=harga_kamar, TOTAL=total, TANGGAL_PEMESANAN=tanggal_pemesanan,
                                NOMOR_INVOICE=generate_invoice)
+
+    @flask_objek.route('/tesinsert')
+    def tesinsert():
+        from web_app.models import Invoice, database
+
+        new_ex = Invoice(2, 'testing2')
+        database.session.add(new_ex)
+        database.session.commit()
 
     return flask_objek
 

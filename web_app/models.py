@@ -42,4 +42,13 @@ class Kamar(database.Model):
         return '{}'.format(self.nama_kamar)
 
 
+class Invoice(database.Model):
+    __tablename__ = 'Invoice'
+    invoice_id = Column(Integer, primary_key=True)
+    example_data = Column(String)
+
+    def __init__(self, id, data):
+        self.invoice_id = id
+        self.example_data = data
+
 
