@@ -141,7 +141,7 @@ def create_app():
             total_harga_penginapan = room_price * int(lama_menginap)
 
             return render_template("checkout.html", TOTAL_HARGA_PENGINAPAN=total_harga_penginapan, NAMA_KAMAR=bedroom_name,
-                                   LAMA_HARI=lama_menginap, ROOM_IMAGES= room_foto)
+                                   LAMA_HARI=lama_menginap, ROOM_IMAGES= room_foto, HARGA_KAMAR=room_price)
 
         return render_template("detail_kamar.html", MENU=menu, NAMA_KAMAR=nama_kamar, id_kamar=id_kamar,
                                HARGA_KAMAR=harga_kamar, room_description=keterangan_kamar, room_images=room_images1)
@@ -163,10 +163,12 @@ def create_app():
             nomor_telepon = request.form.get('NOMOR_TELEPON')
             email_anda = request.form.get('EMAIL_ANDA')
             nama_kamar = request.form.get('NAMA_KAMAR')
+            nama_kamar = request.form.get('LAMA_HARI')
+            harga_kamar = request.args.get('HARGA_KAMAR')
             return render_template("payment.html")
 
         return render_template("checkout.html", MENU=menu, TOTAL_HARGA_PENGINAPAN=total_harga_penginapan, NAMA_KAMAR=nama_kamar,
-                               LAMA_HARI=lama_hari, ROOM_IMAGES=foto_kamar)
+                               LAMA_HARI=lama_hari, ROOM_IMAGES=foto_kamar, HARGA_KAMAR=harga_kamar)
 
 
     @flask_objek.route('/payment')
@@ -174,13 +176,16 @@ def create_app():
         menu = Menu.query.order_by('urutan')
 
         nama_kamar = request.args.get('NAMA_KAMAR')
+        lama_hari = request.args.get('LAMA_HARI')
+        harga_kamar = request.args.get('HARGA_KAMAR')
 
         if request.method == 'get':
             nama_kamar = request.form.get('NAMA_KAMAR')
+            lama_hari = request.form.get('LAMA_HARI')
 
             return render_template('transfer.html')
 
-        return render_template("payment.html", MENU=menu, NAMA_KAMAR=nama_kamar)
+        return render_template("payment.html", MENU=menu, NAMA_KAMAR=nama_kamar, LAMA_HARI=lama_hari, HARGA_KAMAR=harga_kamar)
 
 
     @flask_objek.route('/transfer')
@@ -201,8 +206,11 @@ def create_app():
         # /get invoice number
 
         nama_kamar = request.args.get('NAMA_KAMAR')
+        lama_hari = request.args.get('LAMA_HARI')
+        harga_kamar = request.args.get('HARGA_KAMAR')
+        total = int(lama_hari) * int(harga_kamar)
         print('coba tes print ini', nama_kamar)
-        return render_template('transfer.html', NAMA_KAMAR=nama_kamar, TANGGAL_PEMESANAN=tanggal_pemesanan,
+        return render_template('transfer.html', NAMA_KAMAR=nama_kamar, LAMA_HARI=lama_hari, HARGA_KAMAR=harga_kamar, TOTAL=total, TANGGAL_PEMESANAN=tanggal_pemesanan,
                                NOMOR_INVOICE=generate_invoice)
 
     return flask_objek

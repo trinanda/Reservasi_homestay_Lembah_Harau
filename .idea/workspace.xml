@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fda5f8a-d2f4-4567-96cf-3ac732436be6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/00_Percobaan/02_generate invoice/02_python-generate-random-numbers-and-data/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/00_Percobaan/02_generate invoice/02_python-generate-random-numbers-and-data/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/2d78b83fefed_inisialisasi_database.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web_app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/files/echo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/files/echo_thumb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/files/rumah-adat-sarasah-bunta.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/files/rumah-adat-sarasah-bunta_thumb.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web_app/templates/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/templates/checkout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_app/templates/payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/templates/payment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/templates/penginapan.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/templates/penginapan.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_app/templates/transfer.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/templates/transfer.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +27,31 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web_app/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="205" column="61" selection-start-line="205" selection-start-column="61" selection-end-line="205" selection-end-column="61" />
+            <state relative-caret-position="341">
+              <caret line="210" column="39" selection-start-line="210" selection-start-column="39" selection-end-line="210" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkout.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_app/templates/checkout.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="96" column="76" selection-start-line="96" selection-start-column="65" selection-end-line="96" selection-end-column="76" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#div#2;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#3;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#4;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="payment.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_app/templates/payment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="99" column="103" selection-start-line="99" selection-start-column="103" selection-end-line="99" selection-end-column="103" />
             </state>
           </provider>
         </entry>
@@ -29,24 +59,8 @@
       <file leaf-file-name="transfer.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_app/templates/transfer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="57" column="21" lean-forward="true" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="34" />
-              <folding>
-                <element signature="e#2687#2693#1" expanded="true" />
-                <element signature="e#2717#2723#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/00_Percobaan/02_generate invoice/02_python-generate-random-numbers-and-data/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="15" lean-forward="true" selection-end-line="8" selection-end-column="15" />
-              <folding>
-                <element signature="e#263#276#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="450">
+              <caret line="98" column="29" lean-forward="true" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -63,12 +77,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find />
-      <find>COD</find>
-      <find>Important</find>
-      <find>static</find>
-      <find>files</find>
-      <find>kode</find>
       <find>room_description</find>
       <find>None</find>
       <find>redirect</find>
@@ -93,6 +101,12 @@
       <find>NAMA_KAMAR</find>
       <find>acme</find>
       <find>custom</find>
+      <find>menginap</find>
+      <find>action</find>
+      <find>HARGA_LAMA_MENGINAP</find>
+      <find>harga</find>
+      <find>harga_kamar</find>
+      <find>LAMA_HARI</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/web_app/templates/templates_from_grocery_shoppy_web</dir>
@@ -112,11 +126,9 @@
         <option value="$PROJECT_DIR$/web_app/templates/tes_nilai.html" />
         <option value="$PROJECT_DIR$/web_app/templates/response.html" />
         <option value="$PROJECT_DIR$/web_app/templates/form.html" />
-        <option value="$PROJECT_DIR$/web_app/templates/detail_kamar.html" />
         <option value="$PROJECT_DIR$/web_app/test_app.py" />
         <option value="$PROJECT_DIR$/web_app/templates/besokuas.html" />
         <option value="$PROJECT_DIR$/web_app/templates/base-template.html" />
-        <option value="$PROJECT_DIR$/web_app/templates/penginapan.html" />
         <option value="$PROJECT_DIR$/web_app/templates/homepage.html" />
         <option value="$PROJECT_DIR$/web_app/templates/index.html" />
         <option value="$PROJECT_DIR$/belajar_python_gmail/send_email.py" />
@@ -154,19 +166,22 @@
         <option value="$PROJECT_DIR$/00_Percobaan/03_sms-gateway/01_nexmo/app.py" />
         <option value="$PROJECT_DIR$/00_Percobaan/03_sms-gateway/02_twilo-sudah/app.py" />
         <option value="$PROJECT_DIR$/00_Percobaan/03_sms-gateway/02_twilo/app.py" />
-        <option value="$PROJECT_DIR$/web_app/templates/checkout.html" />
-        <option value="$PROJECT_DIR$/web_app/templates/payment.html" />
         <option value="$PROJECT_DIR$/00_Percobaan/04_datetime-now/app.py" />
         <option value="$PROJECT_DIR$/00_Percobaan/02_generate invoice/02_python-generate-random-numbers-and-data/app.py" />
+        <option value="$PROJECT_DIR$/web_app/templates/penginapan.html" />
+        <option value="$PROJECT_DIR$/web_app/templates/detail_kamar.html" />
+        <option value="$PROJECT_DIR$/web_app/templates/checkout.html" />
+        <option value="$PROJECT_DIR$/web_app/templates/payment.html" />
         <option value="$PROJECT_DIR$/web_app/templates/transfer.html" />
         <option value="$PROJECT_DIR$/web_app/app.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="768" />
-    <option name="width" value="1366" />
-    <option name="height" value="768" />
+    <option name="x" value="98" />
+    <option name="y" value="863" />
+    <option name="width" value="1221" />
+    <option name="height" value="673" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -174,6 +189,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Course" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -195,25 +211,13 @@
             <path>
               <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
-              <item name="00_Percobaan" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
-              <item name="00_Percobaan" type="462c0819:PsiDirectoryNode" />
-              <item name="02_generate invoice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
-              <item name="00_Percobaan" type="462c0819:PsiDirectoryNode" />
-              <item name="02_generate invoice" type="462c0819:PsiDirectoryNode" />
-              <item name="02_python-generate-random-numbers-and-data" type="462c0819:PsiDirectoryNode" />
+              <item name="web_app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
               <item name="web_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -226,7 +230,7 @@
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/web_app/templates/base-template.html" />
   </component>
   <component name="RecentsManager">
@@ -382,91 +386,50 @@
     <frame x="0" y="795" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22727273" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1900149" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5067064" side_tool="true" weight="0.295302" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32605532" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49329358" visible="true" weight="0.32885906" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49329358" weight="0.32885906" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24944155" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4875549" weight="0.33892617" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4875549" weight="0.27181208" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22727273" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.24944155" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49329358" weight="0.32885906" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5067064" side_tool="true" weight="0.295302" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32718122" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4875549" weight="0.48322147" />
-      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32605532" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2306003" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49329358" weight="0.32885906" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1900149" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24944155" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32718122" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32605532" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4875549" weight="0.19295302" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5067064" side_tool="true" weight="0.295302" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29605263" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.48845866" visible="true" weight="0.27903226" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5115413" side_tool="true" weight="0.30730897" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32730263" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/migrations/versions/33a53fade27e_inisialisasi_database.py" />
-    <entry file="file://$PROJECT_DIR$/scripts/reset_migration.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="8" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/templates/homepage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/belajar_python_gmail/Percobaaan-01/config.py" />
     <entry file="file://$PROJECT_DIR$/belajar_python_gmail/Percobaaan-01/send_email.py" />
     <entry file="file://$PROJECT_DIR$/belajar_python_gmail/Percobaan-02/01-Python-quickstart-Gmail-API/client_secret.json" />
     <entry file="file://$PROJECT_DIR$/belajar_python_gmail/Percobaan-02/01-Python-quickstart-Gmail-API/quickstart.py" />
@@ -532,39 +495,15 @@
     <entry file="file://$PROJECT_DIR$/00_Percobaan/02_generate invoice/Facture/app/__init__.py" />
     <entry file="file://$PROJECT_DIR$/00_Percobaan/02_generate invoice/Facture/app/models.py" />
     <entry file="file://$PROJECT_DIR$/00_Percobaan/02_generate invoice/Facture/requirements.txt" />
-    <entry file="file:///usr/lib/python3/dist-packages/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="67" column="6" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/lib/python3/dist-packages/flask/app.py" />
     <entry file="file://$PROJECT_DIR$/00_Percobaan/02_generate invoice/01-invoice_flask/templates/base.html" />
     <entry file="file://$PROJECT_DIR$/00_Percobaan/02_generate invoice/01-invoice_flask/templates/invoice.html" />
     <entry file="file://$PROJECT_DIR$/00_Percobaan/02_generate invoice/01-invoice_flask/app.py" />
-    <entry file="file://$PROJECT_DIR$/web_app/templates/base-template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/templates/penginapan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="45" column="64" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/00_Percobaan/03_sms-gateway/01_sinch_com.py" />
     <entry file="file://$PROJECT_DIR$/00_Percobaan/03_sms-gateway/01_text-magic/app.py" />
     <entry file="file://$PROJECT_DIR$/00_Percobaan/03_sms-gateway/01_jasmine/jasmin/docker/README.md" />
     <entry file="file://$PROJECT_DIR$/00_Percobaan/03_sms-gateway/pythonsms.py" />
-    <entry file="file:///usr/local/lib/python3.6/dist-packages/smpplib/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5272" />
-      </provider>
-    </entry>
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/smpplib/client.py" />
     <entry file="file://$PROJECT_DIR$/00_Percobaan/03_sms-gateway/02_python-libsmpp/python-smpplib/app.py" />
     <entry file="file://$PROJECT_DIR$/00_Percobaan/03_sms-gateway/03_using-google-spreadsheet/spreasheet.py" />
     <entry file="file://$PROJECT_DIR$/00_Percobaan/03_sms-gateway/03_using-google-spreadsheet/africas_talking_api.py" />
@@ -587,30 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/templates/detail_kamar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="121" column="91" selection-start-line="121" selection-start-column="81" selection-end-line="121" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/templates/checkout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="69" column="67" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/templates/payment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="52" column="80" selection-start-line="52" selection-start-column="80" selection-end-line="52" selection-end-column="80" />
-          <folding>
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/00_Percobaan/04_datetime-now/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -618,31 +533,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/templates/transfer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="57" column="21" lean-forward="true" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="34" />
-          <folding>
-            <element signature="e#2687#2693#1" expanded="true" />
-            <element signature="e#2717#2723#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/00_Percobaan/02_generate invoice/02_python-generate-random-numbers-and-data/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="15" lean-forward="true" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/penginapan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="54" column="29" lean-forward="true" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
-            <element signature="e#263#276#0" expanded="true" />
+            <element signature="e#0#58#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/detail_kamar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/base-template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2394">
+          <caret line="495" column="39" lean-forward="true" selection-start-line="495" selection-start-column="39" selection-end-line="495" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/payment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="99" column="103" selection-start-line="99" selection-start-column="103" selection-end-line="99" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/checkout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="96" column="76" selection-start-line="96" selection-start-column="65" selection-end-line="96" selection-end-column="76" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#2;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#3;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#4;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/transfer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="98" column="29" lean-forward="true" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web_app/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="205" column="61" selection-start-line="205" selection-start-column="61" selection-end-line="205" selection-end-column="61" />
+        <state relative-caret-position="341">
+          <caret line="210" column="39" selection-start-line="210" selection-start-column="39" selection-end-line="210" selection-end-column="39" />
         </state>
       </provider>
     </entry>
