@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, ForeignKey
+from sqlalchemy import Column, Integer, String, ForeignKey, Enum
 from sqlalchemy.orm import relationship, backref
 from flask_sqlalchemy import SQLAlchemy
 
@@ -43,12 +43,19 @@ class Kamar(database.Model):
 
 
 class Invoice(database.Model):
-    __tablename__ = 'Invoice'
+    __tablename__ = "invoice"
     invoice_id = Column(Integer, primary_key=True)
     example_data = Column(String)
 
-    def __init__(self, id, data):
+    PENDING = "pending"
+    CONFIRMED = "confirmed"
+    REJECTED = "rejected"
+    status = database.Column(database.Enum(PENDING, CONFIRMED, REJECTED, name='status', default=PENDING))
+
+    def __init__(self, id, data, status):
         self.invoice_id = id
         self.example_data = data
+        self.status = status
+
 
 

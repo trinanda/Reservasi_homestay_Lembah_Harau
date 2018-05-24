@@ -38,7 +38,7 @@ class MenuModelView(ModelView):
     pass
 
 class InvoiceModelView(ModelView):
-    column_list = ('invoice_id', 'example_data')
+    column_list = ('invoice_id', 'example_data', 'status')
     pass
 
 

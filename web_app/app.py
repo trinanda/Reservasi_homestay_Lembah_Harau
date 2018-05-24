@@ -214,16 +214,16 @@ def create_app():
         return render_template('transfer.html', NAMA_KAMAR=nama_kamar, LAMA_HARI=lama_hari, HARGA_KAMAR=harga_kamar, TOTAL=total, TANGGAL_PEMESANAN=tanggal_pemesanan,
                                NOMOR_INVOICE=generate_invoice)
 
+    from web_app.models import Invoice, database
     @flask_objek.route('/tesinsert', methods = ["GET", "POST"])
-    def tesinsert():
-        from web_app.models import Invoice, database
+    def tesinsert(statuss="pending"):
 
         if request.method == 'POST':
 
             id = request.form.get('id')
             data = request.form.get('data')
-
-            new_ex = Invoice(id, data)
+            status = statuss
+            new_ex = Invoice(id, data, status)
             database.session.add(new_ex)
             database.session.commit()
 
