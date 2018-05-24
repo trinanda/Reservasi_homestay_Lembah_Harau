@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, Enum
+from sqlalchemy import Column, Integer, String, ForeignKey, Enum, DateTime, VARCHAR
 from sqlalchemy.orm import relationship, backref
 from flask_sqlalchemy import SQLAlchemy
 
@@ -31,7 +31,7 @@ class Menu(database.Model):
 
 class Kamar(database.Model):
     __tablename__ = 'kamar'
-    id_kamar = Column(Integer, primary_key=True)
+    id_kamar = Column(String, primary_key=True)
     nama_kamar = Column(String)
     room_description = Column(String)
     room_images = Column(database.Unicode(128))
@@ -44,18 +44,31 @@ class Kamar(database.Model):
 
 class Invoice(database.Model):
     __tablename__ = "invoice"
-    invoice_id = Column(Integer, primary_key=True)
-    example_data = Column(String)
+    nomor_invoice = Column(String, primary_key=True)
+    nama_pemesan = Column(String(15))
+    nomor_telepon = Column(Integer)
+    email_pemesan = Column(String)
+    nama_kamar= Column(String)
+    lama_menginap = Column(Integer)
+    harga_total_pemesan_kamar = Column(Integer)
+    tanggal_pemesanan = Column(DateTime)
+
 
     PENDING = "pending"
     CONFIRMED = "confirmed"
     REJECTED = "rejected"
     status = database.Column(database.Enum(PENDING, CONFIRMED, REJECTED, name='status', default=PENDING))
 
-    def __init__(self, id, data, status):
-        self.invoice_id = id
-        self.example_data = data
+    def __init__(self, nomor_invoice, nama_pemesan, nomor_telepon, email_pemesan,
+                 nama_kamar, lama_menginap, harga_total_pemesan_kamar, tanggal_pemesanan, status):
+        self.nomor_invoice = nomor_invoice
+        self.nama_pemesan = nama_pemesan
+        self.nomor_telepon = nomor_telepon
+        self.email_pemesan = email_pemesan
+        self.nama_kamar = nama_kamar
+        self.lama_menginap = lama_menginap
+        self.harga_total_pemesan_kamar = harga_total_pemesan_kamar
+        self.tanggal_pemesanan = tanggal_pemesanan
         self.status = status
-
 
 

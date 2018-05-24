@@ -38,7 +38,8 @@ class MenuModelView(ModelView):
     pass
 
 class InvoiceModelView(ModelView):
-    column_list = ('invoice_id', 'example_data', 'status')
+    column_list = ('nomor_invoice', 'nama_pemesan', 'nomor_telepon', 'email_pemesan', 'nama_kamar',
+                   'lama_menginap', 'harga_total_pemesan_kamar', 'tanggal_pemesanan', 'status')
     pass
 
 

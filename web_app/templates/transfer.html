@@ -89,14 +89,14 @@
             <tr>
               <td>{{ NAMA_KAMAR }}</td>
               <td>{{ TANGGAL_PEMESANAN }}</td>
-              <td>{{ LAMA_HARI }}</td>
+              <td>{{ LAMA_MENGINAP }}</td>
               <td>{{ HARGA_KAMAR }}</td>
             </tr>
             <tr>
               <td>&nbsp;</td>
               <td>&nbsp;</td>
               <td><strong>Total</strong></td>
-              <td><strong>{{ TOTAL }}</strong></td>
+              <td><strong>{{ HARGA_TOTAL }}</strong></td>
             </tr>
           </tbody>
         </table>
@@ -107,10 +107,27 @@
         <!--<h5 style="text-align:center;">Thank You!</h5>-->
           <!--<button type="button" class="btn btn-primary btn-lg">Upload Bukti Pembayaran</button>-->
           <table border="0">
+
+            <form action="#" method="post">
+              <input type="text" name="NOMOR_INVOICE" value="{{ NOMOR_INVOICE }}">
+              <input type="text" name="NAMA_PEMESAN" value="{{ NAMA_PEMESAN }}">
+              <input type="text" name="NOMOR_TELEPON" value="{{ NOMOR_TELEPON }}">
+              <input type="text" name="EMAIL_PEMESAN" value="{{ EMAIL_PEMESAN }}">
+              <input type="text" name="NAMA_KAMAR" value="{{ NAMA_KAMAR }}">
+              <input type="text" name="LAMA_MENGINAP" value="{{ LAMA_MENGINAP }}">
+              <input type="text" name="HARGA_TOTAL" value="{{ HARGA_TOTAL }}">
+              <input type="text" name="TANGGAL_PEMESANAN" value="{{ TANGGAL_PEMESANAN }}">
               <tr>
-                  <th><a href=""><button type="button" class="btn btn-primary btn-lg" style="width: 150px;">Download PDF</button></a></th>
-                  <th><a href=""><button type="button" class="btn btn-primary btn-lg" style="width: 200px;">Upload bukti pembayaran</button></a></th>
+                <th><input type="submit" class="btn btn-primary btn-lg" style="width: 150px;"></th>
+                <th><a href=""><button type="button" class="btn btn-primary btn-lg" style="width: 150px;">Download PDF</button></a></th>
               </tr>
+            </form>
+
+            <!--<tr>-->
+                  <!--<th><a href=""><button type="button" class="btn btn-primary btn-lg" style="width: 150px;">Download PDF</button></a></th>-->
+                  <!--<th><a href=""><button type="button" class="btn btn-primary btn-lg" style="width: 200px;">Upload bukti pembayaran</button></a></th>-->
+              <!--</tr>-->
+
           </table>
       </div>
     </div>
