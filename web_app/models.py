@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, Enum, DateTime, VARCHAR
+from sqlalchemy import Column, Integer, String, ForeignKey, Enum, DateTime, Unicode, Numeric, VARCHAR
 from sqlalchemy.orm import relationship, backref
 from flask_sqlalchemy import SQLAlchemy
 
@@ -43,24 +43,23 @@ class Kamar(database.Model):
 
 
 class Invoice(database.Model):
-    __tablename__ = "invoice"
-    nomor_invoice = Column(String, primary_key=True)
+    __tablename__ = "Invoice"
+    nomor_invoice = Column(String, primary_key=True, unique=True)
     nama_pemesan = Column(String(15))
-    nomor_telepon = Column(Integer)
+    nomor_telepon = Column(Numeric)
     email_pemesan = Column(String)
     nama_kamar= Column(String)
     lama_menginap = Column(Integer)
     harga_total_pemesan_kamar = Column(Integer)
-    tanggal_pemesanan = Column(DateTime)
-
+    # tanggal_pemesanan = Column(DateTime)
 
     PENDING = "pending"
     CONFIRMED = "confirmed"
     REJECTED = "rejected"
-    status = database.Column(database.Enum(PENDING, CONFIRMED, REJECTED, name='status', default=PENDING))
+    status_pembayaran = database.Column(database.Enum(PENDING, CONFIRMED, REJECTED, name='status_pembayaran', default=PENDING))
 
     def __init__(self, nomor_invoice, nama_pemesan, nomor_telepon, email_pemesan,
-                 nama_kamar, lama_menginap, harga_total_pemesan_kamar, tanggal_pemesanan, status):
+                 nama_kamar, lama_menginap, harga_total_pemesan_kamar, status):
         self.nomor_invoice = nomor_invoice
         self.nama_pemesan = nama_pemesan
         self.nomor_telepon = nomor_telepon
@@ -68,7 +67,9 @@ class Invoice(database.Model):
         self.nama_kamar = nama_kamar
         self.lama_menginap = lama_menginap
         self.harga_total_pemesan_kamar = harga_total_pemesan_kamar
-        self.tanggal_pemesanan = tanggal_pemesanan
-        self.status = status
+        # self.tanggal_pemesanan = tanggal_pemesanan
+        self.status_pembayaran = status
+
+
 
 

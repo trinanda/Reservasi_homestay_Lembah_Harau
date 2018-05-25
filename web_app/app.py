@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
 from flask_admin import Admin
 
-from web_app.views import PageModelView, MenuModelView, PilihKamarView, InvoiceModelView
+from web_app.views import PageModelView, MenuModelView, PilihKamarView, InvoiceView
 
 
 def create_app():
@@ -17,7 +17,7 @@ def create_app():
     admin.add_view(PageModelView(Page, database.session))
     admin.add_view(MenuModelView(Menu, database.session))
     admin.add_view(PilihKamarView(Kamar, database.session))
-    admin.add_view(InvoiceModelView(Invoice, database.session))
+    admin.add_view(InvoiceView(Invoice, database.session))
 
     @flask_objek.route('/')
     @flask_objek.route('/<uri>')
@@ -199,10 +199,10 @@ def create_app():
                                EMAIL_PEMESAN=email_pemesan, LAMA_MENGINAP=lama_menginap, HARGA_KAMAR=harga_kamar)
 
 
-    @flask_objek.route('/transfer', methods = ["GET", "POST"])
-    def transfer(statuss="pending"):
+    @flask_objek.route('/transfer', methods=["GET", "POST"])
+    def tesinsert(statuss="pending"):
 
-        #get current date
+        # get current date
         import time
         tanggal_pemesanan = time.strftime("%d/%m/%Y")
         # /get current date
@@ -212,8 +212,8 @@ def create_app():
         import random
         def generator_random(size=10, chars=string.ascii_uppercase + string.digits):
             return ''.join(random.choice(chars) for x in range(size))
+
         generate_invoice = 'HR' + generator_random() + 'INV'
-        generate_invoice = str(generate_invoice)
         # /get invoice number
 
         nama_kamar = request.args.get('NAMA_KAMAR')
@@ -226,46 +226,34 @@ def create_app():
 
         if request.method == 'POST':
             nomor_invoice = request.form.get('NOMOR_INVOICE')
-            nomor_invoice = str(nomor_invoice)
-            print('coba tes ini ', nomor_invoice, type(nomor_invoice))
+
             nama_pemesan = request.form.get('NAMA_PEMESAN')
             nomor_telepon = request.form.get('NOMOR_TELEPON')
             email_pemesan = request.form.get('EMAIL_PEMESAN')
             nama_kamar = request.form.get('NAMA_KAMAR')
             lama_menginap = request.form.get('LAMA_MENGINAP')
             harga_total_pemesan_kamar = request.form.get('HARGA_TOTAL')
-            tanggal_pemesanan = request.form.get('TANGGAL_PEMESANAN')
+            # tanggal_pemesanan = request.form.get('TANGGAL_PEMESANAN')
 
             status = statuss
 
             insert_ke_db = Invoice(nomor_invoice, nama_pemesan, nomor_telepon, email_pemesan, nama_kamar, lama_menginap,
-                             harga_total_pemesan_kamar, tanggal_pemesanan, status)
+                             harga_total_pemesan_kamar, status)
             database.session.add(insert_ke_db)
             database.session.commit()
 
-            return render_template('transfer.html')
+            return redirect('http://192.168.100.3:7575/success')
 
-
-        return render_template('transfer.html', NAMA_KAMAR=nama_kamar, NAMA_PEMESAN=nama_pemesan, NOMOR_TELEPON=nomor_telepon,
+        return render_template('transfer.html', NAMA_KAMAR=nama_kamar, NAMA_PEMESAN=nama_pemesan,
+                           NOMOR_TELEPON=nomor_telepon,
                                EMAIL_PEMESAN=email_pemesan, LAMA_MENGINAP=lama_menginap, HARGA_KAMAR=harga_kamar,
                                HARGA_TOTAL=harga_total, TANGGAL_PEMESANAN=tanggal_pemesanan,
                                NOMOR_INVOICE=generate_invoice)
 
+    @flask_objek.route('/success', methods=['GET', 'POST'])
+    def success():
+        return render_template('success.html')
 
-    # from web_app.models import Invoice, database
-    # @flask_objek.route('/tesinsert', methods = ["GET", "POST"])
-    # def tesinsert(statuss="pending"):
-    #
-    #     if request.method == 'POST':
-    #
-    #         id = request.form.get('id')
-    #         data = request.form.get('data')
-    #         status = statuss
-    #         new_ex = Invoice(id, data, status)
-    #         database.session.add(new_ex)
-    #         database.session.commit()
-    #
-    #     return render_template('example_insert.html')
 
     return flask_objek
 
