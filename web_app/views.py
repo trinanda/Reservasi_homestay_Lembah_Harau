@@ -40,7 +40,7 @@ class MenuModelView(ModelView):
 
 class InvoiceView(ModelView):
     column_list = ('nomor_invoice', 'nama_pemesan', 'nomor_telepon', 'email_pemesan', 'nama_kamar',
-                   'lama_menginap', 'harga_total_pemesan_kamar', 'status_pembayaran')
+                   'lama_menginap', 'harga_total_pemesan_kamar', 'tanggal_pemesanan', 'status_pembayaran')
     pass
 
 # Create directory for file fields to use

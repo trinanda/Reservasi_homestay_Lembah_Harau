@@ -205,6 +205,7 @@ def create_app():
         # get current date
         import time
         tanggal_pemesanan = time.strftime("%d/%m/%Y")
+        tanggal_pemesanan_untuk_admin = time.strftime("%Y-%m-%d %H:%M:%S")
         # /get current date
 
         # get invoice number
@@ -233,12 +234,12 @@ def create_app():
             nama_kamar = request.form.get('NAMA_KAMAR')
             lama_menginap = request.form.get('LAMA_MENGINAP')
             harga_total_pemesan_kamar = request.form.get('HARGA_TOTAL')
-            # tanggal_pemesanan = request.form.get('TANGGAL_PEMESANAN')
+            tanggal_pemesanan = request.form.get('TANGGAL_PEMESANAN_UNTUK_ADMIN')
 
             status = statuss
 
             insert_ke_db = Invoice(nomor_invoice, nama_pemesan, nomor_telepon, email_pemesan, nama_kamar, lama_menginap,
-                             harga_total_pemesan_kamar, status)
+                             harga_total_pemesan_kamar, tanggal_pemesanan, status)
             database.session.add(insert_ke_db)
             database.session.commit()
 
@@ -248,6 +249,7 @@ def create_app():
                            NOMOR_TELEPON=nomor_telepon,
                                EMAIL_PEMESAN=email_pemesan, LAMA_MENGINAP=lama_menginap, HARGA_KAMAR=harga_kamar,
                                HARGA_TOTAL=harga_total, TANGGAL_PEMESANAN=tanggal_pemesanan,
+                               TANGGAL_PEMESANAN_UNTUK_ADMIN=tanggal_pemesanan_untuk_admin,
                                NOMOR_INVOICE=generate_invoice)
 
     @flask_objek.route('/success', methods=['GET', 'POST'])
