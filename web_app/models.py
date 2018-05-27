@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, Enum, DateTime, Numeric
+from sqlalchemy import Column, Integer, String, ForeignKey, Enum, DateTime, Numeric, Unicode
 from sqlalchemy.orm import relationship, backref
 from flask_sqlalchemy import SQLAlchemy
 
@@ -18,7 +18,7 @@ class Page(database.Model):
 
 class Menu(database.Model):
     __tablename__ = 'menu'
-    id_menu = Column(Integer, primary_key=True)
+    id_menu = Column(Integer, primary_key=True, autoincrement=True)
     title = Column(String)
     urutan = Column(Integer)
 
@@ -31,7 +31,7 @@ class Menu(database.Model):
 
 class Kamar(database.Model):
     __tablename__ = 'kamar'
-    id_kamar = Column(String, primary_key=True)
+    id_kamar = Column(Integer, primary_key=True)
     nama_kamar = Column(String)
     room_description = Column(String)
     room_images = Column(database.Unicode(128))
