@@ -1,8 +1,10 @@
 from flask import Flask, render_template, request, redirect
 from flask_admin import Admin
 from flask_mail import Mail, Message
-
 from web_app.views import PageModelView, MenuModelView, PilihKamarView, InvoiceView
+from web_app.settings import MAIL_USERNAME, MAIL_PASSWORD
+from smtplib import SMTP_SSL
+
 
 
 def create_app():
@@ -201,7 +203,7 @@ def create_app():
 
 
     @flask_objek.route('/transfer', methods=["GET", "POST"])
-    def tesinsert(statuss="pending"):
+    def transfer(statuss="pending"):
 
         # get current date
         import time
@@ -236,25 +238,19 @@ def create_app():
             lama_menginap = request.form.get('LAMA_MENGINAP')
             harga_total_pemesan_kamar = request.form.get('HARGA_TOTAL')
             tanggal_pemesanan = request.form.get('TANGGAL_PEMESANAN_UNTUK_ADMIN')
-
             status = statuss
 
-            # send_email_to = request.form.get('EMAIL_PEMESAN')
-            gmail_username = 'zidanecr7kaka@gmail.com'
-            gmail_password = 'm@Fu7Ur3#'
+            #################### email untuk pemesan
             to = email_pemesan
 
             subject = '---Harau Homestay Reservation---'
-            space = ' '
-            abc = nama_kamar
             message = 'Terima kasih Telah Menggunakan Layanan Kami, Anda telah memesan kamar ' + nama_kamar + \
                       ' selama ' + lama_menginap + ' hari, dan biaya total nya adalah ' + harga_total_pemesan_kamar +\
                       ' ribu rupiah, Kami akan segera mengkonfirmasi setelah pembayaran selesai dilakukan \n' + \
                       '---Terima kasih, Salam dari kami Harau Homestay Reservation---'
 
-
-            flask_objek.config['MAIL_USERNAME'] = gmail_username
-            flask_objek.config['MAIL_PASSWORD'] = gmail_password
+            gmail_username = MAIL_USERNAME
+            gmail_password = MAIL_PASSWORD
 
             msg = Message(subject, sender=gmail_username, recipients=[to])
             msg.body = message
@@ -262,6 +258,21 @@ def create_app():
             mail = Mail(flask_objek)
             mail.connect()
             mail.send(msg)
+            ###############################---------------###
+
+            # EMAIL SMTP_SSL
+            msg_to_admin = 'Ada yang memesan kamar ' + nama_kamar + ' selama ' + lama_menginap + \
+                           ' dan harga totalnya ' + str(harga_total)
+            try:
+                server = SMTP_SSL('smtp.gmail.com', 465)
+                server.ehlo()
+                server.login(gmail_username, gmail_password)
+                server.sendmail('zidanecr7kaka@gmail.com', 'pythonpayakumbuh@gmail.com', msg_to_admin)
+                server.quit()
+            except:
+                return 'email gagal terkirim'
+            #/> EMAIL SMTP_SSL
+
 
             insert_ke_db = Invoice(nomor_invoice, nama_pemesan, nomor_telepon, email_pemesan, nama_kamar,
                                        lama_menginap,
