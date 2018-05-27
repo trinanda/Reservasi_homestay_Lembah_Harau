@@ -2,9 +2,9 @@ from flask import Flask, render_template, request, redirect
 from flask_admin import Admin
 from flask_mail import Mail, Message
 from web_app.views import PageModelView, MenuModelView, PilihKamarView, InvoiceView
-from web_app.settings import MAIL_USERNAME, MAIL_PASSWORD
+from web_app.settings import MAIL_USERNAME, MAIL_PASSWORD, TWLIO_ACCOUNT_SID, TWLIO_AUTH_TOKEN
 from smtplib import SMTP_SSL
-
+from twilio.rest import Client
 
 
 def create_app():
@@ -260,9 +260,11 @@ def create_app():
             mail.send(msg)
             ###############################---------------###
 
-            # EMAIL SMTP_SSL
-            msg_to_admin = 'Ada yang memesan kamar ' + nama_kamar + ' selama ' + lama_menginap + \
-                           ' dan harga totalnya ' + str(harga_total)
+            #### EMAIL SMTP_SSL ##
+            msg_to_admin = 'Pelanggan atas nama ' + nama_pemesan + ' dengan email '+ email_pemesan + ' dan' + \
+                           ' nomor telepon ' + nomor_telepon +' telah memesan kamar ' +\
+                           nama_kamar + ' selama ' + lama_menginap + \
+                           ' hari, dan harga totalnya ' + str(harga_total)
             try:
                 server = SMTP_SSL('smtp.gmail.com', 465)
                 server.ehlo()
@@ -271,7 +273,23 @@ def create_app():
                 server.quit()
             except:
                 return 'email gagal terkirim'
-            #/> EMAIL SMTP_SSL
+            ###/> EMAIL SMTP_SSL ###
+
+            ###### TWILIO ####
+            # Your Account SID from twilio.com/console
+            account_sid = TWLIO_ACCOUNT_SID
+            # Your Auth Token from twilio.com/console
+            auth_token = TWLIO_AUTH_TOKEN
+
+            client = Client(account_sid, auth_token)
+
+            message = client.messages.create(
+                # to="+6282174853636",/up
+                to="+6281275803651",
+                from_="+12014307127",
+                body=msg_to_admin)
+
+            #######-->/ TWILIO ########
 
 
             insert_ke_db = Invoice(nomor_invoice, nama_pemesan, nomor_telepon, email_pemesan, nama_kamar,

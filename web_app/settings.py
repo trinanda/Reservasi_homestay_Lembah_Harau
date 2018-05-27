@@ -14,3 +14,10 @@ MAIL_USE_TLS = True
 MAIL_USE_SSL = False
 MAIL_USERNAME = 'zidanecr7kaka@gmail.com'
 MAIL_PASSWORD = 'm@Fu7Ur3#'
+
+
+#twilio
+# Your Account SID from twilio.com/console
+TWLIO_ACCOUNT_SID = "ACe211524106753eb639d9fae6ebd35bb2"
+# Your Auth Token from twilio.com/console
+TWLIO_AUTH_TOKEN = "2d7c15d4df5846d341c3a67a7fec9b9b"

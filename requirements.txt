@@ -7,3 +7,4 @@ flask-admin
 flask-wtf
 pillow
 flask_mail
+twilio
