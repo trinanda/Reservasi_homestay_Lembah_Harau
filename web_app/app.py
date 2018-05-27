@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect
 from flask_admin import Admin
+from flask_mail import Mail, Message
 
 from web_app.views import PageModelView, MenuModelView, PilihKamarView, InvoiceView
 
@@ -238,8 +239,33 @@ def create_app():
 
             status = statuss
 
-            insert_ke_db = Invoice(nomor_invoice, nama_pemesan, nomor_telepon, email_pemesan, nama_kamar, lama_menginap,
-                             harga_total_pemesan_kamar, tanggal_pemesanan, status)
+            # send_email_to = request.form.get('EMAIL_PEMESAN')
+            gmail_username = 'zidanecr7kaka@gmail.com'
+            gmail_password = 'm@Fu7Ur3#'
+            to = email_pemesan
+
+            subject = '---Harau Homestay Reservation---'
+            space = ' '
+            abc = nama_kamar
+            message = 'Terima kasih Telah Menggunakan Layanan Kami, Anda telah memesan kamar ' + nama_kamar + \
+                      ' selama ' + lama_menginap + ' hari, dan biaya total nya adalah ' + harga_total_pemesan_kamar +\
+                      ' ribu rupiah, Kami akan segera mengkonfirmasi setelah pembayaran selesai dilakukan \n' + \
+                      '---Terima kasih, Salam dari kami Harau Homestay Reservation---'
+
+
+            flask_objek.config['MAIL_USERNAME'] = gmail_username
+            flask_objek.config['MAIL_PASSWORD'] = gmail_password
+
+            msg = Message(subject, sender=gmail_username, recipients=[to])
+            msg.body = message
+
+            mail = Mail(flask_objek)
+            mail.connect()
+            mail.send(msg)
+
+            insert_ke_db = Invoice(nomor_invoice, nama_pemesan, nomor_telepon, email_pemesan, nama_kamar,
+                                       lama_menginap,
+                                       harga_total_pemesan_kamar, tanggal_pemesanan, status)
             database.session.add(insert_ke_db)
             database.session.commit()
 

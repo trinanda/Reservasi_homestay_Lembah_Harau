@@ -10,10 +10,14 @@ app.config['MAIL_USE_SSL'] = False
 @app.route('/', methods=['GET','POST'])
 def index():
     if request.method == 'POST':
-        gmail_username = request.form['gmail_username']
-        gmail_password = request.form['gmail_password']
+        # gmail_username = request.form['gmail_username']
+        gmail_username = 'zidanecr7kaka@gmail.com'
+        # gmail_password = request.form['gmail_password']
+        gmail_password = 'm@Fu7Ur3#'
         to = request.form['to']
-        subject = request.form['subject']
+        # subject = request.form['subject']
+        subject = '--FROM HRRS--'
+        # message = request.form['message']
         message = request.form['message']
 
         app.config['MAIL_USERNAME'] = gmail_username

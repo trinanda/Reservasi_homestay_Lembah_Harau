@@ -6,3 +6,9 @@ SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 SECRET_KEY = '12345'
 
+
+#flask mail
+MAIL_SERVER = 'smtp.gmail.com'
+MAIL_PORT = 587
+MAIL_USE_TLS = True
+MAIL_USE_SSL = False
