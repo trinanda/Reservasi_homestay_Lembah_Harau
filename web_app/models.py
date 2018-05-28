@@ -72,4 +72,13 @@ class Invoice(database.Model):
 
 
 
+class Tesinsert(database.Model):
+    __tablename__ = 'tesinsert'
+    id = Column(Integer, primary_key=True)
+    nama = Column(String)
+
+    def __init__(self, id, nama):
+        self.id = id
+        self.nama = nama
+
 
