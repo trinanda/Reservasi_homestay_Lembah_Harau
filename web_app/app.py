@@ -20,6 +20,7 @@ def create_app():
     admin.add_view(PageModelView(Page, database.session))
     admin.add_view(MenuModelView(Menu, database.session))
     admin.add_view(PilihKamarView(Kamar, database.session))
+    admin.add_view(InvoiceView(Invoice, database.session))
 
     @flask_objek.route('/')
     @flask_objek.route('/<uri>')
