@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
 from flask_admin import Admin
 from flask_mail import Mail, Message
-from web_app.views import PageModelView, MenuModelView, PilihKamarView, InvoiceView, TesinsertlView
+from web_app.views import PageModelView, MenuModelView, PilihKamarView, InvoiceView
 from web_app.settings import MAIL_USERNAME, MAIL_PASSWORD, TWLIO_ACCOUNT_SID, TWLIO_AUTH_TOKEN
 from smtplib import SMTP_SSL
 from twilio.rest import Client
@@ -13,7 +13,7 @@ def create_app():
 
     flask_objek.config.from_pyfile('settings.py')
 
-    from web_app.models import database, Page, Menu, Kamar, Invoice, Tesinsert
+    from web_app.models import database, Page, Menu, Kamar, Invoice
     database.init_app(flask_objek)
 
     admin = Admin(flask_objek, name='Administrator', template_mode='bootstrap3')
@@ -311,20 +311,6 @@ def create_app():
     @flask_objek.route('/success', methods=['GET', 'POST'])
     def success():
         return render_template('success.html')
-
-
-    @flask_objek.route('/tesinsert', methods=['GET', 'POST'])
-    def tesinsert():
-        if request.method == 'POST':
-            id = request.form.get('id')
-            nama = request.form.get('nama')
-
-            insert_ke_db = Tesinsert(id, nama)
-            database.session.add(insert_ke_db)
-            database.session.commit()
-
-            return render_template('tesinsert.html')
-        return render_template('tesinsert.html')
 
 
 

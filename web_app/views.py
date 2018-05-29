@@ -37,10 +37,6 @@ class MenuModelView(ModelView):
     column_list = ('title', 'urutan')
     pass
 
-class TesinsertlView(ModelView):
-    column_list = ('id', 'nama')
-    pass
-
 
 class InvoiceView(ModelView):
     column_list = ('nomor_invoice', 'nama_pemesan', 'nomor_telepon', 'email_pemesan', 'nama_kamar',
