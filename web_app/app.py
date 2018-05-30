@@ -5,6 +5,7 @@ from web_app.views import PageModelView, MenuModelView, PilihKamarView, InvoiceV
 from web_app.settings import MAIL_USERNAME, MAIL_PASSWORD, TWLIO_ACCOUNT_SID, TWLIO_AUTH_TOKEN
 from smtplib import SMTP_SSL
 from twilio.rest import Client
+from web_app.models import database, Page, Menu, Kamar, Invoice
 
 
 def create_app():
@@ -13,7 +14,6 @@ def create_app():
 
     flask_objek.config.from_pyfile('settings.py')
 
-    from web_app.models import database, Page, Menu, Kamar, Invoice
     database.init_app(flask_objek)
 
     admin = Admin(flask_objek, name='Administrator', template_mode='bootstrap3')
