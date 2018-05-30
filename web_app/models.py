@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, ForeignKey, Enum, DateTime, Numeric, Unicode
 from sqlalchemy.orm import relationship, backref
 from flask_sqlalchemy import SQLAlchemy
-
+from flask_security import UserMixin, RoleMixin
 
 database = SQLAlchemy()
 
@@ -72,4 +72,33 @@ class Invoice(database.Model):
 
 
 
+# Define models
+roles_users = database.Table(
+    'roles_users',
+    database.Column('user_id', database.Integer(), database.ForeignKey('user.id')),
+    database.Column('role_id', database.Integer(), database.ForeignKey('role.id'))
+)
 
+
+class Role(database.Model, RoleMixin):
+    id = database.Column(database.Integer(), primary_key=True)
+    name = database.Column(database.String(80), unique=True)
+    description = database.Column(database.String(255))
+
+    def __str__(self):
+        return self.name
+
+
+class User(database.Model, UserMixin):
+    id = database.Column(database.Integer, primary_key=True)
+    first_name = database.Column(database.String(255))
+    last_name = database.Column(database.String(255))
+    email = database.Column(database.String(255), unique=True)
+    password = database.Column(database.String(255))
+    active = database.Column(database.Boolean())
+    confirmed_at = database.Column(database.DateTime())
+    roles = database.relationship('Role', secondary=roles_users,
+                            backref=database.backref('users', lazy='dynamic'))
+
+    def __str__(self):
+        return self.email
