@@ -8,8 +8,9 @@ from flask_admin.contrib import sqla
 from sqlalchemy.event import listens_for
 import os
 import os.path as op
-from flask import url_for
-from web_app.models import Kamar
+from flask import url_for, request, redirect, abort
+from models import Kamar
+from flask_security import current_user
 
 # cekdeitor
 class CKEditorWidget(TextArea):
@@ -25,7 +26,55 @@ class CKEditorField(TextAreaField):
 
 # cekdeitor
 
-class PageModelView(ModelView):
+
+
+class UserAkses(ModelView):
+
+    def is_accessible(self):
+        if not current_user.is_active or not current_user.is_authenticated:
+            return False
+        if current_user.has_role('user'):
+            return True
+
+        return False
+
+    def _handle_view(self, name, **kwargs):
+        """
+        Override builtin _handle_view in order to redirect users when a view is not accessible.
+        """
+        if not self.is_accessible():
+            if current_user.is_authenticated:
+                # permission denied
+                abort(403)
+            else:
+                # login
+                return redirect(url_for('security.login', next=request.url))
+
+
+class AdminAkses(ModelView):
+    def is_accessible(self):
+        if not current_user.is_active or not current_user.is_authenticated:
+            return False
+
+        if current_user.has_role('superuser'):
+            return True
+
+        return False
+
+    def _handle_view(self, name, **kwargs):
+        """
+        Override builtin _handle_view in order to redirect users when a view is not accessible.
+        """
+        if not self.is_accessible():
+            if current_user.is_authenticated:
+                # permission denied
+                abort(403)
+            else:
+                # login
+                return redirect(url_for('security.login', next=request.url))
+
+
+class PageModelView(AdminAkses):
     form_overrides = dict(konten=CKEditorField)
 
     create_template = 'admin/ckeditor.html'
@@ -33,12 +82,12 @@ class PageModelView(ModelView):
     column_list = ('judul', 'tag')
 
 
-class MenuModelView(ModelView):
+class MenuModelView(AdminAkses):
     column_list = ('title', 'urutan')
     pass
 
 
-class InvoiceView(ModelView):
+class InvoiceView(AdminAkses):
     column_list = ('nomor_invoice', 'nama_pemesan', 'nomor_telepon', 'email_pemesan', 'nama_kamar',
                    'lama_menginap', 'harga_total_pemesan_kamar', 'tanggal_pemesanan', 'status_pembayaran')
     pass
@@ -70,7 +119,7 @@ def del_image(mapper, connection, target):
 
 
 # Administrative views
-class PilihKamarView(sqla.ModelView):
+class PilihKamarView(UserAkses):
     form_overrides = dict(room_description=CKEditorField)
     create_template = 'admin/ckeditor.html'
     edit_template = 'admin/ckeditor.html'
@@ -94,3 +143,6 @@ class PilihKamarView(sqla.ModelView):
                                       thumbnail_size=(100, 100, True))
     }
 
+# Create customized model view class
+class MyModelView(AdminAkses):
+    pass

@@ -1,11 +1,20 @@
-from flask import Flask, render_template, request, redirect
-from flask_admin import Admin
+import sys, os
+
+from flask_security.utils import encrypt_password
+
+sys.path.append(os.getcwd() + '/web_app') #sesuai dengan mark directory as sources
+
+import flask_admin
+from flask import Flask, render_template, request, redirect, url_for
+from flask_admin import Admin, helpers as admin_helpers
 from flask_mail import Mail, Message
-from web_app.views import PageModelView, MenuModelView, PilihKamarView, InvoiceView
-from web_app.settings import MAIL_USERNAME, MAIL_PASSWORD, TWLIO_ACCOUNT_SID, TWLIO_AUTH_TOKEN
+from flask_security import SQLAlchemyUserDatastore, Security
+
+from views import PageModelView, MenuModelView, PilihKamarView, InvoiceView, MyModelView
+from settings import MAIL_USERNAME, MAIL_PASSWORD, TWLIO_ACCOUNT_SID, TWLIO_AUTH_TOKEN
 from smtplib import SMTP_SSL
 from twilio.rest import Client
-from web_app.models import database, Page, Menu, Kamar, Invoice
+from models import database, Page, Menu, Kamar, Invoice, User, Role
 
 
 def create_app():
@@ -16,12 +25,21 @@ def create_app():
 
     database.init_app(flask_objek)
 
-    admin = Admin(flask_objek, name='Administrator', template_mode='bootstrap3')
+    # Setup Flask-Security
+    user_datastore = SQLAlchemyUserDatastore(database, User, Role)
+    security = Security(flask_objek, user_datastore)
+
+    admin = Admin(flask_objek, name='Administrator', base_template='my_master.html', template_mode='bootstrap3')
     admin.add_view(PageModelView(Page, database.session))
     admin.add_view(MenuModelView(Menu, database.session))
     admin.add_view(PilihKamarView(Kamar, database.session))
     admin.add_view(InvoiceView(Invoice, database.session))
+    admin.add_view(MyModelView(Role, database.session))
+    admin.add_view(MyModelView(User, database.session))
 
+
+    # define a context processor for merging flask-admin's template context into the
+    # flask-security views.
     @flask_objek.route('/')
     @flask_objek.route('/<uri>')
     def index(uri=None):
@@ -35,7 +53,7 @@ def create_app():
             isi_konten = Page.query.first()
             isi_konten = isi_konten.konten
         except AttributeError:
-            return render_template('index.html')
+            return render_template('index_page.html')
 
         isi_konten = 'test'
         if page is not None:
@@ -46,7 +64,18 @@ def create_app():
 
         menu = Menu.query.order_by('urutan')
 
-        return render_template('index.html', CONTENT=isi_konten,  MENU=menu)
+        return render_template('index_page.html', CONTENT=isi_konten,  MENU=menu)
+
+
+    @security.context_processor
+    @flask_objek.route('/admin')
+    def security_context_processor():
+        return dict(
+            admin_base_template=admin.base_template,
+            admin_view=admin.index_view,
+            h=admin_helpers,
+            get_url=url_for
+        )
 
     @flask_objek.route('/homepage')
     @flask_objek.route('/<uri>')

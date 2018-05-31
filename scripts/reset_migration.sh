@@ -6,3 +6,4 @@ chown -R $USER:$USER web_app/files/
 rm -rf web_app/files/* .png .jpg
 alembic revision --autogenerate -m 'inisialisasi database'
 alembic upgrade head
+# python web_app/app.py

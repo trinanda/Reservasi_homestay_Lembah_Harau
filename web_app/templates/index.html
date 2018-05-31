@@ -1,9 +1,7 @@
-<!DOCTYPE html>
 <html>
     <body>
-        {% extends "base-template.html" %}
-        {% block content %}
-            {{ CONTENT|striptags }}
-        {% endblock %}
+        <div>
+            <a href="{{ url_for('admin.index') }}">Go to admin!</a>
+        </div>
     </body>
 </html>
