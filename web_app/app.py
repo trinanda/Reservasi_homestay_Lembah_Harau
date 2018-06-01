@@ -269,7 +269,7 @@ def create_app():
             tanggal_pemesanan = request.form.get('TANGGAL_PEMESANAN_UNTUK_ADMIN')
             status = statuss
 
-            #################### email untuk pemesan
+            #################### send_email untuk pemesan
             to = email_pemesan
 
             subject = '---Harau Homestay Reservation---'
@@ -290,7 +290,7 @@ def create_app():
             ###############################---------------###
 
             #### EMAIL SMTP_SSL ##
-            msg_to_admin = 'Pelanggan atas nama ' + nama_pemesan + ' dengan email '+ email_pemesan + ' dan' + \
+            msg_to_admin = 'Pelanggan atas nama ' + nama_pemesan + ' dengan send_email '+ email_pemesan + ' dan' + \
                            ' nomor telepon ' + nomor_telepon +' telah memesan kamar ' +\
                            nama_kamar + ' selama ' + lama_menginap + \
                            ' hari, dan harga totalnya ' + str(harga_total)
@@ -301,7 +301,7 @@ def create_app():
                 server.sendmail('zidanecr7kaka@gmail.com', 'pythonpayakumbuh@gmail.com', msg_to_admin)
                 server.quit()
             except:
-                return 'email gagal terkirim'
+                return 'send_email gagal terkirim'
             ###/> EMAIL SMTP_SSL ###
 
             ###### TWILIO ####
