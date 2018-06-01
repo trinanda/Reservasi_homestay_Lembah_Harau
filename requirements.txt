@@ -8,4 +8,4 @@ flask-wtf
 pillow
 flask_mail
 twilio
-flask_security
+Flask-Security>=1.7.5
