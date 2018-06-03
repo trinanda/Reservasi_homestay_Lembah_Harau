@@ -11,10 +11,22 @@ from flask_mail import Mail, Message
 from flask_security import SQLAlchemyUserDatastore, Security
 
 from views import PageModelView, MenuModelView, PilihKamarView, InvoiceView, MyModelView
-from settings import MAIL_USERNAME, MAIL_PASSWORD, TWLIO_ACCOUNT_SID, TWLIO_AUTH_TOKEN
+# from settings import MAIL_USERNAME, MAIL_PASSWORD, TWLIO_ACCOUNT_SID, TWLIO_AUTH_TOKEN
+from settings import TWLIO_ACCOUNT_SID, TWLIO_AUTH_TOKEN
 from smtplib import SMTP_SSL
 from twilio.rest import Client
 from models import database, Page, Menu, Kamar, Invoice, User, Role
+
+#gmail import package dependencies
+import base64
+import httplib2
+
+from email.mime.text import MIMEText
+from googleapiclient.discovery import build
+from oauth2client.client import flow_from_clientsecrets
+from oauth2client.file import Storage
+from oauth2client.tools import run_flow
+
 
 
 def create_app():
@@ -269,56 +281,141 @@ def create_app():
             tanggal_pemesanan = request.form.get('TANGGAL_PEMESANAN_UNTUK_ADMIN')
             status = statuss
 
+            # # fitur ini untuk sementara di non-aktivkan, karena di server vps digital ocean tidak jalan karena port SMPT di block
+            # # selama 60 hari dari pendaftaran
             #################### send_email untuk pemesan
-            to = email_pemesan
+            # to_pemesan = email_pemesan
+            #
+            # subject_to_pemesan = '---Harau Homestay Reservation---'
+            # message_to_pemesan  = 'Terima kasih Telah Menggunakan Layanan Kami, Anda telah memesan kamar ' + nama_kamar + \
+            #           ' selama ' + lama_menginap + ' hari, dan biaya total nya adalah ' + harga_total_pemesan_kamar +\
+            #           ' ribu rupiah, Kami akan segera mengkonfirmasi setelah pembayaran selesai dilakukan \n' + \
+            #           '---Terima kasih, Salam dari kami Harau Homestay Reservation---'
 
-            subject = '---Harau Homestay Reservation---'
-            message = 'Terima kasih Telah Menggunakan Layanan Kami, Anda telah memesan kamar ' + nama_kamar + \
-                      ' selama ' + lama_menginap + ' hari, dan biaya total nya adalah ' + harga_total_pemesan_kamar +\
-                      ' ribu rupiah, Kami akan segera mengkonfirmasi setelah pembayaran selesai dilakukan \n' + \
-                      '---Terima kasih, Salam dari kami Harau Homestay Reservation---'
+            # gmail_username = MAIL_USERNAME
+            # gmail_password = MAIL_PASSWORD
+            #
+            # msg = Message(subject_to_pemesan, sender=gmail_username, recipients=[to_pemesan])
+            # msg.body = message_to_pemesan
+            #
+            # mail = Mail(flask_objek)
+            # mail.connect()
+            # mail.send(msg)
+            ##############################---------------###
 
-            gmail_username = MAIL_USERNAME
-            gmail_password = MAIL_PASSWORD
-
-            msg = Message(subject, sender=gmail_username, recipients=[to])
-            msg.body = message
-
-            mail = Mail(flask_objek)
-            mail.connect()
-            mail.send(msg)
-            ###############################---------------###
-
+            #fitur ini untuk sementara di non-aktivkan, karena di server vps digital ocean tidak jalan karena port SMPT di block
+            #selama 60 hari dari pendaftaran
             #### EMAIL SMTP_SSL ##
             msg_to_admin = 'Pelanggan atas nama ' + nama_pemesan + ' dengan send_email '+ email_pemesan + ' dan' + \
                            ' nomor telepon ' + nomor_telepon +' telah memesan kamar ' +\
                            nama_kamar + ' selama ' + lama_menginap + \
                            ' hari, dan harga totalnya ' + str(harga_total)
-            try:
-                server = SMTP_SSL('smtp.gmail.com', 465)
-                server.ehlo()
-                server.login(gmail_username, gmail_password)
-                server.sendmail('zidanecr7kaka@gmail.com', 'pythonpayakumbuh@gmail.com', msg_to_admin)
-                server.quit()
-            except:
-                return 'send_email gagal terkirim'
+            # try:
+            #     server = SMTP_SSL('smtp.gmail.com', 465)
+            #     server.ehlo()
+            #     server.login(gmail_username, gmail_password)
+            #     server.sendmail('zidanecr7kaka@gmail.com', 'pythonpayakumbuh@gmail.com', msg_to_admin)
+            #     server.quit()
+            # except:
+            #     return 'send_email gagal terkirim'
             ###/> EMAIL SMTP_SSL ###
 
+            ##################
             ###### TWILIO ####
             # Your Account SID from twilio.com/console
-            account_sid = TWLIO_ACCOUNT_SID
-            # Your Auth Token from twilio.com/console
-            auth_token = TWLIO_AUTH_TOKEN
-
-            client = Client(account_sid, auth_token)
-
-            message = client.messages.create(
-                # to="+6282174853636",/up
-                to="+6281275803651",
-                from_="+12014307127",
-                body=msg_to_admin)
+            # account_sid = TWLIO_ACCOUNT_SID
+            # # Your Auth Token from twilio.com/console
+            # auth_token = TWLIO_AUTH_TOKEN
+            #
+            # client = Client(account_sid, auth_token)
+            #
+            # message = client.messages.create(
+            #     # to="+6282174853636",/up
+            #     to="+6281275803651",
+            #     from_="+12014307127",
+            #     body=msg_to_admin)
 
             #######-->/ TWILIO ########
+            ####################################
+
+            ####################################
+            #send gmail
+            # Path to the client_secret.json file downloaded from the Developer Console
+            # import json
+            # with open('client_secret.json', 'r') as json_data:
+            #     data = json.load(json_data)
+            CLIENT_SECRET_FILE = 'web_app/api/client_secret.json'
+
+            # Check https://developers.google.com/gmail/api/auth/scopes for all available scopes
+            OAUTH_SCOPE = 'https://www.googleapis.com/auth/gmail.compose'
+
+            # Location of the credentials storage file
+            STORAGE = Storage('web_app/api/gmail.storage')
+
+            # Start the OAuth flow to retrieve credentials
+            flow = flow_from_clientsecrets(CLIENT_SECRET_FILE, scope=OAUTH_SCOPE)
+            http = httplib2.Http()
+
+            # Try to retrieve credentials from storage or run the flow to generate them
+            credentials = STORAGE.get()
+            if credentials is None or credentials.invalid:
+                credentials = run_flow(flow, STORAGE, http=http)
+
+            # Authorize the httplib2.Http object with our credentials
+            http = credentials.authorize(http)
+
+            # Build the Gmail service from discovery
+            gmail_service = build('gmail', 'v1', http=http)
+
+
+            # TO PEMESAN
+
+            to_pemesan = email_pemesan
+
+            subject_to_pemesan = '---Harau Homestay Reservation---'
+            message_to_pemesan = 'Terima kasih Telah Menggunakan Layanan Kami, Anda telah memesan kamar ' + nama_kamar + \
+                                     ' selama ' + lama_menginap + ' hari, dan biaya total nya adalah ' + harga_total_pemesan_kamar + \
+                                     ' ribu rupiah, Kami akan segera mengkonfirmasi setelah pembayaran selesai dilakukan \n' + \
+                                     '---Terima kasih, Salam dari kami Harau Homestay Reservation---'
+            # create a message to send
+            # message_to_pemesan = MIMEText("Terima kasih telah memesan kamar melalui Harau Reservation")
+            message_to_pemesan = MIMEText(message_to_pemesan)
+            message_to_pemesan['to'] = to_pemesan
+            # message_to_pemesan['from'] = "python.api123@gmail.com"
+            message_to_pemesan['from'] = "zidanecr7kaka@gmail.com"
+            message_to_pemesan['subject'] = subject_to_pemesan
+            raw_to_pemesan = base64.urlsafe_b64encode(message_to_pemesan.as_bytes())
+            raw_to_pemesan = raw_to_pemesan.decode()
+            body_to_pemesan = {'raw': raw_to_pemesan}
+
+                # send it
+            try:
+                message_to_pemesan = (
+                gmail_service.users().messages().send(userId="me", body=body_to_pemesan).execute())
+                print('Message Id: %s' % message_to_pemesan['id'])
+                print(message_to_pemesan)
+            except Exception as error:
+                print('An error occurred: %s' % error)
+
+            # TO ADMIN
+            # create a message to send
+            message_to_admin = MIMEText(msg_to_admin)
+            message_to_admin['to'] = "pythonpayakumbuh@gmail.com"
+            # message_to_admin['from'] = "python.api123@gmail.com"
+            message_to_admin['from'] = "zidanecr7kaka@gmail.com"
+            message_to_admin['subject'] = "Ada yang memesan kamar"
+            raw_to_admin = base64.urlsafe_b64encode(message_to_admin.as_bytes())
+            raw_to_admin = raw_to_admin.decode()
+            body_to_admin = {'raw': raw_to_admin}
+
+            # send it
+            try:
+                message_to_admin = (
+                    gmail_service.users().messages().send(userId="me", body=body_to_admin).execute())
+                print('Message Id: %s' % message_to_admin['id'])
+                print(message_to_admin)
+            except Exception as error:
+                print('An error occurred: %s' % error)
 
 
             insert_ke_db = Invoice(nomor_invoice, nama_pemesan, nomor_telepon, email_pemesan, nama_kamar,

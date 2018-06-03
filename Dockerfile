@@ -6,6 +6,10 @@ RUN apt-get update && apt-get install -y build-essential libpq-dev
 
 RUN apt-get update && apt-get install -y libgeos-dev
 
+RUN pip install --upgrade google-api-python-client
+
+RUN pip install --upgrade python-gflags
+
 ENV INSTALL_PATH_DI_DALAM_DOCKER /web_app_docker
 
 RUN mkdir -p $INSTALL_PATH_DI_DALAM_DOCKER

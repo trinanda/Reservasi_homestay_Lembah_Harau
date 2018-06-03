@@ -11,13 +11,14 @@ SQLALCHEMY_ECHO = True
 SECRET_KEY = '12345'
 
 
-#flask mail
-MAIL_SERVER = 'smtp.gmail.com'
-MAIL_PORT = 587
-MAIL_USE_TLS = True
-MAIL_USE_SSL = False
-MAIL_USERNAME = 'zidanecr7kaka@gmail.com'
-MAIL_PASSWORD = 'm@Fu7Ur3#'
+# #flask mail // fitur ini untuk sementara di non-aktivkan, karena di server vps digital ocean tidak jalan karena port SMPT di block
+#selama 60 hari dari pendaftaran
+# MAIL_SERVER = 'smtp.gmail.com'
+# MAIL_PORT = 587
+# MAIL_USE_TLS = True
+# MAIL_USE_SSL = False
+# MAIL_USERNAME = 'zidanecr7kaka@gmail.com'
+# MAIL_PASSWORD = 'm@Fu7Ur3#'
 
 
 #twilio
@@ -44,3 +45,4 @@ SECURITY_POST_REGISTER_VIEW = "/admin/"
 # Flask-Security features
 SECURITY_REGISTERABLE = True
 SECURITY_SEND_REGISTER_EMAIL = False
+
