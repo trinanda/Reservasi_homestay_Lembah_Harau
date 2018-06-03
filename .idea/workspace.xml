@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3fda5f8a-d2f4-4567-96cf-3ac732436be6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_app/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_app/send_email/client_secret.json" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/api/client_secret.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_app/send_email/gmail.storage" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/send_email/gmail.storage" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="3fda5f8a-d2f4-4567-96cf-3ac732436be6" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +17,8 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web_app/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="346" column="46" selection-start-line="346" selection-start-column="46" selection-end-line="346" selection-end-column="46" />
+            <state relative-caret-position="-532">
+              <caret line="352" column="58" lean-forward="true" selection-start-line="352" selection-start-column="58" selection-end-line="352" selection-end-column="58" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -198,24 +189,6 @@
             <path>
               <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="gmail_api_with_flask" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="gmail_api_with_flask" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
               <item name="web_app" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -250,11 +223,11 @@
       <recent name="$PROJECT_DIR$/web_app/email" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web_app/api" />
       <recent name="$PROJECT_DIR$/web_app" />
       <recent name="$PROJECT_DIR$/web_app/templates" />
       <recent name="$PROJECT_DIR$/testing/gmail_api_with_flask" />
       <recent name="$PROJECT_DIR$/web_app/send_email" />
-      <recent name="$PROJECT_DIR$/web_app/api" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -420,7 +393,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="795" width="1366" height="741" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49761903" visible="true" weight="0.23174366" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
@@ -431,7 +403,7 @@
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32550335" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49031296" weight="0.22315437" />
       <window_info id="Structure" order="0" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4865872" visible="true" weight="0.3104027" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4865872" visible="true" weight="0.37416106" />
       <window_info id="Favorites" order="1" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -703,8 +675,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web_app/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="346" column="46" selection-start-line="346" selection-start-column="46" selection-end-line="346" selection-end-column="46" />
+        <state relative-caret-position="-532">
+          <caret line="352" column="58" lean-forward="true" selection-start-line="352" selection-start-column="58" selection-end-line="352" selection-end-column="58" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
