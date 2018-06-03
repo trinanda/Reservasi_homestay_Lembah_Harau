@@ -9,7 +9,7 @@ from sqlalchemy.event import listens_for
 import os
 import os.path as op
 from flask import url_for, request, redirect, abort
-from web_app.models import Kamar
+from models import Kamar
 from flask_security import current_user
 
 # cekdeitor

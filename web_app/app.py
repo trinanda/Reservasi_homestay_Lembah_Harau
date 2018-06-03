@@ -437,7 +437,5 @@ def create_app():
     def success():
         return render_template('success.html')
 
-
-
     return flask_objek
 
