@@ -323,17 +323,17 @@ def create_app():
             ##################
             ###### TWILIO ####
             # Your Account SID from twilio.com/console
-            # account_sid = TWLIO_ACCOUNT_SID
-            # # Your Auth Token from twilio.com/console
-            # auth_token = TWLIO_AUTH_TOKEN
-            #
-            # client = Client(account_sid, auth_token)
-            #
-            # message = client.messages.create(
-            #     # to="+6282174853636",/up
-            #     to="+6281275803651",
-            #     from_="+12014307127",
-            #     body=msg_to_admin)
+            account_sid = TWLIO_ACCOUNT_SID
+            # Your Auth Token from twilio.com/console
+            auth_token = TWLIO_AUTH_TOKEN
+
+            client = Client(account_sid, auth_token)
+
+            message = client.messages.create(
+                # to="+6282174853636",/up
+                to="+6281275803651",
+                from_="+12014307127",
+                body=msg_to_admin)
 
             #######-->/ TWILIO ########
             ####################################
