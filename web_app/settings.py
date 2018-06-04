@@ -46,3 +46,7 @@ SECURITY_POST_REGISTER_VIEW = "/admin/"
 SECURITY_REGISTERABLE = True
 SECURITY_SEND_REGISTER_EMAIL = False
 
+
+# credentials for loading map tiles from mapbox
+MAPBOX_MAP_ID = '...'
+MAPBOX_ACCESS_TOKEN = '...'
