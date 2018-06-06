@@ -10,6 +10,8 @@ RUN pip install --upgrade google-api-python-client
 
 RUN pip install --upgrade python-gflags
 
+RUN pip install --upgrade geoalchemy2
+
 ENV INSTALL_PATH_DI_DALAM_DOCKER /web_app_docker
 
 RUN mkdir -p $INSTALL_PATH_DI_DALAM_DOCKER
