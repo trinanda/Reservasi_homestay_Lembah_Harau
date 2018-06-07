@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3fda5f8a-d2f4-4567-96cf-3ac732436be6" name="Default" comment="" />
+    <list default="true" id="3fda5f8a-d2f4-4567-96cf-3ac732436be6" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/00-percobaan/geo_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/00-percobaan/recaptcha/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/00-percobaan/recaptcha/templates/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/templates/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/templates/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/views.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,71 +24,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web_app/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6327">
-              <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+            <state relative-caret-position="294">
+              <caret line="236" lean-forward="true" selection-start-line="208" selection-start-column="4" selection-end-line="236" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reset_migration.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/reset_migration.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="15" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_app/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_app/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="104" selection-start-line="104" selection-end-line="104" />
-              <folding>
-                <element signature="e#0#92#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web_app/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1873">
-              <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -88,18 +41,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>nama</find>
-      <find>lama</find>
-      <find>LAMA</find>
-      <find>NOMOR_INVOICE</find>
-      <find>NOMO_INVOICENOMO_INVOICE</find>
       <find>redirect</find>
       <find>date</find>
       <find>170</find>
@@ -125,6 +73,11 @@
       <find>clien_secret_gmail_api</find>
       <find>SQLAlchemyUserDatastore</find>
       <find>Security</find>
+      <find>database</find>
+      <find>class</find>
+      <find>captha</find>
+      <find>CLASS</find>
+      <find>form</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/web_app/templates/templates_from_grocery_shoppy_web</dir>
@@ -141,9 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/00_Percobaan/01_python-flask-email/Buku Flask Budi Rahardjo/02-flask-mail/app.py" />
-        <option value="$PROJECT_DIR$/00_Percobaan/01_python-flask-email/Buku Flask Budi Rahardjo/02-flask-mail/templates/form.html" />
-        <option value="$PROJECT_DIR$/web_app/templates/checkout.html" />
         <option value="$PROJECT_DIR$/web_app/templates/payment.html" />
         <option value="$PROJECT_DIR$/web_app/test.py" />
         <option value="$PROJECT_DIR$/web_app/templates/transfer.html" />
@@ -179,7 +129,6 @@
         <option value="$PROJECT_DIR$/web_app/templates/homepage.html" />
         <option value="$PROJECT_DIR$/web_app/templates/admin/index.html" />
         <option value="$PROJECT_DIR$/web_app/send_email/testing.py" />
-        <option value="$PROJECT_DIR$/web_app/settings.py" />
         <option value="$PROJECT_DIR$/testing/app.py" />
         <option value="$PROJECT_DIR$/testing/coba_json.py" />
         <option value="$PROJECT_DIR$/web_app/send_email/sending_email.py" />
@@ -187,19 +136,22 @@
         <option value="$PROJECT_DIR$/testing/gmail_api_with_flask/gmail.py" />
         <option value="$PROJECT_DIR$/web_app/templates/form.html" />
         <option value="$PROJECT_DIR$/web_app/gmail.py" />
-        <option value="$PROJECT_DIR$/Dockerfile" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/web_app/app.py" />
         <option value="$PROJECT_DIR$/scripts/initialize_db.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/web_app/geo_test.py" />
         <option value="$PROJECT_DIR$/web_app/views.py" />
+        <option value="$PROJECT_DIR$/00-percobaan/recaptcha/app.py" />
+        <option value="$PROJECT_DIR$/web_app/settings.py" />
+        <option value="$PROJECT_DIR$/web_app/templates/checkout.html" />
+        <option value="$PROJECT_DIR$/web_app/app.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="73" />
-    <option name="y" value="847" />
-    <option name="width" value="1356" />
-    <option name="height" value="555" />
+    <option name="y" value="795" />
+    <option name="width" value="1366" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -218,7 +170,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,18 +180,7 @@
             <path>
               <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-              <item name="versions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="00-percobaan" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
@@ -251,6 +191,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -270,19 +211,19 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web_app/api" />
-      <recent name="$PROJECT_DIR$/web_app" />
-      <recent name="$PROJECT_DIR$/web_app/templates" />
-      <recent name="$PROJECT_DIR$/testing/gmail_api_with_flask" />
-      <recent name="$PROJECT_DIR$/web_app/send_email" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/00-percobaan" />
       <recent name="$PROJECT_DIR$/web_app/api" />
       <recent name="$PROJECT_DIR$/testing/gmail_api_with_flask/template" />
       <recent name="$PROJECT_DIR$/web_app" />
       <recent name="$PROJECT_DIR$/web_app/send_email" />
-      <recent name="$PROJECT_DIR$/web_app/email" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/00-percobaan" />
+      <recent name="$PROJECT_DIR$/web_app/api" />
+      <recent name="$PROJECT_DIR$/web_app" />
+      <recent name="$PROJECT_DIR$/web_app/templates" />
+      <recent name="$PROJECT_DIR$/testing/gmail_api_with_flask" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -297,7 +238,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.app (2)">
+  <component name="RunManager" selected="Python.app (3)">
     <configuration name="app (1)" type="PythonConfigurationType" factoryName="Python">
       <module name="Tugas-Akhir" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -334,7 +275,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="app (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Tugas-Akhir" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -342,11 +283,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testing" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/00-percobaan/recaptcha" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testing/app.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/00-percobaan/recaptcha/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -408,19 +349,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.app (1)" />
-      <item itemvalue="Python.app" />
       <item itemvalue="Python.coba_json" />
       <item itemvalue="Python.gmail" />
       <item itemvalue="Python.gmail (1)" />
       <item itemvalue="Python.app (2)" />
+      <item itemvalue="Python.app (3)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.app (3)" />
         <item itemvalue="Python.app (2)" />
         <item itemvalue="Python.gmail (1)" />
         <item itemvalue="Python.gmail" />
         <item itemvalue="Python.coba_json" />
-        <item itemvalue="Python.app" />
       </list>
     </recent_temporary>
   </component>
@@ -449,35 +390,24 @@
   <component name="ToolWindowManager">
     <frame x="0" y="795" width="1366" height="741" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49761903" visible="true" weight="0.23174366" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49761903" visible="true" weight="0.22652757" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51341283" side_tool="true" weight="0.2147651" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49031296" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32885906" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32550335" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49031296" weight="0.22315437" />
       <window_info id="Structure" order="0" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4865872" visible="true" weight="0.3942953" />
-      <window_info id="Favorites" order="1" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4865872" visible="true" weight="0.27181208" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
+      <window_info id="Favorites" order="1" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49761903" visible="true" weight="0.23174366" />
-      <window_info id="Structure" order="0" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32885906" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49031296" weight="0.22315437" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51341283" side_tool="true" weight="0.2147651" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="1" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49850968" weight="0.32550335" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4865872" weight="0.3590604" />
-      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32550335" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -530,30 +460,16 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web_app/api2/kirim_email.py" />
-    <entry file="file://$PROJECT_DIR$/web_app/api2/gmail.storage" />
-    <entry file="file://$PROJECT_DIR$/web_app/email/email_untuk_admin.py" />
     <entry file="file://$PROJECT_DIR$/web_app/api2/testing.py" />
     <entry file="file://$PROJECT_DIR$/web_app/email/email_untuk_pemesan.py" />
     <entry file="file://$PROJECT_DIR$/web_app/api2/send_email.py" />
     <entry file="file://$PROJECT_DIR$/percobaan/gmail_api/app.py" />
     <entry file="file://$PROJECT_DIR$/web_app/templates/tempalte_test.html" />
-    <entry file="file://$PROJECT_DIR$/web_app/send_email/template_test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/send_email/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/send_email/template_test.html" />
+    <entry file="file://$PROJECT_DIR$/web_app/send_email/__init__.py" />
     <entry file="file://$PROJECT_DIR$/web_app/email/send_email_test.py" />
     <entry file="file://$PROJECT_DIR$/web_app/send_email/emailtest.py" />
     <entry file="file://$PROJECT_DIR$/web_app/templates/detail_kamar.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/templates/checkout.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web_app/templates/homepage.html">
@@ -587,16 +503,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/send_email/testing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/send_email/client_secret.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/send_email/testing.py" />
+    <entry file="file://$PROJECT_DIR$/web_app/send_email/client_secret.json" />
     <entry file="file:///usr/lib/python3.6/email/mime/text.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
@@ -618,20 +526,8 @@
     <entry file="file://$PROJECT_DIR$/testing/gmail_api_with_flask/client_secret.json" />
     <entry file="file://$PROJECT_DIR$/testing/gmail_api_with_flask/template/form.html" />
     <entry file="file://$PROJECT_DIR$/web_app/templates/form.html" />
-    <entry file="file://$PROJECT_DIR$/web_app/gmail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/send_email/sending_email.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/gmail.py" />
+    <entry file="file://$PROJECT_DIR$/web_app/send_email/sending_email.py" />
     <entry file="file://$PROJECT_DIR$/testing/gmail_api_with_flask/gmail.py" />
     <entry file="file://$PROJECT_DIR$/web_app/api/client_secret.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -646,13 +542,6 @@
     </entry>
     <entry file="file:///usr/local/lib/python3.6/dist-packages/oauth2client/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/masuk_ke_docker.sh">
       <provider selected="true" editor-type-id="text-editor" />
@@ -672,9 +561,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/versions/84a2d14756fb_inisialisasi_database.py">
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-412" />
+        <state relative-caret-position="173">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/initialize_db.py">
@@ -684,58 +575,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6327">
-          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/reset_migration.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web_app/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        <state relative-caret-position="356">
+          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
           <folding>
             <element signature="e#0#92#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/versions/84a2d14756fb_inisialisasi_database.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1873">
-          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/00-percobaan/geo_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="54" selection-start-line="54" selection-end-line="59" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/00-percobaan/recaptcha/templates/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#ul#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#2;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/00-percobaan/recaptcha/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/checkout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="121" column="34" lean-forward="true" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="236" lean-forward="true" selection-start-line="208" selection-start-column="4" selection-end-line="236" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

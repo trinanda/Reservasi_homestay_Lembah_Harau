@@ -50,3 +50,11 @@ SECURITY_SEND_REGISTER_EMAIL = False
 # credentials for loading map tiles from mapbox
 MAPBOX_MAP_ID = '...'
 MAPBOX_ACCESS_TOKEN = '...'
+
+
+## Adding reCAPTCHA to your site
+# Site key
+RECAPTCHA_PUBLIC_KEY = '6Ld9yV0UAAAAAO80R7BhJYQij2t4yXAbbEiZbFFW'
+# Secret key
+RECAPTCHA_PRIVATE_KEY = '6Ld9yV0UAAAAAHMETUy4xdllS-FS4LLFDBC6j5F2'
+TESTING = True

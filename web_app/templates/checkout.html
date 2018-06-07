@@ -68,6 +68,7 @@
 				<div class="address_form_agile">
 					<h4>Informasi Anda</h4>
 					<form action="http://192.168.100.3:7575/payment" method="get" class="creditly-card-form agileinfo_form">
+						{{ captha.csrf_token }}
 						<div class="creditly-wrapper wthree, w3_agileits_wrapper">
 							<div class="information-wrapper">
 								<div class="first-row">
@@ -111,6 +112,12 @@
 									<!--</div>-->
 								</div>
 								<!--<button class="submit check_out">Pilih Metode Pembayaran</button>-->
+								{{ captha.recaptcha }}
+								{% for error in captha.recaptcha.errors %}
+								<ul>
+									<li style="color:red;">{{ error }}</li>
+								{% endfor %}
+								</ul>
 								<input type="submit" name="submit" value="Pilih Metode Pembayaran" class="btn btn-primary btn-lg" style="width: 220px;"/>
 							</div>
 						</div>

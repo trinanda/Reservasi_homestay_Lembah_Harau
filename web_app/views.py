@@ -11,9 +11,9 @@ import os.path as op
 from flask import url_for, request, redirect, abort
 
 #disable this line will affect to delete data on table Kamar
-from web_app.models import Kamar
+# from web_app.models import Kamar
 # enable this line if you want to migrations data with alembic
-# from models import Kamar
+from models import Kamar
 
 
 from flask_security import current_user

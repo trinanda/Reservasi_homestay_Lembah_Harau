@@ -27,6 +27,7 @@ from oauth2client.client import flow_from_clientsecrets
 from oauth2client.file import Storage
 from oauth2client.tools import run_flow
 
+from flask_wtf import FlaskForm, RecaptchaField
 
 
 def create_app():
@@ -36,6 +37,7 @@ def create_app():
     flask_objek.config.from_pyfile('settings.py')
 
     database.init_app(flask_objek)
+
 
     # Setup Flask-Security
     user_datastore = SQLAlchemyUserDatastore(database, User, Role)
@@ -48,6 +50,15 @@ def create_app():
     admin.add_view(InvoiceView(Invoice, database.session))
     admin.add_view(MyModelView(Role, database.session))
     admin.add_view(MyModelView(User, database.session))
+
+    from geoalchemy2.types import Geometry
+    class Point(database.Model):
+        id = database.Column(database.Integer, primary_key=True)
+        name = database.Column(database.String(64), unique=True)
+        point = database.Column(Geometry("POINT"))
+
+    if __name__ == '__main__':
+        database.create_all()
 
 
     # define a context processor for merging flask-admin's template context into the
@@ -192,6 +203,9 @@ def create_app():
                                HARGA_KAMAR=harga_kamar, room_description=keterangan_kamar, room_images=room_images1)
 
 
+
+
+
     @flask_objek.route('/checkout/<id_kamar>', methods = ["GET", "POST"])
     def checkout(id_kamar=None):
         menu = Menu.query.order_by('urutan')
@@ -203,17 +217,23 @@ def create_app():
         lama_menginap = request.args.get('lama_menginap')
         total_harga_penginapan = int(harga_kamar) * int(lama_menginap)
 
-        if request.method == 'get':
-            nama_lengkap = request.form.get('NAMA_LENGKAP')
-            nomor_telepon = request.form.get('NOMOR_TELEPON')
-            email_pemesan = request.form.get('EMAIL_PEMESAN')
-            nama_kamar = request.form.get('NAMA_KAMAR')
-            nama_kamar = request.form.get('LAMA_MENGINAP')
-            harga_kamar = request.args.get('HARGA_KAMAR')
-            return render_template("payment.html")
+        class LoginForm(FlaskForm):
+            recaptcha = RecaptchaField()
+
+        captha = LoginForm()
+
+        if captha.validate_on_submit():
+            if request.method == 'get':
+                nama_lengkap = request.form.get('NAMA_LENGKAP')
+                nomor_telepon = request.form.get('NOMOR_TELEPON')
+                email_pemesan = request.form.get('EMAIL_PEMESAN')
+                nama_kamar = request.form.get('NAMA_KAMAR')
+                nama_kamar = request.form.get('LAMA_MENGINAP')
+                harga_kamar = request.args.get('HARGA_KAMAR')
+                return render_template("payment.html")
 
         return render_template("checkout.html", MENU=menu, TOTAL_HARGA_PENGINAPAN=total_harga_penginapan, NAMA_KAMAR=nama_kamar,
-                               LAMA_MENGINAP=lama_hari, ROOM_IMAGES=foto_kamar, HARGA_KAMAR=harga_kamar)
+                               LAMA_MENGINAP=lama_hari, ROOM_IMAGES=foto_kamar, HARGA_KAMAR=harga_kamar, captha=captha)
 
 
     @flask_objek.route('/payment')
@@ -435,7 +455,19 @@ def create_app():
 
     @flask_objek.route('/success', methods=['GET', 'POST'])
     def success():
-        return render_template('success.html')
+        return render_template('success.html')@flask_objek.route('/success', methods=['GET', 'POST'])
+
+
+    # @flask_objek.route('/geo')
+    # def geo():
+    #     from geoalchemy2.types import Geometry
+    #     class mapping(database.Model):
+    #         __tablename__ = 'mapping'
+    #         id = database.Column(database.Integer, primary_key=True)
+    #         name = database.Column(database.String(64), unique=True)
+    #         point = database.Column(Geometry("POINT"))
+    #
+    #     database.create_all()
 
     return flask_objek
 
