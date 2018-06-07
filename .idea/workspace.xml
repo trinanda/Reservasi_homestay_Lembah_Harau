@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fda5f8a-d2f4-4567-96cf-3ac732436be6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/00-percobaan/geo_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00-percobaan/recaptcha/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00-percobaan/recaptcha/templates/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_app/templates/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/templates/checkout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,14 +16,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_app/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="236" lean-forward="true" selection-start-line="208" selection-start-column="4" selection-end-line="236" />
+            <state relative-caret-position="234">
+              <caret line="232" column="48" selection-start-line="232" selection-start-column="48" selection-end-line="232" selection-end-column="48" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="150">
+                <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="12" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -94,7 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web_app/templates/payment.html" />
         <option value="$PROJECT_DIR$/web_app/test.py" />
         <option value="$PROJECT_DIR$/web_app/templates/transfer.html" />
         <option value="$PROJECT_DIR$/web_app/templates/tesinsert.html" />
@@ -145,6 +148,7 @@
         <option value="$PROJECT_DIR$/web_app/settings.py" />
         <option value="$PROJECT_DIR$/web_app/templates/checkout.html" />
         <option value="$PROJECT_DIR$/web_app/app.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -181,11 +185,6 @@
               <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
               <item name="00-percobaan" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
-              <item name="web_app" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -389,6 +388,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="795" width="1366" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49761903" visible="true" weight="0.22652757" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
@@ -398,7 +398,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32885906" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32550335" />
       <window_info id="Structure" order="0" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4865872" visible="true" weight="0.27181208" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4865872" visible="true" weight="0.3305369" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
       <window_info id="Favorites" order="1" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -460,7 +460,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web_app/api2/testing.py" />
     <entry file="file://$PROJECT_DIR$/web_app/email/email_untuk_pemesan.py" />
     <entry file="file://$PROJECT_DIR$/web_app/api2/send_email.py" />
     <entry file="file://$PROJECT_DIR$/percobaan/gmail_api/app.py" />
@@ -664,11 +663,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web_app/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="236" lean-forward="true" selection-start-line="208" selection-start-column="4" selection-end-line="236" />
+        <state relative-caret-position="234">
+          <caret line="232" column="48" selection-start-line="232" selection-start-column="48" selection-end-line="232" selection-end-column="48" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
