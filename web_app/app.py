@@ -469,16 +469,6 @@ def create_app():
         return render_template('success.html')
 
 
-    # @flask_objek.route('/geo')
-    # def geo():
-    #     from geoalchemy2.types import Geometry
-    #     class mapping(database.Model):
-    #         __tablename__ = 'mapping'
-    #         id = database.Column(database.Integer, primary_key=True)
-    #         name = database.Column(database.String(64), unique=True)
-    #         point = database.Column(Geometry("POINT"))
-    #
-    #     database.create_all()
 
     return flask_objek
 
