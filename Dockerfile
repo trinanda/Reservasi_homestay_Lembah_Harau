@@ -12,9 +12,6 @@ RUN pip install --upgrade python-gflags
 
 RUN pip install --upgrade geoalchemy2
 
-RUN apt-get update && apt-get install postgis -y
-#ADD /create_postgis_extension.sh /docker-entrypoint-initdb.d/
-
 ENV INSTALL_PATH_DI_DALAM_DOCKER /web_app_docker
 
 RUN mkdir -p $INSTALL_PATH_DI_DALAM_DOCKER

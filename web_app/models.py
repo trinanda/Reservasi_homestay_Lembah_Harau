@@ -109,7 +109,6 @@ class User(database.Model, UserMixin):
         return self.email
 
 
-
 class Map(database.Model):
     __tablename__ = 'map'
     id = database.Column(database.Integer, primary_key=True)
