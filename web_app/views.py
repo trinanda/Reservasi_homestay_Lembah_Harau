@@ -15,8 +15,10 @@ from web_app.models import Kamar
 # enable this line if you want to migrations data with alembic
 # from models import Kamar
 
-
 from flask_security import current_user
+
+from flask_admin.contrib.geoa import ModelView as GeoModelView
+
 
 # cekdeitor
 class CKEditorWidget(TextArea):
@@ -151,4 +153,7 @@ class PilihKamarView(UserAkses):
 
 # Create customized model view class
 class MyModelView(AdminAkses):
+    pass
+
+class MapView(GeoModelView):
     pass

@@ -12,9 +12,8 @@ RUN pip install --upgrade python-gflags
 
 RUN pip install --upgrade geoalchemy2
 
-#RUN apt-get install postgresql-10
-
-RUN apt-get install postgresql-9.6-postgis-scripts -y
+RUN apt-get update && apt-get install postgis -y
+#ADD /create_postgis_extension.sh /docker-entrypoint-initdb.d/
 
 ENV INSTALL_PATH_DI_DALAM_DOCKER /web_app_docker
 

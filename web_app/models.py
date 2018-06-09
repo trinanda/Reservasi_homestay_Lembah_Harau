@@ -2,6 +2,7 @@ from sqlalchemy import Column, Integer, String, ForeignKey, Enum, DateTime, Nume
 from sqlalchemy.orm import relationship, backref
 from flask_sqlalchemy import SQLAlchemy
 from flask_security import UserMixin, RoleMixin
+from geoalchemy2.types import Geometry
 
 database = SQLAlchemy()
 
@@ -106,3 +107,11 @@ class User(database.Model, UserMixin):
 
     def __str__(self):
         return self.email
+
+
+
+class Map(database.Model):
+    __tablename__ = 'map'
+    id = database.Column(database.Integer, primary_key=True)
+    name = database.Column(database.String(64), unique=True)
+    point = database.Column(Geometry("POINT"))
