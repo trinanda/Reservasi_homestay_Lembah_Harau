@@ -48,7 +48,8 @@ SECURITY_SEND_REGISTER_EMAIL = False
 
 
 # credentials for loading map tiles from mapbox
-MAPBOX_MAP_ID = 'mapbox.satellite'
+# MAPBOX_MAP_ID = 'mapbox.satellite'
+MAPBOX_MAP_ID = 'mapbox.streets'
 MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoidHJpbmFuZGEzIiwiYSI6ImNqaTdzdHpyMzBkZmkzcG1yb21jYzJzenUifQ.iFPWtI22OYctMQcYeBdLLg'
 
 
