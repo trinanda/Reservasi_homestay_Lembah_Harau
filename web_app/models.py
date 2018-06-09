@@ -43,7 +43,7 @@ class Kamar(database.Model):
 
 
 class Invoice(database.Model):
-    __tablename__ = "Invoice"
+    __tablename__ = "invoice"
     nomor_invoice = Column(String, primary_key=True, unique=True)
     nama_pemesan = Column(String(15))
     nomor_telepon = Column(Numeric)
@@ -53,13 +53,17 @@ class Invoice(database.Model):
     harga_total_pemesan_kamar = Column(Integer)
     tanggal_pemesanan = Column(DateTime)
 
+    kamar_id = Column(Integer, ForeignKey(Kamar.id_kamar), nullable=False)
+    # id_kamar = relationship('Kamar')
+
     PENDING = "pending"
     CONFIRMED = "confirmed"
     REJECTED = "rejected"
     status_pembayaran = database.Column(database.Enum(PENDING, CONFIRMED, REJECTED, name='status_pembayaran', default=PENDING))
 
-    def __init__(self, nomor_invoice, nama_pemesan, nomor_telepon, email_pemesan,
+    def __init__(self, id_kamar, nomor_invoice, nama_pemesan, nomor_telepon, email_pemesan,
                  nama_kamar, lama_menginap, harga_total_pemesan_kamar, tanggal_pemesanan, status):
+        self.kamar_id = id_kamar
         self.nomor_invoice = nomor_invoice
         self.nama_pemesan = nama_pemesan
         self.nomor_telepon = nomor_telepon
