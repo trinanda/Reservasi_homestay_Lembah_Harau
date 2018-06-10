@@ -469,6 +469,17 @@ def create_app():
         return render_template('success.html')
 
 
+    # @flask_objek.route('/latlong')
+    # def latlong():
+    #     from shapely import wkb, wkt
+    #     map = Map()
+    #     map = Map.query.first()
+    #     map = map.point
+    #     print('testing', map)
+    #
+    #     for lake in map:
+    #         point = wkb.loads(bytes(lake.point.data))
+    #         print('testing kedua', point.xy)
 
     return flask_objek
 
