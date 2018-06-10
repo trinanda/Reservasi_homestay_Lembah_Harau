@@ -10,12 +10,12 @@ from flask_admin import Admin, helpers as admin_helpers
 from flask_mail import Mail, Message
 from flask_security import SQLAlchemyUserDatastore, Security
 
-from views import PageModelView, MenuModelView, PilihKamarView, InvoiceView, MyModelView, MapView
+from views import PageModelView, MenuModelView, PilihKamarView, InvoiceView, MyModelView
 # from settings import MAIL_USERNAME, MAIL_PASSWORD, TWLIO_ACCOUNT_SID, TWLIO_AUTH_TOKEN
 from settings import TWLIO_ACCOUNT_SID, TWLIO_AUTH_TOKEN
 from smtplib import SMTP_SSL
 from twilio.rest import Client
-from models import database, Page, Menu, Kamar, Invoice, User, Role, Map
+from models import database, Page, Menu, Kamar, Invoice, User, Role
 
 #gmail import package dependencies
 import base64
@@ -50,7 +50,6 @@ def create_app():
     admin.add_view(InvoiceView(Invoice, database.session))
     admin.add_view(MyModelView(Role, database.session))
     admin.add_view(MyModelView(User, database.session))
-    admin.add_view(MapView(Map, database.session))
 
     from geoalchemy2.types import Geometry
     class Point(database.Model):
@@ -150,7 +149,7 @@ def create_app():
             room_id = Kamar.query.first()
             room_id = room_id.id_kamar
             keterangan_kamar = Kamar.query.first()
-            keterangan_kamar = keterangan_kamar.room_description
+            keterangan_kamar = keterangan_kamar.keterangan_kamar
 
         urutan_kamar = Kamar.query.order_by('urutan_kamar')
 
@@ -164,15 +163,15 @@ def create_app():
             room_id = Kamar.query.first()
             room_id = room_id.id_kamar
             keterangan_kamar = Kamar.query.first()
-            keterangan_kamar = keterangan_kamar.room_description
+            keterangan_kamar = keterangan_kamar.keterangan_kamar
             return render_template("detail_kamar.html", id_kamar=room_id, NAMA_KAMAR=bedroom_name, HARGA_KAMAR=room_price,
-                                   room_images=room_foto, room_description=keterangan_kamar)
+                                   room_images=room_foto, keterangan_kamar=keterangan_kamar)
         else:
             pass
 
         return render_template('penginapan.html', CONTENT=konten, MENU=menu,
                                nama_kamar=bedroom_name, harga_kamar=room_price, room_images=room_foto,
-                               KAMARS=urutan_kamar, room_id=room_id, room_description=keterangan_kamar)
+                               KAMARS=urutan_kamar, room_id=room_id, keterangan_kamar=keterangan_kamar)
 
 
     @flask_objek.route('/detail_kamar/<id_kamar>', methods = ["GET", "POST"])
@@ -182,7 +181,7 @@ def create_app():
         id_kamar = request.args.get('id_kamar')
         nama_kamar = request.args.get('nama_kamar')
         harga_kamar = request.args.get('harga_kamar')
-        keterangan_kamar = request.args.get('room_description')
+        keterangan_kamar = request.args.get('keterangan_kamar')
         room_images1= request.args.get('room_images')
 
         kamar = Kamar()
@@ -204,7 +203,7 @@ def create_app():
                                    LAMA_HARI=lama_menginap, ROOM_IMAGES= room_foto, HARGA_KAMAR=room_price, ID_KAMAR=room_id)
 
         return render_template("detail_kamar.html", MENU=menu, NAMA_KAMAR=nama_kamar, id_kamar=id_kamar,
-                               HARGA_KAMAR=harga_kamar, room_description=keterangan_kamar, room_images=room_images1)
+                               HARGA_KAMAR=harga_kamar, keterangan_kamar=keterangan_kamar, room_images=room_images1)
 
 
 

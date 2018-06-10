@@ -13,3 +13,5 @@ point = wkb.loads(binnary)
 print(point.x, point.y)
 
 print(wkt.dumps(point))
+
+

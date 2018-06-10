@@ -34,7 +34,8 @@ class Kamar(database.Model):
     __tablename__ = 'kamar'
     id_kamar = Column(Integer, primary_key=True)
     nama_kamar = Column(String)
-    room_description = Column(String)
+    lokasi = database.Column(Geometry("POINT"))
+    keterangan_kamar = Column(String)
     room_images = Column(database.Unicode(128))
     harga_kamar = Column(Integer)
     urutan_kamar = Column(Integer)
@@ -108,9 +109,3 @@ class User(database.Model, UserMixin):
     def __str__(self):
         return self.email
 
-
-class Map(database.Model):
-    __tablename__ = 'map'
-    id = database.Column(database.Integer, primary_key=True)
-    name = database.Column(database.String(64), unique=True)
-    point = database.Column(Geometry("POINT"))

@@ -126,9 +126,13 @@ def del_image(mapper, connection, target):
             pass
 
 
+
+class MapView(GeoModelView):
+    pass
+
 # Administrative views
-class PilihKamarView(UserAkses):
-    form_overrides = dict(room_description=CKEditorField)
+class PilihKamarView(UserAkses, MapView):
+    form_overrides = dict(keterangan_kamar=CKEditorField)
     create_template = 'admin/ckeditor.html'
     edit_template = 'admin/ckeditor.html'
     column_list = ('nama_kamar', 'room_images', 'harga_kamar')
@@ -155,5 +159,3 @@ class PilihKamarView(UserAkses):
 class MyModelView(AdminAkses):
     pass
 
-class MapView(GeoModelView):
-    pass
