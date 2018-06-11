@@ -1,7 +1,6 @@
 DEBUG = True
 
 # database connection
-
 SQLALCHEMY_DATABASE_URI = 'postgresql://ta:12345@service_postgresql_di_dalam_docker/ta'
 DATABASE_FILE = SQLALCHEMY_DATABASE_URI
 SQLALCHEMY_TRACK_MODIFICATIONS = False
@@ -18,7 +17,7 @@ SECRET_KEY = '12345'
 # MAIL_USE_TLS = True
 # MAIL_USE_SSL = False
 # MAIL_USERNAME = 'zidanecr7kaka@gmail.com'
-# MAIL_PASSWORD = 'm@Fu7Ur3#'
+# MAIL_PASSWORD = 'yourpassword12345'
 
 
 #twilio
@@ -28,6 +27,7 @@ TWLIO_ACCOUNT_SID = "ACe211524106753eb639d9fae6ebd35bb2"
 TWLIO_AUTH_TOKEN = "2d7c15d4df5846d341c3a67a7fec9b9b"
 
 
+#############################################################################################################
 # Flask-Security config
 SECURITY_URL_PREFIX = "/admin"
 SECURITY_PASSWORD_HASH = "pbkdf2_sha512"
@@ -45,20 +45,32 @@ SECURITY_POST_REGISTER_VIEW = "/admin/"
 # Flask-Security features
 SECURITY_REGISTERABLE = True
 SECURITY_SEND_REGISTER_EMAIL = False
+#############################################################################################################
 
 
+#############################################################################################################
 # credentials for loading map tiles from mapbox
+# https://www.mapbox.com/studio/tilesets/
 # MAPBOX_MAP_ID = 'mapbox.satellite'
 MAPBOX_MAP_ID = 'mapbox.streets'
+#https://www.mapbox.com/account/
 MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoidHJpbmFuZGEzIiwiYSI6ImNqaTdzdHpyMzBkZmkzcG1yb21jYzJzenUifQ.iFPWtI22OYctMQcYeBdLLg'
+#############################################################################################################
 
 
+#############################################################################################################
 ## Adding reCAPTCHA to your site
+# https://www.google.com/recaptcha/admin#site/341690749?setup
 # Site key
 RECAPTCHA_PUBLIC_KEY = '6Ld9yV0UAAAAAO80R7BhJYQij2t4yXAbbEiZbFFW'
 # Secret key
 RECAPTCHA_PRIVATE_KEY = '6Ld9yV0UAAAAAHMETUy4xdllS-FS4LLFDBC6j5F2'
 TESTING = True
+#############################################################################################################
 
+
+#############################################################################################################
 #google map API
+# https://developers.google.com/places/web-service/get-api-key
 GOOGLE_MAP_API = "AIzaSyATc2uRye5sztfUGup5KA69_Ru9dsAA8TQ"
+#############################################################################################################
