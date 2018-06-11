@@ -88,7 +88,7 @@
 						<label>Kamar </label>:</p>
 					<ul>
 						<li>
-							{{ room_description | striptags }}
+							{{ keterangan_kamar | striptags }}
 						</li>
 						<!--<li>-->
 							<!--After cooking, Zeeba Basmati rice grains attain an extra ordinary length of upto 2.4 cm/~1 inch.-->
@@ -114,13 +114,15 @@
 							<!--</script>-->
 							<!--&lt;!&ndash; /mapbox &ndash;&gt;-->
 							<li><del><i>Masih dalam tahap pengembagan</i></del></li>
+							<li>Lokasi</li>
 						</ul>
 					</p>
 				</div>
-								<input type="hidden" name="id_kamar" value="{{ id_kamar }}" />
-								<input type="hidden" name="harga_kamar" value="{{ HARGA_KAMAR }}" />
-								<input type="hidden" name="nama_kamar" value="{{ NAMA_KAMAR }}" style="width: 70px;">
-								<input type="hidden" name="foto_kamar" value="{{ room_images }}" style="width: 70px;">
+								<input type="text" name="id_kamar" value="{{ id_kamar }}" />
+								<input type="text" name="harga_kamar" value="{{ HARGA_KAMAR }}" />
+								<input type="text" name="nama_kamar" value="{{ NAMA_KAMAR }}" style="width: 70px;">
+								<input type="text" name="foto_kamar" value="{{ room_images }}" style="width: 70px;">
+								<input type="text" name="lokasi_kamar" value="{{ lokasi_kamar }}" style="width: 70px;">
 								<!--<input type="value" name="add" value="1" />-->
 								<!--<input type="value" name="business" value=" " />-->
 								<!--<input type="value" name="item_name" value="Zeeba Premium Basmati Rice - 5 KG" />-->

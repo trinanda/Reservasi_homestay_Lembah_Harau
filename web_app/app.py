@@ -29,6 +29,8 @@ from oauth2client.tools import run_flow
 
 from flask_wtf import FlaskForm, RecaptchaField
 
+from shapely import wkb, wkt
+from binascii import unhexlify
 
 def create_app():
 
@@ -50,15 +52,6 @@ def create_app():
     admin.add_view(InvoiceView(Invoice, database.session))
     admin.add_view(MyModelView(Role, database.session))
     admin.add_view(MyModelView(User, database.session))
-
-    from geoalchemy2.types import Geometry
-    class Point(database.Model):
-        id = database.Column(database.Integer, primary_key=True)
-        name = database.Column(database.String(64), unique=True)
-        point = database.Column(Geometry("POINT"))
-
-    if __name__ == '__main__':
-        database.create_all()
 
 
     # define a context processor for merging flask-admin's template context into the
@@ -139,7 +132,6 @@ def create_app():
             pass
 
         if kamar is not None:
-            id_kamar
             room_price = Kamar.query.first()
             room_price = room_price.harga_kamar
             bedroom_name = Kamar.query.first()
@@ -150,6 +142,14 @@ def create_app():
             room_id = room_id.id_kamar
             keterangan_kamar = Kamar.query.first()
             keterangan_kamar = keterangan_kamar.keterangan_kamar
+            lokasi_kamar = Kamar.query.first()
+            lokasi_kamar = lokasi_kamar.lokasi
+
+            data = str(lokasi_kamar)
+            binnary = unhexlify(data)
+            point = wkb.loads(binnary)
+            print('lat', point.x)
+            print('long', point.y)
 
         urutan_kamar = Kamar.query.order_by('urutan_kamar')
 
@@ -164,14 +164,16 @@ def create_app():
             room_id = room_id.id_kamar
             keterangan_kamar = Kamar.query.first()
             keterangan_kamar = keterangan_kamar.keterangan_kamar
+            lokasi_kamar = Kamar.query.first()
+            lokasi_kamar = lokasi_kamar.lokasi
             return render_template("detail_kamar.html", id_kamar=room_id, NAMA_KAMAR=bedroom_name, HARGA_KAMAR=room_price,
-                                   room_images=room_foto, keterangan_kamar=keterangan_kamar)
+                                   room_images=room_foto, keterangan_kamar=keterangan_kamar, lokasi_kamar=lokasi_kamar)
         else:
             pass
 
         return render_template('penginapan.html', CONTENT=konten, MENU=menu,
                                nama_kamar=bedroom_name, harga_kamar=room_price, room_images=room_foto,
-                               KAMARS=urutan_kamar, room_id=room_id, keterangan_kamar=keterangan_kamar)
+                               KAMARS=urutan_kamar, room_id=room_id, keterangan_kamar=keterangan_kamar, LOKASI_KAMAR=lokasi_kamar)
 
 
     @flask_objek.route('/detail_kamar/<id_kamar>', methods = ["GET", "POST"])
@@ -467,18 +469,6 @@ def create_app():
     def success():
         return render_template('success.html')
 
-
-    # @flask_objek.route('/latlong')
-    # def latlong():
-    #     from shapely import wkb, wkt
-    #     map = Map()
-    #     map = Map.query.first()
-    #     map = map.point
-    #     print('testing', map)
-    #
-    #     for lake in map:
-    #         point = wkb.loads(bytes(lake.point.data))
-    #         print('testing kedua', point.xy)
 
     return flask_objek
 
