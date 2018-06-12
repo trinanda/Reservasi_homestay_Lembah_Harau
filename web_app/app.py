@@ -148,8 +148,8 @@ def create_app():
             data = str(lokasi_kamar)
             binnary = unhexlify(data)
             point = wkb.loads(binnary)
-            print('lat', point.x)
-            print('long', point.y)
+            longitude = point.y
+            latitude = point.x
 
         urutan_kamar = Kamar.query.order_by('urutan_kamar')
 
@@ -167,13 +167,12 @@ def create_app():
             lokasi_kamar = Kamar.query.first()
             lokasi_kamar = lokasi_kamar.lokasi
             return render_template("detail_kamar.html", id_kamar=room_id, NAMA_KAMAR=bedroom_name, HARGA_KAMAR=room_price,
-                                   room_images=room_foto, keterangan_kamar=keterangan_kamar, lokasi_kamar=lokasi_kamar)
+                                   room_images=room_foto, keterangan_kamar=keterangan_kamar, lokasi_kamar=lokasi_kamar,
+                                   LATITUDE=latitude, LONGITUDE=longitude)
         else:
             pass
 
-        return render_template('penginapan.html', CONTENT=konten, MENU=menu,
-                               nama_kamar=bedroom_name, harga_kamar=room_price, room_images=room_foto,
-                               KAMARS=urutan_kamar, room_id=room_id, keterangan_kamar=keterangan_kamar, LOKASI_KAMAR=lokasi_kamar)
+        return render_template('penginapan.html', CONTENT=konten, MENU=menu, KAMARS=urutan_kamar)
 
 
     @flask_objek.route('/detail_kamar/<id_kamar>', methods = ["GET", "POST"])
@@ -185,6 +184,14 @@ def create_app():
         harga_kamar = request.args.get('harga_kamar')
         keterangan_kamar = request.args.get('keterangan_kamar')
         room_images1= request.args.get('room_images')
+        lokasi = request.args.get('lokasi')
+        data = str(lokasi)
+        binnary = unhexlify(data)
+        point = wkb.loads(binnary)
+        longitude = str(point.y)
+        latitude = str(point.x)
+
+        lihat_lokasi = 'https://www.google.com/maps/@'+longitude+','+latitude+',17.25z'
 
         kamar = Kamar()
 
@@ -205,7 +212,8 @@ def create_app():
                                    LAMA_HARI=lama_menginap, ROOM_IMAGES= room_foto, HARGA_KAMAR=room_price, ID_KAMAR=room_id)
 
         return render_template("detail_kamar.html", MENU=menu, NAMA_KAMAR=nama_kamar, id_kamar=id_kamar,
-                               HARGA_KAMAR=harga_kamar, keterangan_kamar=keterangan_kamar, room_images=room_images1)
+                               HARGA_KAMAR=harga_kamar, keterangan_kamar=keterangan_kamar, room_images=room_images1,
+                               LATITUDE=longitude, LONGITUDE=latitude, LIHAT_LOKASI=lihat_lokasi)
 
 
 

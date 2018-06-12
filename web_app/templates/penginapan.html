@@ -38,13 +38,12 @@
 									</div>
 									<div class="snipcart-details">
 											<fieldset>
-												<input type="text" name="id_kamar" value="{{ ROOMS.id_kamar }}" />
-												<input type="text" name="nama_kamar" value="{{ ROOMS.nama_kamar }}" />
-												<input type="text" name="lokasi_kamar" value="{{ ROOMS.LATITUDE }}" />
-												<input type="text" name="lokasi_kamar" value="{{ ROOMS.LONGTITUDE }}" />
-												<input type="text" name="harga_kamar" value="{{ ROOMS.harga_kamar }}" />
-												<input type="text" name="keterangan_kamar" value="{{ ROOMS.keterangan_kamar | striptags }}" />
-												<input type="text" name="room_images" value="http://192.168.100.3:7575/files/{{ ROOMS.room_images }}" />
+												<input type="hidden" name="id_kamar" value="{{ ROOMS.id_kamar }}" />
+												<input type="hidden" name="nama_kamar" value="{{ ROOMS.nama_kamar }}" />
+												<input type="hidden" name="lokasi" value="{{ ROOMS.lokasi }}" />
+												<input type="hidden" name="harga_kamar" value="{{ ROOMS.harga_kamar }}" />
+												<input type="hidden" name="keterangan_kamar" value="{{ ROOMS.keterangan_kamar | striptags }}" />
+												<input type="hidden" name="room_images" value="http://192.168.100.3:7575/files/{{ ROOMS.room_images }}" />
                                                 <!--<input type="hidden" name="fasilitas" value="USD" />-->
 												<input type="submit" name="submit" value="Lihat Detail" class="button" />
 											</fieldset>

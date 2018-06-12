@@ -15,7 +15,7 @@ from binascii import unhexlify
 # print(wkt.dumps(point))
 
 
-data = '0101000000f3ffffbfa01c594089c7c9c6ff03aa3f'
+data = '01010000001100008890285940FF55ED493B85CCBF'
 binnary = unhexlify(data)
 print(binnary)
 
