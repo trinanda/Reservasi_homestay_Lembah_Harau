@@ -113,10 +113,24 @@
 							<!--});-->
 							<!--</script>-->
 							<!--&lt;!&ndash; /mapbox &ndash;&gt;-->
-							<li><del><i>Masih dalam tahap pengembagan</i></del></li>
-							<input type="text" name="LATITUDE" value="{{ LATITUDE }}" style="width: 70px;">
-							<input type="text" name="LONGITUDE" value="{{ LONGITUDE }}" style="width: 70px;">
-							<li><a href="{{ LIHAT_LOKASI }}" target="_blank">Lihat Lokasi</a></li>
+							{% with %}
+
+								{% set location=LATITUDE,LONGITUDE %}
+								{% set style="width:350px;height:250px;"%}
+
+								{{
+								googlemap(
+									"simple-map",
+									location.0, location.1,
+									markers=[location,],
+									style=style
+									)
+								}}
+
+							{% endwith %}
+							<input type="hidden" name="LATITUDE" value="{{ LATITUDE }}" style="width: 70px;">
+							<input type="hidden" name="LONGITUDE" value="{{ LONGITUDE }}" style="width: 70px;">
+							<li><a href="{{ LIHAT_LOKASI }}" target="_blank">Pergi ke lokasi <i><del>Code Review, (menunggu masukan dari Pak Arif terlebih dahulu)</del></i></a></li>
 						</ul>
 					</p>
 				</div>

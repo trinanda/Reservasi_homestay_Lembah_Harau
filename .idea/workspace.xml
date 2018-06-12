@@ -2,8 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fda5f8a-d2f4-4567-96cf-3ac732436be6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/api_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/api_example.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/.idea/Flask-GoogleMaps.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/example.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/package/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/package/MANIFEST.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/package/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/package/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/package/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/package/examples/example.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/package/examples/jsonify_examples.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/package/examples/static/images/m1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/package/examples/static/images/m2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/package/examples/static/images/m3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/package/examples/static/images/m4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/package/examples/static/images/m5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/package/examples/templates/example.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/package/examples/templates/example_fullmap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/package/flask_googlemaps/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/package/flask_googlemaps/icons.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/package/flask_googlemaps/templates/googlemaps/gmap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/package/flask_googlemaps/templates/googlemaps/gmapjs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/package/flit.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/package/screenshot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/package/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/testing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/brunorocha_flask_google_maps/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-percobaan/map/brunorocha_flask_google_maps/templates/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Tugas-Akhir.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Tugas-Akhir.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/map/testing_add_url.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/templates/detail_kamar.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/templates/detail_kamar.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,55 +58,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="api_example.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/api_example.py">
+      <file leaf-file-name="detail_kamar.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web_app/templates/detail_kamar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="50" />
+            <state relative-caret-position="135">
+              <caret line="132" column="159" selection-start-line="132" selection-start-column="159" selection-end-line="132" selection-end-column="159" />
               <folding>
-                <element signature="e#0#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/templates/layout.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="93" selection-start-line="8" selection-start-column="93" selection-end-line="8" selection-end-column="93" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="key.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/key.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/static/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="point_geo_convert_wkt_to_wkb.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-percobaan/map/point_geo_convert_wkt_to_wkb.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-75">
-              <caret line="4" selection-start-line="4" selection-end-line="5" selection-end-column="30" />
-              <folding>
-                <element signature="e#155#183#0" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#ul#1;n#div#1;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,14 +75,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>database</find>
       <find>class</find>
       <find>captha</find>
       <find>CLASS</find>
@@ -113,6 +111,7 @@
       <find>nama_kamar</find>
       <find>s</find>
       <find>shapely</find>
+      <find>location</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/web_app/templates/templates_from_grocery_shoppy_web</dir>
@@ -129,11 +128,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/testing/gmail_api_with_flask/form.html" />
-        <option value="$PROJECT_DIR$/testing/gmail_api_with_flask/gmail.py" />
         <option value="$PROJECT_DIR$/web_app/templates/form.html" />
         <option value="$PROJECT_DIR$/web_app/gmail.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/web_app/geo_test.py" />
         <option value="$PROJECT_DIR$/00-percobaan/recaptcha/app.py" />
         <option value="$PROJECT_DIR$/migrations/versions/dea8b8ef95bf_inisialisasi_database.py" />
@@ -170,16 +166,19 @@
         <option value="$PROJECT_DIR$/web_app/models.py" />
         <option value="$PROJECT_DIR$/migrations/versions/86ee228966c5_inisialisasi_database.py" />
         <option value="$PROJECT_DIR$/00-some-important-thing/when upgrade alembic enum always already exist" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/key.py" />
         <option value="$PROJECT_DIR$/web_app/views.py" />
         <option value="$PROJECT_DIR$/web_app/settings.py" />
         <option value="$PROJECT_DIR$/01-percobaan/map/point_geo_convert_wkt_to_wkb.py" />
         <option value="$PROJECT_DIR$/web_app/templates/penginapan.html" />
-        <option value="$PROJECT_DIR$/web_app/templates/detail_kamar.html" />
-        <option value="$PROJECT_DIR$/web_app/app.py" />
         <option value="$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/api_example.py" />
         <option value="$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/templates/layout.html" />
+        <option value="$PROJECT_DIR$/01-percobaan/map/brunorocha_flask_google_maps/app.py" />
+        <option value="$PROJECT_DIR$/01-percobaan/map/brunorocha_flask_google_maps/templates/template.html" />
+        <option value="$PROJECT_DIR$/web_app/app.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/web_app/templates/detail_kamar.html" />
       </list>
     </option>
   </component>
@@ -201,40 +200,6 @@
             <path>
               <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
-              <item name="01-percobaan" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
-              <item name="01-percobaan" type="462c0819:PsiDirectoryNode" />
-              <item name="map" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
-              <item name="01-percobaan" type="462c0819:PsiDirectoryNode" />
-              <item name="map" type="462c0819:PsiDirectoryNode" />
-              <item name="GoogleAPIExample" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
-              <item name="01-percobaan" type="462c0819:PsiDirectoryNode" />
-              <item name="map" type="462c0819:PsiDirectoryNode" />
-              <item name="GoogleAPIExample" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
-              <item name="01-percobaan" type="462c0819:PsiDirectoryNode" />
-              <item name="map" type="462c0819:PsiDirectoryNode" />
-              <item name="GoogleAPIExample" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
@@ -275,19 +240,19 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/01-percobaan/map" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/00-percobaan" />
-      <recent name="$PROJECT_DIR$/web_app/api" />
-      <recent name="$PROJECT_DIR$/testing/gmail_api_with_flask/template" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/01-percobaan/map/brunorocha_flask_google_maps" />
       <recent name="$PROJECT_DIR$/00-percobaan" />
       <recent name="$PROJECT_DIR$/web_app/api" />
       <recent name="$PROJECT_DIR$/web_app" />
       <recent name="$PROJECT_DIR$/web_app/templates" />
-      <recent name="$PROJECT_DIR$/testing/gmail_api_with_flask" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/01-percobaan/map/brunorocha_flask_google_maps/templates" />
+      <recent name="$PROJECT_DIR$/01-percobaan/map/brunorocha_flask_google_maps" />
+      <recent name="$PROJECT_DIR$/01-percobaan/map" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/00-percobaan" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -375,7 +340,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="app (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Tugas-Akhir" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -383,11 +348,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/00-percobaan/recaptcha" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01-percobaan/map/brunorocha_flask_google_maps" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/00-percobaan/recaptcha/app.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01-percobaan/map/brunorocha_flask_google_maps/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -414,18 +379,18 @@
     <list>
       <item itemvalue="Python.app (1)" />
       <item itemvalue="Python.app (2)" />
-      <item itemvalue="Python.app (3)" />
       <item itemvalue="Python.point_geo" />
       <item itemvalue="Python.Google Maps and Local Search APIs in Python" />
       <item itemvalue="Python.api_example" />
+      <item itemvalue="Python.app" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.api_example" />
         <item itemvalue="Python.point_geo" />
+        <item itemvalue="Python.app" />
         <item itemvalue="Python.app (2)" />
         <item itemvalue="Python.Google Maps and Local Search APIs in Python" />
-        <item itemvalue="Python.app (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -455,15 +420,15 @@
     <frame x="0" y="795" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49761903" visible="true" weight="0.16318928" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49761903" visible="true" weight="0.17958272" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51341283" side_tool="true" weight="0.2147651" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32885906" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32550335" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49031296" visible="true" weight="0.3557047" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49031296" weight="0.3557047" />
       <window_info id="Structure" order="0" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4865872" weight="0.38666666" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4865872" visible="true" weight="0.37416106" />
       <window_info id="Favorites" order="1" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -544,13 +509,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/migrations/versions/e52599477730_inisialisasi_database.py" />
-    <entry file="file://$PROJECT_DIR$/migrations/versions/f469ccd68c20_inisialisasi_database.py" />
-    <entry file="file://$PROJECT_DIR$/migrations/versions/bc63d0a690dd_inisialisasi_database.py" />
-    <entry file="file://$PROJECT_DIR$/migrations/versions/52a3eef66cfc_inisialisasi_database.py" />
-    <entry file="file://$PROJECT_DIR$/migrations/versions/9947bb40f6e2_inisialisasi_database.py" />
-    <entry file="file://$PROJECT_DIR$/migrations/versions/ef3d867619ea_inisialisasi_database.py" />
-    <entry file="file://$PROJECT_DIR$/migrations/versions/f7421839d6d2_initialize_db.py" />
     <entry file="file://$PROJECT_DIR$/web_app/templates/base-template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
@@ -642,16 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="180">
-            <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/00-some-important-thing/geoalchemy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -663,13 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="14" selection-start-line="7" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/static/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -694,13 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01-percobaan/map/testing_add_url.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web_app/key.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -718,40 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/templates/detail_kamar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="118" column="44" lean-forward="true" selection-start-line="118" selection-start-column="44" selection-end-line="118" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="194" lean-forward="true" selection-start-line="194" selection-end-line="194" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-percobaan/map/point_geo_convert_wkt_to_wkb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="4" selection-start-line="4" selection-end-line="5" selection-end-column="30" />
-          <folding>
-            <element signature="e#155#183#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/api_example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/key.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -762,9 +662,107 @@
     <entry file="file://$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="93" selection-start-line="8" selection-start-column="93" selection-end-line="8" selection-end-column="93" />
+          <caret line="8" column="57" lean-forward="true" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-percobaan/map/testing_add_url.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/static/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/app.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/testing.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/example.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-percobaan/map/point_geo_convert_wkt_to_wkb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" lean-forward="true" selection-start-line="4" selection-end-line="5" selection-end-column="30" />
           <folding>
-            <element signature="n#style#0;n#input#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#155#183#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-percobaan/map/brunorocha_flask_google_maps/templates/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="4" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-percobaan/map/brunorocha_flask_google_maps/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/api_example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/detail_kamar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="132" column="159" selection-start-line="132" selection-start-column="159" selection-end-line="132" selection-end-column="159" />
+          <folding>
+            <element signature="n#style#0;n#input#1;n#ul#1;n#div#1;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

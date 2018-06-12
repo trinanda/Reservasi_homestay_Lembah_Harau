@@ -12,3 +12,4 @@ Flask-Security>=1.7.5
 httplib2
 oauth2client
 shapely
+flask_googlemaps

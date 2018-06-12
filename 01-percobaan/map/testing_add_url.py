@@ -1,1 +1,0 @@
-https://www.google.com/maps/@-0.2240312,100.6340489,16z

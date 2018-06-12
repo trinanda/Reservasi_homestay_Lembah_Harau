@@ -1,0 +1,20 @@
+<body>
+<h1>Flask Google Maps Example</h1>
+
+<h2> Google Dev Bus - Rua Quatá, 255 </h2>
+{% with %}
+
+    {% set location=(-0.222815905663694,100.633821487427) %}
+    {% set style="width:350px;height:350px;"%}
+
+    {{
+    googlemap(
+        "simple-map",
+        location.0, location.1,
+        markers=[location,],
+        style=style
+        )
+    }}
+
+{% endwith %}
+</body>

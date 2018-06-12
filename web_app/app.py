@@ -32,6 +32,10 @@ from flask_wtf import FlaskForm, RecaptchaField
 from shapely import wkb, wkt
 from binascii import unhexlify
 
+from flask_googlemaps import GoogleMaps
+
+
+
 def create_app():
 
     flask_objek = Flask(__name__, static_folder='files')
@@ -40,6 +44,7 @@ def create_app():
 
     database.init_app(flask_objek)
 
+    GoogleMaps(flask_objek)
 
     # Setup Flask-Security
     user_datastore = SQLAlchemyUserDatastore(database, User, Role)
