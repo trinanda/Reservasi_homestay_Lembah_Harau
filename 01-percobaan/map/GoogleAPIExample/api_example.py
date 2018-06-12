@@ -1,6 +1,8 @@
 from flask import Flask, render_template, jsonify
 import requests
 from key import GOOGLE_MAP_API
+from shapely import wkb, wkt
+from binascii import unhexlify
 app = Flask(__name__)
 
 search_url = "https://maps.googleapis.com/maps/api/place/textsearch/json"
@@ -8,7 +10,15 @@ details_url = "https://maps.googleapis.com/maps/api/place/details/json"
 
 @app.route("/", methods=["GET"])
 def retreive():
-    return render_template('layout.html')
+	wkt_number = '01010000001100008890285940FF55ED493B85CCBF'
+	binary = unhexlify(wkt_number)
+	point = wkb.loads(binary)
+	longitude = str(point.y)
+	latitude = str(point.x)
+
+	kodinat = longitude+','+latitude
+
+	return render_template('layout.html', KORDINAT=kodinat)
 
 @app.route("/sendRequest/<string:query>")
 def results(query):
