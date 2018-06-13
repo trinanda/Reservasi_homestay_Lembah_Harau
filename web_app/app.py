@@ -201,7 +201,6 @@ def create_app():
         if tersedia_kah_kamar <= 0:
             tersedia_kah_kamar = 'Mohon maaf, saat ini kamar sedang penuh'
         elif tersedia_kah_kamar >= 1:
-            # tersedia_kah_kamar = 'Saat ini tersedia ' + kamar_tersedia + ' kamar'
             tersedia_kah_kamar = ' '
 
         lokasi = request.args.get('lokasi')
