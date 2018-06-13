@@ -123,7 +123,7 @@ def create_app():
 
         menu = Menu.query.order_by('urutan')
 
-        kamar = Kamar()
+        kamar = Kamar(kurangi_jumlah_kamar=1)
 
         try:
             room_price = Kamar.query.first()
@@ -198,7 +198,7 @@ def create_app():
 
         lihat_lokasi = 'https://www.google.com/maps/@'+longitude+','+latitude+',17.25z'
 
-        kamar = Kamar()
+        kamar = Kamar(kurangi_jumlah_kamar=1)
 
         if request.method == "get":
             room_price = Kamar.query.first()
