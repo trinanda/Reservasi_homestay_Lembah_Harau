@@ -126,7 +126,6 @@ def del_image(mapper, connection, target):
             pass
 
 
-
 class MapView(GeoModelView):
     pass
 
@@ -135,7 +134,7 @@ class PilihKamarView(UserAkses, MapView):
     form_overrides = dict(keterangan_kamar=CKEditorField)
     create_template = 'admin/ckeditor.html'
     edit_template = 'admin/ckeditor.html'
-    column_list = ('nama_kamar', 'room_images', 'harga_kamar')
+    column_list = ('nama_kamar', 'room_images', 'harga_kamar', 'kamar_tersedia')
     def _list_thumbnail(view, context, model, name):
         if not model.room_images:
             return ''
