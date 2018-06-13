@@ -221,9 +221,6 @@ def create_app():
                                LATITUDE=longitude, LONGITUDE=latitude, LIHAT_LOKASI=lihat_lokasi)
 
 
-
-
-
     @flask_objek.route('/checkout/<id_kamar>', methods = ["GET", "POST"])
     def checkout(id_kamar=None):
         menu = Menu.query.order_by('urutan')
@@ -467,6 +464,9 @@ def create_app():
                                        lama_menginap,
                                        harga_total_pemesan_kamar, tanggal_pemesanan, status)
             database.session.add(insert_ke_db)
+            database.session.commit()
+
+            database.session.query(Kamar).update({Kamar.kamar_tersedia: Kamar.kamar_tersedia - 1})
             database.session.commit()
 
             return redirect('http://192.168.100.3:7575/success')

@@ -38,11 +38,14 @@ class Kamar(database.Model):
     keterangan_kamar = Column(String)
     room_images = Column(database.Unicode(128))
     harga_kamar = Column(Integer)
+    kamar_tersedia = Column(Integer)
     urutan_kamar = Column(Integer)
 
     def __repr__(self):
         return '{}'.format(self.nama_kamar)
 
+    def __init__(self, kurangi_jumlah_kamar):
+        self.kamar_tersedia = kurangi_jumlah_kamar
 
 class Invoice(database.Model):
     __tablename__ = "invoice"
