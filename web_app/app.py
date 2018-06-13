@@ -149,6 +149,8 @@ def create_app():
             keterangan_kamar = keterangan_kamar.keterangan_kamar
             lokasi_kamar = Kamar.query.first()
             lokasi_kamar = lokasi_kamar.lokasi
+            kamar_tersedia = Kamar.query.first()
+            kamar_tersedia = kamar_tersedia.kamar_tersedia
 
             data = str(lokasi_kamar)
             binnary = unhexlify(data)
@@ -171,13 +173,16 @@ def create_app():
             keterangan_kamar = keterangan_kamar.keterangan_kamar
             lokasi_kamar = Kamar.query.first()
             lokasi_kamar = lokasi_kamar.lokasi
+            kamar_tersedia = Kamar.query.first()
+            kamar_tersedia = kamar_tersedia.kamar_tersedia
+
             return render_template("detail_kamar.html", id_kamar=room_id, NAMA_KAMAR=bedroom_name, HARGA_KAMAR=room_price,
                                    room_images=room_foto, keterangan_kamar=keterangan_kamar, lokasi_kamar=lokasi_kamar,
                                    LATITUDE=latitude, LONGITUDE=longitude)
         else:
             pass
 
-        return render_template('penginapan.html', CONTENT=konten, MENU=menu, KAMARS=urutan_kamar)
+        return render_template('penginapan.html', CONTENT=konten, MENU=menu, KAMARS=urutan_kamar, KAMAR_TERSEDIA=kamar_tersedia)
 
 
     @flask_objek.route('/detail_kamar/<id_kamar>', methods = ["GET", "POST"])
@@ -189,6 +194,16 @@ def create_app():
         harga_kamar = request.args.get('harga_kamar')
         keterangan_kamar = request.args.get('keterangan_kamar')
         room_images1= request.args.get('room_images')
+        kamar_tersedia = request.args.get('kamar_tersedia')
+
+        tersedia_kah_kamar = Kamar.query.filter_by(id_kamar=id_kamar).first()
+        tersedia_kah_kamar = tersedia_kah_kamar.kamar_tersedia
+        if tersedia_kah_kamar <= 0:
+            tersedia_kah_kamar = 'Mohon maaf, saat ini kamar sedang penuh'
+        elif tersedia_kah_kamar >= 1:
+            # tersedia_kah_kamar = 'Saat ini tersedia ' + kamar_tersedia + ' kamar'
+            tersedia_kah_kamar = ' '
+
         lokasi = request.args.get('lokasi')
         data = str(lokasi)
         binnary = unhexlify(data)
@@ -218,7 +233,7 @@ def create_app():
 
         return render_template("detail_kamar.html", MENU=menu, NAMA_KAMAR=nama_kamar, id_kamar=id_kamar,
                                HARGA_KAMAR=harga_kamar, keterangan_kamar=keterangan_kamar, room_images=room_images1,
-                               LATITUDE=longitude, LONGITUDE=latitude, LIHAT_LOKASI=lihat_lokasi)
+                               LATITUDE=longitude, LONGITUDE=latitude, LIHAT_LOKASI=lihat_lokasi, KAMAR_TERSEDIA=tersedia_kah_kamar)
 
 
     @flask_objek.route('/checkout/<id_kamar>', methods = ["GET", "POST"])
@@ -468,6 +483,13 @@ def create_app():
 
             database.session.query(Kamar).update({Kamar.kamar_tersedia: Kamar.kamar_tersedia - 1})
             database.session.commit()
+
+            # kamar_yang_tersedia = Kamar.kamar_tersedia
+
+            # delete_kamar = Kamar.query.filter_by(id_kamar=id_kamar).first()
+            # if kamar_yang_tersedia < 1:
+            #     database.session.delete(delete_kamar)
+            #     database.session.commit()
 
             return redirect('http://192.168.100.3:7575/success')
 
