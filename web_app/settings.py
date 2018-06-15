@@ -72,5 +72,6 @@ TESTING = True
 #############################################################################################################
 #google map API
 # https://developers.google.com/places/web-service/get-api-key
-GOOGLE_MAP_API = "AIzaSyATc2uRye5sztfUGup5KA69_Ru9dsAA8TQ"
+# https://developers.google.com/maps/documentation/javascript/get-api-key?hl=ID#key
+GOOGLE_MAP_API = "AIzaSyB9qwTOe5jp5SGiiF00Gku329KeJE1cYa0"
 #############################################################################################################

@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fda5f8a-d2f4-4567-96cf-3ac732436be6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/01-percobaan/cookie/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Tugas-Akhir.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Tugas-Akhir.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_app/templates/base-template.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/templates/base-template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_app/templates/detail_kamar.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/templates/detail_kamar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,11 +23,61 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_app/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="163">
+              <caret line="47" column="27" lean-forward="true" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api_example.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/api_example.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-percobaan/map/brunorocha_flask_google_maps/templates/template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="10" selection-start-line="12" selection-end-line="12" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web_app/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="74" column="43" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -44,44 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail_kamar.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="detail_kamar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_app/templates/detail_kamar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_app/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2130">
-              <caret line="161" selection-start-line="161" selection-end-line="161" />
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_app/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1680">
-              <caret line="117" selection-start-line="117" selection-end-line="117" />
-              <folding>
-                <element signature="e#0#105#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            <state relative-caret-position="240">
+              <caret line="16" column="96" selection-start-line="16" selection-start-column="96" selection-end-line="16" selection-end-column="96" />
             </state>
           </provider>
         </entry>
@@ -98,7 +112,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>status_pembayaran</find>
       <find>nullable</find>
       <find>produ</find>
       <find>/penginapan</find>
@@ -128,6 +141,7 @@
       <find>UnicodeText</find>
       <find>Sign In now, Let's start your Grocery Shopping. Don't have an account</find>
       <find>cari</find>
+      <find>from flask_googlemaps import GoogleMaps</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/web_app/templates/templates_from_grocery_shoppy_web</dir>
@@ -144,7 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/migrations/versions/52a3eef66cfc_inisialisasi_database.py" />
         <option value="$PROJECT_DIR$/migrations/versions/9947bb40f6e2_inisialisasi_database.py" />
         <option value="$PROJECT_DIR$/migrations/versions/ef3d867619ea_inisialisasi_database.py" />
         <option value="$PROJECT_DIR$/web_app/templates/checkout.html" />
@@ -175,7 +188,6 @@
         <option value="$PROJECT_DIR$/migrations/versions/86ee228966c5_inisialisasi_database.py" />
         <option value="$PROJECT_DIR$/00-some-important-thing/when upgrade alembic enum always already exist" />
         <option value="$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/key.py" />
-        <option value="$PROJECT_DIR$/web_app/settings.py" />
         <option value="$PROJECT_DIR$/01-percobaan/map/point_geo_convert_wkt_to_wkb.py" />
         <option value="$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/api_example.py" />
         <option value="$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/templates/layout.html" />
@@ -191,9 +203,11 @@
         <option value="$PROJECT_DIR$/01-percobaan/cookie/app.py" />
         <option value="$PROJECT_DIR$/web_app/models.py" />
         <option value="$PROJECT_DIR$/web_app/views.py" />
-        <option value="$PROJECT_DIR$/web_app/app.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/web_app/templates/base-template.html" />
+        <option value="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/app.py" />
+        <option value="$PROJECT_DIR$/web_app/settings.py" />
+        <option value="$PROJECT_DIR$/web_app/app.py" />
         <option value="$PROJECT_DIR$/web_app/templates/detail_kamar.html" />
       </list>
     </option>
@@ -216,6 +230,46 @@
             <path>
               <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
+              <item name="01-percobaan" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
+              <item name="01-percobaan" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
+              <item name="01-percobaan" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+              <item name="brunorocha_flask_google_maps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
+              <item name="01-percobaan" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+              <item name="brunorocha_flask_google_maps" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
+              <item name="01-percobaan" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+              <item name="Flask-GoogleMaps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
+              <item name="01-percobaan" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+              <item name="GoogleAPIExample" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
@@ -444,15 +498,15 @@
     <frame x="0" y="795" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49761903" visible="true" weight="0.25409836" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49761903" visible="true" weight="0.16318928" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51415795" side_tool="true" weight="0.4161074" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4880775" weight="0.34060404" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4880775" weight="0.30872482" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32885906" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32550335" />
       <window_info id="Structure" order="0" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.48584202" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.48584202" visible="true" weight="0.29697987" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
       <window_info id="Favorites" order="1" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -522,7 +576,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/01-percobaan/map/a.py" />
     <entry file="file://$PROJECT_DIR$/01-percobaan/map/Google Maps and Local Search APIs in Python.py" />
     <entry file="file:///usr/local/lib/python3.6/dist-packages/flask_admin/contrib/geoa/view.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -574,22 +627,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web_app/key.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/key.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -609,9 +648,6 @@
     <entry file="file://$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/app.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/testing.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -629,29 +665,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/api_example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01-percobaan/map/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-percobaan/map/brunorocha_flask_google_maps/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-percobaan/map/brunorocha_flask_google_maps/templates/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/migrations/versions/86ee228966c5_inisialisasi_database.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -760,12 +775,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/views.py">
+    <entry file="file://$PROJECT_DIR$/01-percobaan/map/brunorocha_flask_google_maps/templates/template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2130">
-          <caret line="161" selection-start-line="161" selection-end-line="161" />
+        <state relative-caret-position="165">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="10" selection-start-line="12" selection-end-line="12" selection-end-column="10" />
           <folding>
-            <element signature="e#0#46#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -777,6 +808,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="161" selection-start-line="161" selection-end-line="161" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web_app/templates/base-template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -784,10 +825,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/api_example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-percobaan/map/brunorocha_flask_google_maps/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/key.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web_app/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="163">
+          <caret line="47" column="27" lean-forward="true" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
@@ -796,8 +858,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web_app/templates/detail_kamar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="240">
+          <caret line="16" column="96" selection-start-line="16" selection-start-column="96" selection-end-line="16" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="74" column="43" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="43" />
         </state>
       </provider>
     </entry>
