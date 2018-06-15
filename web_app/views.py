@@ -158,3 +158,4 @@ class PilihKamarView(UserAkses, MapView):
 class MyModelView(AdminAkses):
     pass
 
+

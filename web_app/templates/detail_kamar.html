@@ -1,5 +1,19 @@
 {% extends "base-template.html" %}
 {% block content %}
+
+<style>
+	.blinking{
+    animation:blinkingText 1.5s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: red;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+</style>
+
 	<!-- //page -->
 <div class="banner-bootom-w3-agileits">
 		<div class="container">
@@ -38,7 +52,7 @@
 
 			<div class="col-md-7 single-right-left simpleCart_shelfItem">
 				<h3>{{ NAMA_KAMAR }}</h3>
-				<h5><b>{{ KAMAR_TERSEDIA }}</b></h5>
+				<h5><b class="blinking"><i>{{ KAMAR_TERSEDIA }}</i></b></h5>
 				<!--<p style="visibility: hidden;">{{ id_kamar }}</p>-->
 				<!--<div class="rating1">-->
 					<!--<span class="starRating">-->

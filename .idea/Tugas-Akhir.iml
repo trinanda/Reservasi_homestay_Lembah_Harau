@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/web_app" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/01-percobaan/map/GoogleAPIExample" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/01-percobaan/map/brunorocha_flask_google_maps" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/01-percobaan/cookie" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.6" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

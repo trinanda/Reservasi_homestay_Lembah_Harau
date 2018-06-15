@@ -1,8 +1,9 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, Enum, DateTime, Numeric, Unicode
+from sqlalchemy import Column, Integer, String, ForeignKey, Enum, DateTime, Numeric, Unicode, UnicodeText
 from sqlalchemy.orm import relationship, backref
 from flask_sqlalchemy import SQLAlchemy
 from flask_security import UserMixin, RoleMixin
 from geoalchemy2.types import Geometry
+from sqlalchemy_imageattach.entity import Image, image_attachment
 
 database = SQLAlchemy()
 
@@ -111,4 +112,10 @@ class User(database.Model, UserMixin):
 
     def __str__(self):
         return self.email
+
+
+
+
+
+
 
