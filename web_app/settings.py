@@ -73,5 +73,7 @@ TESTING = True
 #google map API
 # https://developers.google.com/places/web-service/get-api-key
 # https://developers.google.com/maps/documentation/javascript/get-api-key?hl=ID#key
-GOOGLE_MAP_API = "AIzaSyB9qwTOe5jp5SGiiF00Gku329KeJE1cYa0"
+# GOOGLE_MAP_API = "AIzaSyB9qwTOe5jp5SGiiF00Gku329KeJE1cYa0"
+# or
+# GOOGLEMAPS_KEY = "key"
 #############################################################################################################
