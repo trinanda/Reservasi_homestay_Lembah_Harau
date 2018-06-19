@@ -12,7 +12,7 @@ from flask_security import SQLAlchemyUserDatastore, Security
 
 from views import PageModelView, MenuModelView, PilihKamarView, InvoiceView, MyModelView
 # from settings import MAIL_USERNAME, MAIL_PASSWORD, TWLIO_ACCOUNT_SID, TWLIO_AUTH_TOKEN
-from settings import TWLIO_ACCOUNT_SID, TWLIO_AUTH_TOKEN
+from settings import TWLIO_ACCOUNT_SID_UPGRADED_FOR_USER, TWLIO_AUTH_TOKEN_UPGRADED_FOR_USER, TWLIO_ACCOUNT_SID_NONE_UPGRADED_FOR_ADMIN, TWLIO_AUTH_TOKEN_NONE_UPGRADED_FOR_ADMIN
 from smtplib import SMTP_SSL
 from twilio.rest import Client
 from models import database, Page, Menu, Kamar, Invoice, User, Role
@@ -376,26 +376,7 @@ def create_app():
             #     return 'send_email gagal terkirim'
             ###/> EMAIL SMTP_SSL ###
 
-            ##################
-            ###### TWILIO ####
-            # Your Account SID from twilio.com/console
-            account_sid = TWLIO_ACCOUNT_SID
-            # Your Auth Token from twilio.com/console
-            auth_token = TWLIO_AUTH_TOKEN
 
-            client = Client(account_sid, auth_token)
-
-            message = client.messages.create(
-                # to="+6282174853636",/up
-                to="+6281275803651",
-                from_="+12014307127",
-                body=msg_to_admin)
-
-
-            # to for user message
-
-            #######-->/ TWILIO ########
-            ####################################
 
             ####################################
             #send gmail
@@ -432,10 +413,50 @@ def create_app():
             to_pemesan = email_pemesan
 
             subject_to_pemesan = '---Harau Homestay Reservation---'
-            message_to_pemesan = 'Terima kasih Telah Menggunakan Layanan Kami, Anda telah memesan kamar ' + nama_kamar + \
+            message_to_pemesan = 'Terima kasih ' + nama_pemesan + ' telah Menggunakan Layanan Kami, Anda telah memesan kamar ' + nama_kamar + \
                                      ' selama ' + lama_menginap + ' hari, dan biaya total nya adalah ' + harga_total_pemesan_kamar + \
-                                     ' ribu rupiah, Kami akan segera mengkonfirmasi setelah pembayaran selesai dilakukan \n' + \
+                                     ' rupiah, Kami akan segera mengkonfirmasi setelah pembayaran selesai dilakukan \n' + \
                                      '---Terima kasih, Salam dari kami Harau Homestay Reservation---'
+
+
+            ##################
+            ###### TWILIO ####
+
+            # for admin notifications
+            # Your Account SID from twilio.com/console
+            account_sid_admin = TWLIO_ACCOUNT_SID_NONE_UPGRADED_FOR_ADMIN
+            # Your Auth Token from twilio.com/console
+            auth_token_admin = TWLIO_AUTH_TOKEN_NONE_UPGRADED_FOR_ADMIN
+
+            sms_admin = Client(account_sid_admin, auth_token_admin)
+
+            message_admin = sms_admin.messages.create(
+                to="+6281275803651",
+                from_="+12132961837",  # this non upgrade number
+                body=msg_to_admin)
+
+
+            # ############################# SMS fot user ##########################
+            # # # for user notifications
+            # #  # Your Account SID from twilio.com/console
+            # account_sid_user = TWLIO_ACCOUNT_SID_UPGRADED_FOR_USER
+            # # # Your Auth Token from twilio.com/console
+            # auth_token_user = TWLIO_AUTH_TOKEN_UPGRADED_FOR_USER
+            # #
+            # sms_client = Client(account_sid_user, auth_token_user)
+            # #
+            # nomor_telepon_pemesan = nomor_telepon
+            # message_pemesan = sms_client.messages.create(
+            #     to=nomor_telepon_pemesan,
+            #     from_="+12014307127",   # this upgraded number
+            #     body=message_to_pemesan)
+            # #
+
+            #######-->/ TWILIO ########
+            ####################################
+
+
+
             # create a message to send
             # message_to_pemesan = MIMEText("Terima kasih telah memesan kamar melalui Harau Reservation")
             message_to_pemesan = MIMEText(message_to_pemesan)
@@ -475,6 +496,8 @@ def create_app():
                 print(message_to_admin)
             except Exception as error:
                 print('An error occurred: %s' % error)
+
+
 
 
             insert_ke_db = Invoice(id_kamar, nomor_invoice, nama_pemesan, nomor_telepon, email_pemesan, nama_kamar,
