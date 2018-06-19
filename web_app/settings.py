@@ -19,12 +19,28 @@ SECRET_KEY = '12345'
 # MAIL_USERNAME = 'zidanecr7kaka@gmail.com'
 # MAIL_PASSWORD = 'yourpassword12345'
 
+#############################################################################################################
 
 #twilio
 # Your Account SID from twilio.com/console
+
+# this upgraded SID
 TWLIO_ACCOUNT_SID = "ACe211524106753eb639d9fae6ebd35bb2"
+
+# this non upgrade SID
+# TWLIO_ACCOUNT_SID = "ACe335c5f83a4c6a3dc22f25cb5fe3d74d"
+
+
 # Your Auth Token from twilio.com/console
+
+# this upgraded auth_token
 TWLIO_AUTH_TOKEN = "2d7c15d4df5846d341c3a67a7fec9b9b"
+
+# this none upgraded auth_token
+# TWLIO_AUTH_TOKEN = "98f8f99a6bcbe14e0f5b9ab50ae55a31"
+
+
+#############################################################################################################
 
 
 #############################################################################################################

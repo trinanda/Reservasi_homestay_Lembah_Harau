@@ -2,10 +2,510 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fda5f8a-d2f4-4567-96cf-3ac732436be6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Tugas-Akhir.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Tugas-Akhir.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/templates/halaman1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/templates/halaman2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/bin/activate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/bin/activate.csh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/bin/activate.fish" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/bin/activate_this.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/bin/easy_install" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/bin/easy_install-2.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/bin/pip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/bin/pip2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/bin/pip2.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/bin/python" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/bin/python-config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/bin/python2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/bin/python2.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/bin/wheel" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/include/python2.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/UserDict.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/_abcoll.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/_weakrefset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/abc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/codecs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/copy_reg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/distutils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/distutils/distutils.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/encodings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/fnmatch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/genericpath.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/lib-dynload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/linecache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/locale.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/no-global-site-packages.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/ntpath.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/orig-prefix.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/os.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/posixpath.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/re.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/easy_install.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip-10.0.1.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip-10.0.1.dist-info/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip-10.0.1.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip-10.0.1.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip-10.0.1.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip-10.0.1.dist-info/entry_points.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip-10.0.1.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/__main__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/basecommand.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/baseparser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/build_env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/cache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/cmdoptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/commands/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/commands/check.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/commands/completion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/commands/configuration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/commands/download.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/commands/freeze.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/commands/hash.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/commands/help.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/commands/install.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/commands/list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/commands/search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/commands/show.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/commands/uninstall.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/commands/wheel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/configuration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/download.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/index.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/locations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/models/index.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/operations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/operations/check.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/operations/freeze.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/operations/prepare.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/pep425tags.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/req/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/req/req_file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/req/req_install.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/req/req_set.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/req/req_uninstall.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/resolve.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/status_codes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/utils/appdirs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/utils/deprecation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/utils/encoding.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/utils/filesystem.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/utils/glibc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/utils/hashes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/utils/logging.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/utils/misc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/utils/outdated.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/utils/packaging.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/utils/setuptools_build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/utils/temp_dir.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/utils/typing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/utils/ui.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/vcs/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/vcs/bazaar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/vcs/git.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/vcs/mercurial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/vcs/subversion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_internal/wheel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/appdirs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/_cmd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/adapter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/cache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/caches/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/caches/redis_cache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/filewrapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/heuristics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/serialize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/wrapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/certifi/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/certifi/__main__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/certifi/cacert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/certifi/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/big5freq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/big5prober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/chardistribution.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/charsetgroupprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/charsetprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/cli/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/cli/chardetect.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/codingstatemachine.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/cp949prober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/enums.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/escprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/escsm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/eucjpprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/euckrfreq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/euckrprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/euctwfreq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/euctwprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/gb2312freq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/gb2312prober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/hebrewprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/jisfreq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/jpcntx.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/langbulgarianmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/langcyrillicmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/langgreekmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/langhebrewmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/langhungarianmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/langthaimodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/langturkishmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/latin1prober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/mbcharsetprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/mbcsgroupprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/mbcssm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/sbcharsetprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/sbcsgroupprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/sjisprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/universaldetector.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/utf8prober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/chardet/version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/colorama/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/colorama/ansi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/colorama/ansitowin32.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/colorama/initialise.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/colorama/win32.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/colorama/winterm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/misc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/shutil.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/sysconfig.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/sysconfig.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/tarfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/database.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/index.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/locators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/manifest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/markers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/metadata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/resources.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/scripts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/t32.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/t64.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/w32.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/w64.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distlib/wheel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/distro.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_ihatexml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_inputstream.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_tokenizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_trie/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_trie/_base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_trie/datrie.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_trie/py.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/alphabeticalattributes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/inject_meta_charset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/optionaltags.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/sanitizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/whitespace.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/html5parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/serializer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treeadapters/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treeadapters/genshi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treeadapters/sax.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/dom.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/etree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/etree_lxml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/dom.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/etree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/etree_lxml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/genshi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/idna/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/idna/codec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/idna/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/idna/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/idna/idnadata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/idna/intranges.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/idna/package_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/idna/uts46data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/ipaddress.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/lockfile/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/lockfile/linklockfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/lockfile/mkdirlockfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/lockfile/pidlockfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/lockfile/sqlitelockfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/lockfile/symlinklockfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/msgpack/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/msgpack/_version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/msgpack/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/msgpack/fallback.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/packaging/__about__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/packaging/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/packaging/_compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/packaging/_structures.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/packaging/markers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/packaging/requirements.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/packaging/specifiers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/packaging/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/packaging/version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/pkg_resources/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/pkg_resources/py31compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/progress/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/progress/bar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/progress/counter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/progress/helpers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/progress/spinner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/pyparsing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/pytoml/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/pytoml/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/pytoml/parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/pytoml/writer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/requests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/requests/__version__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/requests/_internal_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/requests/adapters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/requests/api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/requests/auth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/requests/certs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/requests/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/requests/cookies.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/requests/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/requests/help.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/requests/hooks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/requests/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/requests/sessions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/requests/status_codes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/requests/structures.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/requests/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/retrying.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/six.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/_collections.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/connection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/connectionpool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/_securetransport/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/_securetransport/low_level.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/appengine.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/ntlmpool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/pyopenssl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/securetransport.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/socks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/fields.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/filepost.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/packages/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/packages/backports/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/packages/backports/makefile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/packages/ordered_dict.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/packages/six.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/packages/ssl_match_hostname/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/packages/ssl_match_hostname/_implementation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/poolmanager.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/response.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/connection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/response.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/retry.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/selectors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/ssl_.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/timeout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/url.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/wait.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/webencodings/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/webencodings/labels.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/webencodings/mklabels.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/webencodings/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/webencodings/x_user_defined.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pkg_resources-0.0.0.dist-info/DESCRIPTION.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pkg_resources-0.0.0.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pkg_resources-0.0.0.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pkg_resources-0.0.0.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pkg_resources-0.0.0.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pkg_resources-0.0.0.dist-info/metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pkg_resources/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pkg_resources/_vendor/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pkg_resources/_vendor/appdirs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/__about__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/_compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/_structures.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/markers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/requirements.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/specifiers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pkg_resources/_vendor/pyparsing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pkg_resources/_vendor/six.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pkg_resources/extern/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pkg_resources/py31compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools-39.2.0.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools-39.2.0.dist-info/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools-39.2.0.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools-39.2.0.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools-39.2.0.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools-39.2.0.dist-info/dependency_links.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools-39.2.0.dist-info/entry_points.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools-39.2.0.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools-39.2.0.dist-info/zip-safe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/_vendor/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/__about__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/_compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/_structures.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/markers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/requirements.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/specifiers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/_vendor/pyparsing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/_vendor/six.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/archive_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/build_meta.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/cli-32.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/cli-64.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/cli.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/alias.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/bdist_egg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/bdist_rpm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/bdist_wininst.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/build_clib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/build_ext.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/build_py.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/develop.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/dist_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/easy_install.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/egg_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/install.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/install_egg_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/install_lib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/install_scripts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/launcher manifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/py36compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/register.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/rotate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/saveopts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/sdist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/setopt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/upload.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/command/upload_docs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/dep_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/depends.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/dist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/extension.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/extern/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/glibc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/glob.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/gui-32.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/gui-64.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/gui.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/launch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/lib2to3_ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/monkey.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/msvc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/namespaces.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/package_index.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/pep425tags.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/py27compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/py31compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/py33compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/py36compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/sandbox.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/script (dev).tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/script.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/site-patch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/ssl_support.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/unicode_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/wheel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/setuptools/windows_support.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel-0.31.1.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel-0.31.1.dist-info/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel-0.31.1.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel-0.31.1.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel-0.31.1.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel-0.31.1.dist-info/entry_points.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel-0.31.1.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel/__main__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel/archive.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel/bdist_wheel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel/egg2wheel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel/install.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel/metadata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel/paths.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel/pep425tags.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel/pkginfo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel/signatures/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel/signatures/djbec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel/signatures/ed25519py.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel/signatures/keys.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel/tool/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/wheel/wininst2wheel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/sre.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/sre_compile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/sre_constants.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/sre_parse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/stat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/types.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/warnings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/local/bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/local/include" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/local/lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/CacheControl-0.11.7-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/appdirs-1.4.3-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/certifi-2018.1.18-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/chardet-3.0.4-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/colorama-0.3.7-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/distlib-0.2.7-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/distro-1.0.1-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/html5lib-0.999999999-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/idna-2.6-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/ipaddress-0.0.0-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/lockfile-0.12.2-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/packaging-17.1-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/pip-9.0.1-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/pkg_resources-0.0.0-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/progress-1.2-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/pyparsing-2.2.0-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/requests-2.18.4-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/retrying-1.3.3-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/setuptools-39.0.1-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/six-1.11.0-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/urllib3-1.22-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/webencodings-0.5-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-percobaan/cookie/venv/share/python-wheels/wheel-0.30.0-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/api/gmail.storage" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/api/gmail.storage" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_app/templates/detail_kamar.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/templates/detail_kamar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/templates/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/templates/checkout.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,82 +519,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_app/app.py">
+      <file leaf-file-name="transfer.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web_app/templates/transfer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="100">
+              <caret line="48" column="22" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkout.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_app/templates/checkout.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="87" column="132" selection-start-line="87" selection-start-column="132" selection-end-line="87" selection-end-column="132" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api_example.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/api_example.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-percobaan/map/brunorocha_flask_google_maps/templates/template.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="10" selection-start-line="12" selection-end-line="12" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_app/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="73" column="2" lean-forward="true" selection-start-line="73" selection-start-column="2" selection-end-line="73" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base-template.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_app/templates/base-template.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail_kamar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_app/templates/detail_kamar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="110" selection-start-line="16" selection-start-column="110" selection-end-line="16" selection-end-column="110" />
+            <state relative-caret-position="-16">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -104,20 +557,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>nullable</find>
-      <find>produ</find>
-      <find>/penginapan</find>
-      <find>detail</find>
-      <find>id_kamar</find>
-      <find>NAMA_KAMAR</find>
-      <find>room_id</find>
       <find>status</find>
       <find>kamar_id</find>
       <find>.dockerignore</find>
@@ -141,6 +587,13 @@
       <find>Sign In now, Let's start your Grocery Shopping. Don't have an account</find>
       <find>cari</find>
       <find>from flask_googlemaps import GoogleMaps</find>
+      <find>halaman1</find>
+      <find>halaman2</find>
+      <find>session</find>
+      <find>telepon</find>
+      <find>62</find>
+      <find>nomor tele</find>
+      <find>ACe211524106753eb639d9fae6ebd35bb2</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/web_app/templates/templates_from_grocery_shoppy_web</dir>
@@ -157,11 +610,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/migrations/versions/9947bb40f6e2_inisialisasi_database.py" />
-        <option value="$PROJECT_DIR$/migrations/versions/ef3d867619ea_inisialisasi_database.py" />
-        <option value="$PROJECT_DIR$/web_app/templates/checkout.html" />
-        <option value="$PROJECT_DIR$/web_app/templates/payment.html" />
-        <option value="$PROJECT_DIR$/web_app/templates/transfer.html" />
         <option value="$PROJECT_DIR$/migrations/versions/73e6480c9695_inisialisasi_database.py" />
         <option value="$PROJECT_DIR$/.dockerignore" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
@@ -196,26 +644,30 @@
         <option value="$PROJECT_DIR$/web_app/templates/penginapan.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/migrations/versions/160fc5529ae4_tets_multiple_images.py" />
-        <option value="$PROJECT_DIR$/01-percobaan/cookie/templates/index.html" />
         <option value="$PROJECT_DIR$/01-percobaan/cookie/templates/halaman1.html" />
         <option value="$PROJECT_DIR$/01-percobaan/cookie/templates/halaman2.html" />
-        <option value="$PROJECT_DIR$/01-percobaan/cookie/app.py" />
         <option value="$PROJECT_DIR$/web_app/models.py" />
         <option value="$PROJECT_DIR$/web_app/views.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/web_app/templates/base-template.html" />
         <option value="$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/app.py" />
-        <option value="$PROJECT_DIR$/web_app/templates/detail_kamar.html" />
         <option value="$PROJECT_DIR$/web_app/app.py" />
+        <option value="$PROJECT_DIR$/web_app/templates/detail_kamar.html" />
+        <option value="$PROJECT_DIR$/01-percobaan/cookie/templates/index.html" />
+        <option value="$PROJECT_DIR$/01-percobaan/cookie/app.py" />
+        <option value="$PROJECT_DIR$/01-percobaan/session/templates/index.html" />
+        <option value="$PROJECT_DIR$/01-percobaan/session/app.py" />
+        <option value="$PROJECT_DIR$/01-percobaan/twilio any phone number/app.py" />
+        <option value="$PROJECT_DIR$/01-percobaan/delete area code such +62 on phone number/app.py" />
+        <option value="$PROJECT_DIR$/web_app/templates/checkout.html" />
         <option value="$PROJECT_DIR$/web_app/settings.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="446" />
-    <option name="y" value="953" />
-    <option name="width" value="200" />
-    <option name="height" value="505" />
+    <option name="y" value="795" />
+    <option name="width" value="1366" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -223,6 +675,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Tugas-Akhir" type="cbb8eebc:String" user="Tugas-Akhir" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -239,36 +703,12 @@
               <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
               <item name="01-percobaan" type="462c0819:PsiDirectoryNode" />
-              <item name="map" type="462c0819:PsiDirectoryNode" />
+              <item name="twilio any phone number" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
-              <item name="01-percobaan" type="462c0819:PsiDirectoryNode" />
-              <item name="map" type="462c0819:PsiDirectoryNode" />
-              <item name="brunorocha_flask_google_maps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
-              <item name="01-percobaan" type="462c0819:PsiDirectoryNode" />
-              <item name="map" type="462c0819:PsiDirectoryNode" />
-              <item name="brunorocha_flask_google_maps" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
-              <item name="01-percobaan" type="462c0819:PsiDirectoryNode" />
-              <item name="map" type="462c0819:PsiDirectoryNode" />
-              <item name="Flask-GoogleMaps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
-              <item name="01-percobaan" type="462c0819:PsiDirectoryNode" />
-              <item name="map" type="462c0819:PsiDirectoryNode" />
-              <item name="GoogleAPIExample" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
@@ -280,18 +720,6 @@
               <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
               <item name="web_app" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Course" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Tugas-Akhir" type="cbb8eebc:String" user="Tugas-Akhir" />
             </path>
           </expand>
           <select />
@@ -303,7 +731,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../penjualan-ikan-online-irwan-santosa" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/web_app/templates/base-template.html" />
@@ -318,11 +746,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/01-percobaan/twilio any phone number" />
+      <recent name="$PROJECT_DIR$/01-percobaan" />
       <recent name="$PROJECT_DIR$/01-percobaan/map/brunorocha_flask_google_maps" />
       <recent name="$PROJECT_DIR$/00-percobaan" />
       <recent name="$PROJECT_DIR$/web_app/api" />
-      <recent name="$PROJECT_DIR$/web_app" />
-      <recent name="$PROJECT_DIR$/web_app/templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/01-percobaan/map/brunorocha_flask_google_maps/templates" />
@@ -344,25 +772,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.app">
-    <configuration name="api_example" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Tugas-Akhir" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/api_example.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.app (5)">
     <configuration name="app (1)" type="PythonConfigurationType" factoryName="Python">
       <module name="Tugas-Akhir" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -389,11 +799,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web_app" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01-percobaan/twilio any phone number" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web_app/app.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01-percobaan/twilio any phone number/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -417,6 +827,42 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="app (4)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Tugas-Akhir" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01-percobaan/session" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01-percobaan/session/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="app (5)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Tugas-Akhir" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01-percobaan/delete area code such +62 on phone number" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01-percobaan/delete area code such +62 on phone number/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Tugas-Akhir" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -435,39 +881,21 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="point_geo" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Tugas-Akhir" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01-percobaan" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01-percobaan/map/point_geo_convert_wkt_to_wkb.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <list>
       <item itemvalue="Python.app (1)" />
-      <item itemvalue="Python.app (2)" />
-      <item itemvalue="Python.point_geo" />
-      <item itemvalue="Python.api_example" />
       <item itemvalue="Python.app" />
       <item itemvalue="Python.app (3)" />
+      <item itemvalue="Python.app (4)" />
+      <item itemvalue="Python.app (2)" />
+      <item itemvalue="Python.app (5)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.app" />
-        <item itemvalue="Python.app (3)" />
-        <item itemvalue="Python.api_example" />
-        <item itemvalue="Python.point_geo" />
+        <item itemvalue="Python.app (5)" />
         <item itemvalue="Python.app (2)" />
+        <item itemvalue="Python.app (4)" />
+        <item itemvalue="Python.app (3)" />
+        <item itemvalue="Python.app" />
       </list>
     </recent_temporary>
   </component>
@@ -495,18 +923,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="795" width="1366" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49761903" visible="true" weight="0.16318928" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49761903" visible="true" weight="0.21385992" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51415795" side_tool="true" weight="0.4161074" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4880775" weight="0.30872482" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32885906" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32550335" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4880775" weight="0.26677853" />
       <window_info id="Structure" order="0" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.48584202" visible="true" weight="0.3456376" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.48584202" visible="true" weight="0.24328859" />
       <window_info id="Favorites" order="1" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -519,21 +948,21 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49761903" visible="true" weight="0.22801788" />
       <window_info id="Structure" order="0" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32885906" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49031296" weight="0.3557047" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49850968" weight="0.32550335" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32550335" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
       <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4865872" visible="true" weight="0.32666665" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51341283" side_tool="true" weight="0.2147651" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32885906" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="1" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49850968" weight="0.32550335" />
-      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32550335" />
     </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
@@ -570,72 +999,16 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/web_app/models.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/01-percobaan/map/Google Maps and Local Search APIs in Python.py" />
-    <entry file="file:///usr/local/lib/python3.6/dist-packages/flask_admin/contrib/geoa/view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/masuk_ke_service_postgres_didalam_docker.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/versions/b0c520ceb6df_inisialisasi_database.py" />
-    <entry file="file://$PROJECT_DIR$/migrations/versions/3ace06619deb_inisialisasi_database.py" />
-    <entry file="file://$PROJECT_DIR$/migrations/versions/459ef77960be_inisialisasi_database.py" />
-    <entry file="file://$PROJECT_DIR$/migrations/versions/3588cdad9f3e_inisialisasi_database.py" />
-    <entry file="file://$PROJECT_DIR$/migrations/versions/1f317f4b7eb5_inisialisasi_database.py" />
-    <entry file="file://$PROJECT_DIR$/migrations/versions/7aed9ac92357_inisialisasi_database.py" />
-    <entry file="file://$PROJECT_DIR$/migrations/versions/188477566c04_inisialisasi_database.py" />
-    <entry file="file://$PROJECT_DIR$/migrations/versions/aae1a3233d35_inisialisasi_database.py" />
-    <entry file="file://$PROJECT_DIR$/00-some-important-thing/when upgrade alembic enum always already exist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/00-some-important-thing/geoalchemy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="19" column="24" selection-start-line="19" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/reset_migration.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="14" selection-start-line="7" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/templates/checkout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="104" column="73" selection-start-line="104" selection-start-column="73" selection-end-line="104" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/key.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/templates/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="57" lean-forward="true" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-percobaan/map/testing_add_url.py" />
     <entry file="file://$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/static/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -680,13 +1053,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/templates/penginapan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="54" column="34" lean-forward="true" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -707,126 +1073,16 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file:///usr/local/lib/python3.6/dist-packages/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="2308" selection-start-line="2308" selection-end-line="2308" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.6/dist-packages/flask/templating.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-percobaan/cookie/templates/halaman2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/requests/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="247" column="29" lean-forward="true" selection-start-line="247" selection-start-column="29" selection-end-line="247" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.6/dist-packages/flask/globals.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-percobaan/cookie/templates/halaman1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-percobaan/cookie/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-percobaan/cookie/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
-          <folding>
-            <element signature="e#0#105#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-percobaan/map/brunorocha_flask_google_maps/templates/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="10" selection-start-line="12" selection-end-line="12" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/flask/app.py" />
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/flask/templating.py" />
+    <entry file="file://$PROJECT_DIR$/01-percobaan/cookie/templates/halaman2.html" />
+    <entry file="file://$PROJECT_DIR$/01-percobaan/cookie/venv/lib/python2.7/site-packages/pip/_vendor/requests/models.py" />
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/flask/globals.py" />
+    <entry file="file://$PROJECT_DIR$/01-percobaan/cookie/templates/halaman1.html" />
     <entry file="file://$PROJECT_DIR$/web_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="161" selection-start-line="161" selection-end-line="161" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/templates/base-template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/api_example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -846,25 +1102,177 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web_app/templates/detail_kamar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="110" selection-start-line="16" selection-start-column="110" selection-end-line="16" selection-end-column="110" />
+        <state relative-caret-position="300">
+          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-percobaan/map/Flask-GoogleMaps/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-percobaan/map/brunorocha_flask_google_maps/templates/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-percobaan/map/GoogleAPIExample/api_example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-percobaan/cookie/templates/index.html" />
+    <entry file="file://$PROJECT_DIR$/01-percobaan/cookie/app.py" />
+    <entry file="file://$PROJECT_DIR$/01-percobaan/session/venv/bin/pip" />
+    <entry file="file://$PROJECT_DIR$/01-percobaan/session/templates/halaman2.html" />
+    <entry file="file://$PROJECT_DIR$/01-percobaan/session/templates/halaman1.html" />
+    <entry file="file://$PROJECT_DIR$/01-percobaan/session/templates/index.html" />
+    <entry file="file://$PROJECT_DIR$/01-percobaan/session/venv/local/lib/python2.7/site-packages/pip/_vendor/requests/sessions.py" />
+    <entry file="file://$PROJECT_DIR$/01-percobaan/session/app.py" />
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/masuk_ke_docker.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/reset_migration.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="12" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alembic.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="73" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/index_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-percobaan/twilio any phone number/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/base-template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="189" column="31" selection-start-line="184" selection-start-column="4" selection-end-line="189" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web_app/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="135">
+          <caret line="200" column="33" selection-start-line="200" selection-start-column="33" selection-end-line="200" selection-end-column="33" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/penginapan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="48" column="113" selection-start-line="48" selection-start-column="113" selection-end-line="48" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/checkout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="87" column="132" selection-start-line="87" selection-start-column="132" selection-end-line="87" selection-end-column="132" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web_app/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="73" column="2" lean-forward="true" selection-start-line="73" selection-start-column="2" selection-end-line="73" selection-end-column="62" />
+        <state relative-caret-position="-16">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-percobaan/delete area code such +62 on phone number/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/templates/transfer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="48" column="22" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="22" />
         </state>
       </provider>
     </entry>
