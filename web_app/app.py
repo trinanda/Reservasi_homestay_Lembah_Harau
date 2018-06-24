@@ -123,7 +123,7 @@ def create_app():
 
         menu = Menu.query.order_by('urutan')
 
-        kamar = Kamar(kurangi_jumlah_kamar=1)
+        kamar = Kamar()
 
         try:
             room_price = Kamar.query.first()
@@ -212,7 +212,7 @@ def create_app():
 
         lihat_lokasi = 'https://www.google.com/maps/@'+longitude+','+latitude+',17.25z'
 
-        kamar = Kamar(kurangi_jumlah_kamar=1)
+        kamar = Kamar()
 
         if request.method == "get":
             room_price = Kamar.query.first()
@@ -506,7 +506,8 @@ def create_app():
             database.session.add(insert_ke_db)
             database.session.commit()
 
-            database.session.query(Kamar).update({Kamar.kamar_tersedia: Kamar.kamar_tersedia - 1})
+            # database.session.query(Kamar).update({Kamar.kamar_tersedia: Kamar.kamar_tersedia - 1})
+            database.session.query(Kamar).filter_by(id_kamar=id_kamar).update({Kamar.kamar_tersedia: Kamar.kamar_tersedia - 1})
             database.session.commit()
 
             # kamar_yang_tersedia = Kamar.kamar_tersedia

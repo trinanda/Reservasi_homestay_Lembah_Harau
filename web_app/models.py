@@ -45,8 +45,6 @@ class Kamar(database.Model):
     def __repr__(self):
         return '{}'.format(self.nama_kamar)
 
-    def __init__(self, kurangi_jumlah_kamar):
-        self.kamar_tersedia = kurangi_jumlah_kamar
 
 class Invoice(database.Model):
     __tablename__ = "invoice"
