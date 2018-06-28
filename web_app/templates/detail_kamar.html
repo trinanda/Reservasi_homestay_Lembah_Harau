@@ -73,7 +73,7 @@
 				<!--</div>-->
 			<div class="occasion-cart">
 					<div class="top_brand_home_details item_add single-item hvr-outline-out">
-						<form action="http://192.168.100.3:7575/checkout/{{ id_kamar }}" method="get">
+						<form action="{{ FORM_ACTION_FOR_DETAIL_KAMAR }}" method="get">
 							<fieldset>
 								<!--<input type="value" name="cmd" value="_cart" />-->
 				<p>
@@ -165,7 +165,7 @@
 								<!--<input type="value" name="currency_code" value="USD" />-->
 								<!--<input type="value" name="return" value=" " />-->
 								<!--<input type="value" name="cancel_return" value=" " />-->
-								<input type="submit" name="submit" value="Booking Kamar" class="btn btn-primary btn-lg" />
+								<input type="submit" name="submit" value="{{ BUTTON_PENGINAPAN }}" class="btn btn-primary btn-lg" />
 							</fieldset>
 						</form>
 					</div>

@@ -198,10 +198,6 @@ def create_app():
 
         tersedia_kah_kamar = Kamar.query.filter_by(id_kamar=id_kamar).first()
         tersedia_kah_kamar = tersedia_kah_kamar.kamar_tersedia
-        if tersedia_kah_kamar <= 0:
-            tersedia_kah_kamar = 'Mohon maaf, saat ini kamar sedang penuh'
-        elif tersedia_kah_kamar >= 1:
-            tersedia_kah_kamar = ' '
 
         lokasi = request.args.get('lokasi')
         data = str(lokasi)
@@ -210,7 +206,27 @@ def create_app():
         longitude = str(point.y)
         latitude = str(point.x)
 
-        lihat_lokasi = 'https://www.google.com/maps/@'+longitude+','+latitude+',17.25z'
+        lihat_lokasi = 'https://www.google.com/maps/@' + longitude + ',' + latitude + ',17.25z'
+
+        button_penginapan = 'Booking Kamar'
+        form_action_for_detail_kamar = 'http://192.168.100.3:7575/checkout/{{ id_kamar }}'
+        if tersedia_kah_kamar <= 0:
+            tersedia_kah_kamar = 'Mohon maaf, saat ini kamar sedang penuh'
+            button_penginapan = 'Cari kamar lain'
+            form_action_for_detail_kamar = 'http://localhost:7575/penginapan'
+            if button_penginapan == 'Cari kamar lain':
+                return render_template("detail_kamar.html", MENU=menu, NAMA_KAMAR=nama_kamar, id_kamar=id_kamar,
+                                       HARGA_KAMAR=harga_kamar, keterangan_kamar=keterangan_kamar,
+                                       room_images=room_images1,
+                                       LATITUDE=longitude, LONGITUDE=latitude, LIHAT_LOKASI=lihat_lokasi,
+                                       KAMAR_TERSEDIA=tersedia_kah_kamar,
+                                       BUTTON_PENGINAPAN=button_penginapan,
+                                       FORM_ACTION_FOR_DETAIL_KAMAR=form_action_for_detail_kamar)
+
+        elif tersedia_kah_kamar >= 1:
+            tersedia_kah_kamar = ' '
+
+
 
         kamar = Kamar()
 
@@ -230,9 +246,12 @@ def create_app():
             return render_template("checkout.html", TOTAL_HARGA_PENGINAPAN=total_harga_penginapan, NAMA_KAMAR=bedroom_name,
                                    LAMA_HARI=lama_menginap, ROOM_IMAGES= room_foto, HARGA_KAMAR=room_price, ID_KAMAR=room_id)
 
+
+
         return render_template("detail_kamar.html", MENU=menu, NAMA_KAMAR=nama_kamar, id_kamar=id_kamar,
                                HARGA_KAMAR=harga_kamar, keterangan_kamar=keterangan_kamar, room_images=room_images1,
-                               LATITUDE=longitude, LONGITUDE=latitude, LIHAT_LOKASI=lihat_lokasi, KAMAR_TERSEDIA=tersedia_kah_kamar)
+                               LATITUDE=longitude, LONGITUDE=latitude, LIHAT_LOKASI=lihat_lokasi, KAMAR_TERSEDIA=tersedia_kah_kamar,
+                               BUTTON_PENGINAPAN=button_penginapan, FORM_ACTION_FOR_DETAIL_KAMAR=form_action_for_detail_kamar)
 
 
     @flask_objek.route('/checkout/<id_kamar>', methods = ["GET", "POST"])
@@ -264,7 +283,7 @@ def create_app():
                 return render_template("payment.html")
 
         return render_template("checkout.html", ID_KAMAR=id_kamar, MENU=menu, TOTAL_HARGA_PENGINAPAN=total_harga_penginapan, NAMA_KAMAR=nama_kamar,
-                               LAMA_MENGINAP=lama_hari, ROOM_IMAGES=foto_kamar, HARGA_KAMAR=harga_kamar, captha=captha)
+                               LAMA_MENGINAP=lama_hari, LAMA_HARI=lama_menginap, ROOM_IMAGES=foto_kamar, HARGA_KAMAR=harga_kamar, captha=captha)
 
 
     @flask_objek.route('/payment')
