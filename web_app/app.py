@@ -1,21 +1,24 @@
 import sys, os
 
-from flask_security.utils import encrypt_password
+from flask_security.utils import verify_password
+from flask_uploads import configure_uploads, UploadSet, IMAGES
+import pdfkit
+from werkzeug.utils import secure_filename
 
 sys.path.append(os.getcwd() + '/web_app') #sesuai dengan mark directory as sources
 
-import flask_admin
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, session, flash, make_response
 from flask_admin import Admin, helpers as admin_helpers
-from flask_mail import Mail, Message
 from flask_security import SQLAlchemyUserDatastore, Security
 
-from views import PageModelView, MenuModelView, PilihKamarView, InvoiceView, MyModelView
+from views import PageModelView, MenuModelView, PilihKamarView, InvoiceView, MyModelView, HomestayView, LoginFormView, \
+    RegisterFormView, file_path
 # from settings import MAIL_USERNAME, MAIL_PASSWORD, TWLIO_ACCOUNT_SID, TWLIO_AUTH_TOKEN
-from settings import TWLIO_ACCOUNT_SID_UPGRADED_FOR_USER, TWLIO_AUTH_TOKEN_UPGRADED_FOR_USER, TWLIO_ACCOUNT_SID_NONE_UPGRADED_FOR_ADMIN, TWLIO_AUTH_TOKEN_NONE_UPGRADED_FOR_ADMIN
-from smtplib import SMTP_SSL
+from settings import TWLIO_ACCOUNT_SID_NONE_UPGRADED_FOR_ADMIN, TWLIO_AUTH_TOKEN_NONE_UPGRADED_FOR_ADMIN, \
+    TWLIO_ACCOUNT_SID_UPGRADED_FOR_USER, TWLIO_AUTH_TOKEN_UPGRADED_FOR_USER
 from twilio.rest import Client
-from models import database, Page, Menu, Kamar, Invoice, User, Role
+from models import database, Page, Menu, Kamar, Invoice, User, Role, Homestay
+from form import AddKamarForm, EditKamarForm
 
 #gmail import package dependencies
 import base64
@@ -29,11 +32,13 @@ from oauth2client.tools import run_flow
 
 from flask_wtf import FlaskForm, RecaptchaField
 
-from shapely import wkb, wkt
+from shapely import wkb
 from binascii import unhexlify
 
 from flask_googlemaps import GoogleMaps
-
+from flask_bootstrap import Bootstrap
+from flask_login import LoginManager, login_user, login_required, current_user, logout_user
+from werkzeug.security import generate_password_hash
 
 
 def create_app():
@@ -46,6 +51,15 @@ def create_app():
 
     GoogleMaps(flask_objek)
 
+    bootstrap = Bootstrap(flask_objek)
+    login_manager = LoginManager()
+    login_manager.init_app(flask_objek)
+    login_manager.login_view = 'login'
+
+    photos = UploadSet('photos', IMAGES)
+    configure_uploads(flask_objek, photos)
+    # patch_request_class(flask_objek)  # set maximum file size, default is 16MB
+
     # Setup Flask-Security
     user_datastore = SQLAlchemyUserDatastore(database, User, Role)
     security = Security(flask_objek, user_datastore)
@@ -53,11 +67,18 @@ def create_app():
     admin = Admin(flask_objek, name='Administrator', base_template='my_master.html', template_mode='bootstrap3')
     admin.add_view(PageModelView(Page, database.session))
     admin.add_view(MenuModelView(Menu, database.session))
+    admin.add_view(HomestayView(Homestay, database.session))
     admin.add_view(PilihKamarView(Kamar, database.session))
     admin.add_view(InvoiceView(Invoice, database.session))
     admin.add_view(MyModelView(Role, database.session))
     admin.add_view(MyModelView(User, database.session))
 
+
+    url_index = 'http://127.0.0.1:7575/'
+
+    @login_manager.user_loader
+    def load_user(user_id):
+        return User.query.get(int(user_id))
 
     # define a context processor for merging flask-admin's template context into the
     # flask-security views.
@@ -76,7 +97,7 @@ def create_app():
         except AttributeError:
             return render_template('index_page.html')
 
-        isi_konten = 'test'
+        isi_konten = ''
         if page is not None:
             isi_konten = Page.query.first()
             isi_konten  = isi_konten .konten
@@ -97,6 +118,7 @@ def create_app():
             h=admin_helpers,
             get_url=url_for
         )
+
 
     @flask_objek.route('/homepage')
     @flask_objek.route('/<uri>')
@@ -123,8 +145,8 @@ def create_app():
 
         menu = Menu.query.order_by('urutan')
 
-        kamar = Kamar()
-
+        kamar = Kamar('','','','','','','','')
+        homestay = Homestay()
         try:
             room_price = Kamar.query.first()
             room_price = room_price.harga_kamar
@@ -137,21 +159,20 @@ def create_app():
             pass
 
         if kamar is not None:
+            room_id = Kamar.query.first()
+            room_id = room_id.id_kamar
             room_price = Kamar.query.first()
             room_price = room_price.harga_kamar
             bedroom_name = Kamar.query.first()
             bedroom_name = bedroom_name.nama_kamar
             room_foto = Kamar.query.first()
             room_foto = room_foto.room_images
-            room_id = Kamar.query.first()
-            room_id = room_id.id_kamar
+
             keterangan_kamar = Kamar.query.first()
             keterangan_kamar = keterangan_kamar.keterangan_kamar
-            lokasi_kamar = Kamar.query.first()
-            lokasi_kamar = lokasi_kamar.lokasi
-            kamar_tersedia = Kamar.query.first()
-            kamar_tersedia = kamar_tersedia.kamar_tersedia
 
+            lokasi_kamar = Homestay.query.first()
+            lokasi_kamar = lokasi_kamar.lokasi_homestay
             data = str(lokasi_kamar)
             binnary = unhexlify(data)
             point = wkb.loads(binnary)
@@ -160,111 +181,129 @@ def create_app():
 
         urutan_kamar = Kamar.query.order_by('urutan_kamar')
 
-        if request.method == "get":
-            room_price = Kamar.query.first()
-            room_price = room_price.harga_kamar
-            bedroom_name = Kamar.query.first()
-            bedroom_name = bedroom_name.nama_kamar
-            room_foto = Kamar.query.first()
-            room_foto = room_foto.room_images
-            room_id = Kamar.query.first()
-            room_id = room_id.id_kamar
-            keterangan_kamar = Kamar.query.first()
-            keterangan_kamar = keterangan_kamar.keterangan_kamar
-            lokasi_kamar = Kamar.query.first()
-            lokasi_kamar = lokasi_kamar.lokasi
-            kamar_tersedia = Kamar.query.first()
-            kamar_tersedia = kamar_tersedia.kamar_tersedia
-
-            return render_template("detail_kamar.html", id_kamar=room_id, NAMA_KAMAR=bedroom_name, HARGA_KAMAR=room_price,
-                                   room_images=room_foto, keterangan_kamar=keterangan_kamar, lokasi_kamar=lokasi_kamar,
-                                   LATITUDE=latitude, LONGITUDE=longitude)
+        if request.method == "POST":
+            session['LONGITUDE'] = longitude
+            session['LATITUDE'] = latitude
+            session['HARGA_KAMAR'] = room_price
+            session['NAMA_KAMAR'] = bedroom_name
+            session['keterangan_kamar'] = keterangan_kamar
+            return render_template("detail_kamar.html")
         else:
             pass
 
-        return render_template('penginapan.html', CONTENT=konten, MENU=menu, KAMARS=urutan_kamar, KAMAR_TERSEDIA=kamar_tersedia)
+        return render_template('penginapan.html', CONTENT=konten, MENU=menu, KAMARS=urutan_kamar)
 
 
     @flask_objek.route('/detail_kamar/<id_kamar>', methods = ["GET", "POST"])
-    def detail_kamar(id_kamar=None, nama_kamar=None, keterangan_kamar=None):
-        menu = Menu.query.order_by('urutan')
+    def detail_kamar(id_kamar=None):
+        id_kamar = Kamar.query.filter_by(id_kamar=id_kamar).first()
+        id_kamar = id_kamar.id_kamar
 
-        id_kamar = request.args.get('id_kamar')
-        nama_kamar = request.args.get('nama_kamar')
-        harga_kamar = request.args.get('harga_kamar')
-        keterangan_kamar = request.args.get('keterangan_kamar')
-        room_images1= request.args.get('room_images')
-        kamar_tersedia = request.args.get('kamar_tersedia')
+        # nama_homestay = Homestay.query.filter_by(id_homestay=id_kamar).first()
+        # nama_homestay = nama_homestay.nama_homestay
 
-        tersedia_kah_kamar = Kamar.query.filter_by(id_kamar=id_kamar).first()
-        tersedia_kah_kamar = tersedia_kah_kamar.kamar_tersedia
+        result, nama_homestay = database.session.query(Kamar.homestay_name, Homestay.nama_homestay).join(Homestay).filter(Kamar.id_kamar == id_kamar).first()
+        # nama_homestay = nama_homestay.homestay_name
 
-        lokasi = request.args.get('lokasi')
+        nama_kamar = Kamar.query.filter_by(id_kamar=id_kamar).first()
+        nama_kamar = nama_kamar.nama_kamar
+        harga_kamar = Kamar.query.filter_by(id_kamar=id_kamar).first()
+        harga_kamar = harga_kamar.harga_kamar
+
+        keterangan_kamar = Kamar.query.filter_by(id_kamar=id_kamar).first()
+        keterangan_kamar = keterangan_kamar.keterangan_kamar
+
+        # lokasi = Homestay.query.filter_by(id_homestay=id_kamar).first()
+        # lokasi = lokasi.lokasi_homestay
+        result, lokasi = database.session.query(Kamar, Homestay.lokasi_homestay).join(Homestay).filter(Kamar.id_kamar == id_kamar).first()
+
         data = str(lokasi)
         binnary = unhexlify(data)
         point = wkb.loads(binnary)
         longitude = str(point.y)
         latitude = str(point.x)
 
+        menu = Menu.query.order_by('urutan')
+
+        room_images1= request.args.get('room_images')
+
+        status_kamar = Kamar.query.filter_by(id_kamar=id_kamar).first()
+        status_kamar = status_kamar.status
+
+
         lihat_lokasi = 'https://www.google.com/maps/@' + longitude + ',' + latitude + ',17.25z'
 
+        kosong = 'Kosong'
+        sedang_digunakan = 'Sedang di gunakan'
+
         button_penginapan = 'Booking Kamar'
-        form_action_for_detail_kamar = 'http://192.168.100.3:7575/checkout/{{ id_kamar }}'
-        if tersedia_kah_kamar <= 0:
-            tersedia_kah_kamar = 'Mohon maaf, saat ini kamar sedang penuh'
+        form_action_for_detail_kamar = url_index + 'checkout/{{ id_kamar }}'
+        if status_kamar == sedang_digunakan:
+            status_kamar = 'Mohon maaf, saat ini kamar sedang penuh'
             button_penginapan = 'Cari kamar lain'
-            form_action_for_detail_kamar = 'http://localhost:7575/penginapan'
+            form_action_for_detail_kamar = url_index + 'penginapan'
             if button_penginapan == 'Cari kamar lain':
                 return render_template("detail_kamar.html", MENU=menu, NAMA_KAMAR=nama_kamar, id_kamar=id_kamar,
                                        HARGA_KAMAR=harga_kamar, keterangan_kamar=keterangan_kamar,
-                                       room_images=room_images1,
-                                       LATITUDE=longitude, LONGITUDE=latitude, LIHAT_LOKASI=lihat_lokasi,
-                                       KAMAR_TERSEDIA=tersedia_kah_kamar,
-                                       BUTTON_PENGINAPAN=button_penginapan,
-                                       FORM_ACTION_FOR_DETAIL_KAMAR=form_action_for_detail_kamar)
+                                       room_images=room_images1, LATITUDE=longitude, LONGITUDE=latitude,
+                                       LIHAT_LOKASI=lihat_lokasi, KAMAR_TERSEDIA=status_kamar, BUTTON_PENGINAPAN=button_penginapan,
+                                       FORM_ACTION_FOR_DETAIL_KAMAR=form_action_for_detail_kamar, NAMA_HOMESTAY=nama_homestay)
 
-        elif tersedia_kah_kamar >= 1:
-            tersedia_kah_kamar = ' '
+        elif status_kamar == kosong:
+            status_kamar = ' '
 
-
-
-        kamar = Kamar()
-
-        if request.method == "get":
-            room_price = Kamar.query.first()
-            room_price = room_price.harga_kamar
-            bedroom_name = Kamar.query.first()
-            bedroom_name = bedroom_name.nama_kamar
+        kamar = Kamar('','','','','','','','')
+        if request.method == 'get':
+            global lama_inap
             room_foto = Kamar.query.first()
             room_foto = room_foto.room_images
             room_id = Kamar.query.first()
             room_id = room_id.id_kamar
+            lama_menginap = request.form.get('lama_menginap')
 
-            lama_menginap = 1
-            total_harga_penginapan = room_price * int(lama_menginap)
+            return render_template("checkout.html")
 
-            return render_template("checkout.html", TOTAL_HARGA_PENGINAPAN=total_harga_penginapan, NAMA_KAMAR=bedroom_name,
-                                   LAMA_HARI=lama_menginap, ROOM_IMAGES= room_foto, HARGA_KAMAR=room_price, ID_KAMAR=room_id)
-
+        session['NAMA_HOMESTAY'] = nama_homestay
+        session['NAMA_KAMAR'] = nama_kamar
+        session['HARGA_KAMAR'] = harga_kamar
+        session['ID_KAMAR'] = id_kamar
+        session['FOTO_KAMAR'] = room_images1
 
 
         return render_template("detail_kamar.html", MENU=menu, NAMA_KAMAR=nama_kamar, id_kamar=id_kamar,
-                               HARGA_KAMAR=harga_kamar, keterangan_kamar=keterangan_kamar, room_images=room_images1,
-                               LATITUDE=longitude, LONGITUDE=latitude, LIHAT_LOKASI=lihat_lokasi, KAMAR_TERSEDIA=tersedia_kah_kamar,
-                               BUTTON_PENGINAPAN=button_penginapan, FORM_ACTION_FOR_DETAIL_KAMAR=form_action_for_detail_kamar)
+                               keterangan_kamar=keterangan_kamar, room_images=room_images1,
+                               LATITUDE=longitude, LONGITUDE=latitude, LIHAT_LOKASI=lihat_lokasi, KAMAR_TERSEDIA=status_kamar,
+                               BUTTON_PENGINAPAN=button_penginapan, FORM_ACTION_FOR_DETAIL_KAMAR=form_action_for_detail_kamar,
+                               HARGA_KAMAR=harga_kamar, NAMA_HOMESTAY=nama_homestay)
 
 
     @flask_objek.route('/checkout/<id_kamar>', methods = ["GET", "POST"])
     def checkout(id_kamar=None):
-        menu = Menu.query.order_by('urutan')
+        if 'NAMA_KAMAR' in session.keys():
+            nama_kamar = session['NAMA_KAMAR']
+        else:
+            nama_homestay = None
+        if 'NAMA_HOMESTAY' in session.keys():
+            nama_homestay = session['NAMA_HOMESTAY']
+        else:
+            nama_kamar = None
+        if 'HARGA_KAMAR' in session.keys():
+            harga_kamar = session['HARGA_KAMAR']
+        else:
+            harga_kamar = None
+        if 'lama_menginap' in session.keys():
+            lama_menginap = session['lama_menginap']
+        else:
+            lama_menginap = None
 
-        id_kamar = request.args.get('id_kamar')
-        harga_kamar = request.args.get('harga_kamar')
-        nama_kamar = request.args.get('nama_kamar')
-        foto_kamar = request.args.get('foto_kamar')
-        lama_hari = request.args.get('lama_menginap')
         lama_menginap = request.args.get('lama_menginap')
-        total_harga_penginapan = int(harga_kamar) * int(lama_menginap)
+        session['LAMA_MENGINAP'] = lama_menginap
+        total_harga_penginapan = int(lama_menginap) * int(harga_kamar)
+        session['HARGA_TOTAL'] = total_harga_penginapan
+
+        foto_kamar = session['FOTO_KAMAR']
+
+        menu = Menu.query.order_by('urutan')
 
         class LoginForm(FlaskForm):
             recaptcha = RecaptchaField()
@@ -276,52 +315,39 @@ def create_app():
                 nama_lengkap = request.form.get('NAMA_LENGKAP')
                 nomor_telepon = request.form.get('NOMOR_TELEPON')
                 email_pemesan = request.form.get('EMAIL_PEMESAN')
-                nama_kamar = request.form.get('NAMA_KAMAR')
-                nama_kamar = request.form.get('LAMA_MENGINAP')
-                harga_kamar = request.args.get('HARGA_KAMAR')
-                id_kamar = request.args.get('ID_KAMAR')
                 return render_template("payment.html")
 
-        return render_template("checkout.html", ID_KAMAR=id_kamar, MENU=menu, TOTAL_HARGA_PENGINAPAN=total_harga_penginapan, NAMA_KAMAR=nama_kamar,
-                               LAMA_MENGINAP=lama_hari, LAMA_HARI=lama_menginap, ROOM_IMAGES=foto_kamar, HARGA_KAMAR=harga_kamar, captha=captha)
+
+        return render_template("checkout.html", ID_KAMAR=id_kamar, MENU=menu, TOTAL_HARGA_PENGINAPAN=total_harga_penginapan,
+                               NAMA_KAMAR=nama_kamar, NAMA_HOMESTAY=nama_homestay, LAMA_HARI=lama_menginap,
+                               ROOM_IMAGES=foto_kamar, captha=captha)
 
 
-    @flask_objek.route('/payment')
-    def payment():
+    @flask_objek.route('/payment', methods = ["GET", "POST"])
+    def payment(statuss="pending"):
         menu = Menu.query.order_by('urutan')
 
+        harga_kamar = session['HARGA_KAMAR']
         nama_pemesan = request.args.get('NAMA_LENGKAP')
         nomor_telepon = request.args.get('NOMOR_TELEPON')
         email_pemesan = request.args.get('EMAIL_PEMESAN')
-        nama_kamar = request.args.get('NAMA_KAMAR')
-        lama_menginap = request.args.get('LAMA_MENGINAP')
-        harga_kamar = request.args.get('HARGA_KAMAR')
-        id_kamar = request.args.get('ID_KAMAR')
-
-        if request.method == 'get':
-            nomor_invoice = request.form.get('NOMOR_INVOICE')
-            nama_pemesan = request.form.get('NAMA_PEMESAN')
-            nomor_telepon = request.form.get('NOMOR_TELEPON')
-            email_pemesan = request.form.get('EMAIL')
-            nama_kamar = request.form.get('NAMA_KAMAR')
-            lama_menginap = request.form.get('LAMA_MENGINAP')
-            harga_total = request.form.get('HARGA_TOTAL')
-            tanggal_pemesanan = request.form.get('TANGGAL_PEMESANAN')
-            id_kamar = request.form.get('ID_KAMAR')
-
-            return render_template('transfer.html')
-
-        return render_template("payment.html", MENU=menu, NAMA_PEMESAN=nama_pemesan, NAMA_KAMAR=nama_kamar, NOMOR_TELEPON=nomor_telepon,
-                               EMAIL_PEMESAN=email_pemesan, LAMA_MENGINAP=lama_menginap, HARGA_KAMAR=harga_kamar, ID_KAMAR=id_kamar)
-
-
-    @flask_objek.route('/transfer', methods=["GET", "POST"])
-    def transfer(statuss="pending"):
+        nama_kamar = session['NAMA_KAMAR']
+        lama_menginap = session['LAMA_MENGINAP']
+        harga_total = session['HARGA_TOTAL']
+        harga_total = str(harga_total)
+        id_kamar = session['ID_KAMAR']
+        session['NAMA_LENGKAP'] = nama_pemesan
+        session['NOMOR_TELEPON'] = nomor_telepon
+        session['EMAIL_PEMESAN'] = email_pemesan
 
         # get current date
         import time
         tanggal_pemesanan = time.strftime("%d/%m/%Y")
         tanggal_pemesanan_untuk_admin = time.strftime("%Y-%m-%d %H:%M:%S")
+        session['TANGGAL_PEMESANAN'] = tanggal_pemesanan
+        session['TANGGAL_PEMESANAN_UNTUK_ADMIN'] = tanggal_pemesanan_untuk_admin
+        tanggal_pemesanan = session['TANGGAL_PEMESANAN']
+        tanggal_pemesanan_untuk_admin = session['TANGGAL_PEMESANAN_UNTUK_ADMIN']
         # /get current date
 
         # get invoice number
@@ -331,78 +357,19 @@ def create_app():
             return ''.join(random.choice(chars) for x in range(size))
 
         generate_invoice = 'HR' + generator_random() + 'INV'
+        session['GENERATE_INVOICE'] = generate_invoice
+        nomor_invoice = session['GENERATE_INVOICE']
         # /get invoice number
 
-        nama_kamar = request.args.get('NAMA_KAMAR')
-        lama_menginap = request.args.get('LAMA_MENGINAP')
-        harga_kamar = request.args.get('HARGA_KAMAR')
-        harga_total = int(lama_menginap) * int(harga_kamar)
-        nama_pemesan = request.args.get('NAMA_PEMESAN')
-        nomor_telepon = request.args.get('NOMOR_TELEPON')
-        email_pemesan = request.args.get('EMAIL_PEMESAN')
-        id_kamar = request.args.get('ID_KAMAR')
-
-
         if request.method == 'POST':
-            nomor_invoice = request.form.get('NOMOR_INVOICE')
-
-            id_kamar = request.form.get('ID_KAMAR')
-            nama_pemesan = request.form.get('NAMA_PEMESAN')
-            nomor_telepon = request.form.get('NOMOR_TELEPON')
-            email_pemesan = request.form.get('EMAIL_PEMESAN')
-            nama_kamar = request.form.get('NAMA_KAMAR')
-            lama_menginap = request.form.get('LAMA_MENGINAP')
-            harga_total_pemesan_kamar = request.form.get('HARGA_TOTAL')
-            tanggal_pemesanan = request.form.get('TANGGAL_PEMESANAN_UNTUK_ADMIN')
             status = statuss
-
-            # # fitur ini untuk sementara di non-aktivkan, karena di server vps digital ocean tidak jalan karena port SMPT di block
-            # # selama 60 hari dari pendaftaran
-            #################### send_email untuk pemesan
-            # to_pemesan = email_pemesan
-            #
-            # subject_to_pemesan = '---Harau Homestay Reservation---'
-            # message_to_pemesan  = 'Terima kasih Telah Menggunakan Layanan Kami, Anda telah memesan kamar ' + nama_kamar + \
-            #           ' selama ' + lama_menginap + ' hari, dan biaya total nya adalah ' + harga_total_pemesan_kamar +\
-            #           ' ribu rupiah, Kami akan segera mengkonfirmasi setelah pembayaran selesai dilakukan \n' + \
-            #           '---Terima kasih, Salam dari kami Harau Homestay Reservation---'
-
-            # gmail_username = MAIL_USERNAME
-            # gmail_password = MAIL_PASSWORD
-            #
-            # msg = Message(subject_to_pemesan, sender=gmail_username, recipients=[to_pemesan])
-            # msg.body = message_to_pemesan
-            #
-            # mail = Mail(flask_objek)
-            # mail.connect()
-            # mail.send(msg)
-            ##############################---------------###
-
-            #fitur ini untuk sementara di non-aktivkan, karena di server vps digital ocean tidak jalan karena port SMPT di block
-            #selama 60 hari dari pendaftaran
-            #### EMAIL SMTP_SSL ##
-            msg_to_admin = 'Pelanggan atas nama ' + nama_pemesan + ' dengan send_email '+ email_pemesan + ' dan' + \
+            session['TANGGAL_PEMESANAN'] = tanggal_pemesanan
+            msg_to_admin = 'Pelanggan atas nama ' + nama_pemesan + ' dengan email '+ email_pemesan + ' dan' + \
                            ' nomor telepon ' + nomor_telepon +' telah memesan kamar ' +\
                            nama_kamar + ' selama ' + lama_menginap + \
                            ' hari, dan harga totalnya ' + str(harga_total)
-            # try:
-            #     server = SMTP_SSL('smtp.gmail.com', 465)
-            #     server.ehlo()
-            #     server.login(gmail_username, gmail_password)
-            #     server.sendmail('zidanecr7kaka@gmail.com', 'pythonpayakumbuh@gmail.com', msg_to_admin)
-            #     server.quit()
-            # except:
-            #     return 'send_email gagal terkirim'
-            ###/> EMAIL SMTP_SSL ###
 
 
-
-            ####################################
-            #send gmail
-            # Path to the client_secret.json file downloaded from the Developer Console
-            # import json
-            # with open('client_secret.json', 'r') as json_data:
-            #     data = json.load(json_data)
             CLIENT_SECRET_FILE = 'web_app/api/client_secret.json'
 
             # Check https://developers.google.com/gmail/api/auth/scopes for all available scopes
@@ -433,7 +400,7 @@ def create_app():
 
             subject_to_pemesan = '---Harau Homestay Reservation---'
             message_to_pemesan = 'Terima kasih ' + nama_pemesan + ' telah Menggunakan Layanan Kami, Anda telah memesan kamar ' + nama_kamar + \
-                                     ' selama ' + lama_menginap + ' hari, dan biaya total nya adalah ' + harga_total_pemesan_kamar + \
+                                     ' selama ' + lama_menginap + ' hari, dan biaya total nya adalah ' + harga_total + \
                                      ' rupiah, Kami akan segera mengkonfirmasi setelah pembayaran selesai dilakukan \n' + \
                                      '---Terima kasih, Salam dari kami Harau Homestay Reservation---'
 
@@ -444,40 +411,41 @@ def create_app():
             # for admin notifications
             # Your Account SID from twilio.com/console
             account_sid_admin = TWLIO_ACCOUNT_SID_NONE_UPGRADED_FOR_ADMIN
-            # Your Auth Token from twilio.com/console
+            # # Your Auth Token from twilio.com/console
             auth_token_admin = TWLIO_AUTH_TOKEN_NONE_UPGRADED_FOR_ADMIN
+            #
 
             sms_admin = Client(account_sid_admin, auth_token_admin)
-
+            #
             message_admin = sms_admin.messages.create(
                 to="+6281275803651",
                 from_="+12132961837",  # this non upgrade number
                 body=msg_to_admin)
 
+            print(message_admin.sid)
 
-            # ############################# SMS fot user ##########################
-            # # # for user notifications
-            # #  # Your Account SID from twilio.com/console
-            # account_sid_user = TWLIO_ACCOUNT_SID_UPGRADED_FOR_USER
+            # ############################ SMS for user ##########################
+            # # for user notifications
+             # Your Account SID from twilio.com/console
+            account_sid_user = TWLIO_ACCOUNT_SID_UPGRADED_FOR_USER
             # # # Your Auth Token from twilio.com/console
-            # auth_token_user = TWLIO_AUTH_TOKEN_UPGRADED_FOR_USER
+            auth_token_user = TWLIO_AUTH_TOKEN_UPGRADED_FOR_USER
             # #
-            # sms_client = Client(account_sid_user, auth_token_user)
+            sms_client = Client(account_sid_user, auth_token_user)
             # #
-            # nomor_telepon_pemesan = nomor_telepon
-            # message_pemesan = sms_client.messages.create(
-            #     to=nomor_telepon_pemesan,
-            #     from_="+12014307127",   # this upgraded number
-            #     body=message_to_pemesan)
-            # #
-
-            #######-->/ TWILIO ########
-            ####################################
-
+            nomor_telepon_pemesan = nomor_telepon
+            message_pemesan = sms_client.messages.create(
+                to=nomor_telepon_pemesan,
+                from_="+12014307127",   # this upgraded number
+                body=message_to_pemesan)
+            #
+            #
+            # ######-->/ TWILIO ########
+            ###################################
 
 
             # create a message to send
-            # message_to_pemesan = MIMEText("Terima kasih telah memesan kamar melalui Harau Reservation")
+            message_to_pemesan = MIMEText("Terima kasih telah memesan kamar melalui Harau Reservation")
             message_to_pemesan = MIMEText(message_to_pemesan)
             message_to_pemesan['to'] = to_pemesan
             # message_to_pemesan['from'] = "python.api123@gmail.com"
@@ -516,39 +484,194 @@ def create_app():
             except Exception as error:
                 print('An error occurred: %s' % error)
 
-
-
-
             insert_ke_db = Invoice(id_kamar, nomor_invoice, nama_pemesan, nomor_telepon, email_pemesan, nama_kamar,
-                                       lama_menginap,
-                                       harga_total_pemesan_kamar, tanggal_pemesanan, status)
+                                       lama_menginap, harga_total, tanggal_pemesanan_untuk_admin, status)
             database.session.add(insert_ke_db)
             database.session.commit()
 
-            # database.session.query(Kamar).update({Kamar.kamar_tersedia: Kamar.kamar_tersedia - 1})
-            database.session.query(Kamar).filter_by(id_kamar=id_kamar).update({Kamar.kamar_tersedia: Kamar.kamar_tersedia - 1})
+            status_kamar = Kamar.query.filter_by(id_kamar=id_kamar).first()
+            status_kamar.status = 'Sedang di gunakan'
             database.session.commit()
 
-            # kamar_yang_tersedia = Kamar.kamar_tersedia
+            page = render_template('transfer.html', NAMA_KAMAR=nama_kamar, NOMOR_TELEPON=nomor_telepon,
+                               EMAIL_PEMESAN=email_pemesan, LAMA_MENGINAP=lama_menginap,
+                               HARGA_KAMAR=harga_kamar, TANGGAL_PEMESANAN=tanggal_pemesanan,
+                               NOMOR_INVOICE=generate_invoice, HARGA_TOTAL=harga_total)
 
-            # delete_kamar = Kamar.query.filter_by(id_kamar=id_kamar).first()
-            # if kamar_yang_tersedia < 1:
-            #     database.session.delete(delete_kamar)
-            #     database.session.commit()
 
-            return redirect('http://192.168.100.3:7575/success')
+            return page
 
-        return render_template('transfer.html', NAMA_KAMAR=nama_kamar, NAMA_PEMESAN=nama_pemesan,
-                           NOMOR_TELEPON=nomor_telepon,
-                               EMAIL_PEMESAN=email_pemesan, LAMA_MENGINAP=lama_menginap, HARGA_KAMAR=harga_kamar,
-                               HARGA_TOTAL=harga_total, TANGGAL_PEMESANAN=tanggal_pemesanan,
-                               TANGGAL_PEMESANAN_UNTUK_ADMIN=tanggal_pemesanan_untuk_admin,
-                               NOMOR_INVOICE=generate_invoice, ID_KAMAR=id_kamar)
 
-    @flask_objek.route('/success', methods=['GET', 'POST'])
+        return render_template("payment.html", MENU=menu)
+
+
+    @flask_objek.route('/transfer', methods= ['POST', 'GET'])
+    def transfer():
+        nama_kamar = session['NAMA_KAMAR']
+        nomor_telepon = session['NOMOR_TELEPON']
+        email_pemesan = session['EMAIL_PEMESAN']
+        lama_menginap = session['LAMA_MENGINAP']
+        harga_kamar = session['HARGA_KAMAR']
+        tanggal_pemesanan = session['TANGGAL_PEMESANAN']
+        generate_invoice = session['GENERATE_INVOICE']
+        harga_total = session['HARGA_TOTAL']
+
+        if request.method == "POST":
+            page = render_template('transfer.html', NAMA_KAMAR=nama_kamar, NOMOR_TELEPON=nomor_telepon,
+                                   EMAIL_PEMESAN=email_pemesan, LAMA_MENGINAP=lama_menginap,
+                                   HARGA_KAMAR=harga_kamar, TANGGAL_PEMESANAN=tanggal_pemesanan,
+                                   NOMOR_INVOICE=generate_invoice, HARGA_TOTAL=harga_total)
+
+            css = 'web_app/static/bootstrap-combined.min.css'
+            pdf = pdfkit.from_string(page, False, css=css)
+            response = make_response(pdf)
+            response.headers['Content-Type'] = 'applications/pdf'
+            response.headers['Content-Disposition'] = 'inline; filename=invoice.pdf'
+
+            return response
+        return redirect(url_index)
+
+    @flask_objek.route('/success')
     def success():
         return render_template('success.html')
 
+
+
+    @flask_objek.route('/signup', methods=['GET', 'POST'])
+    def signup():
+        form = RegisterFormView()
+
+        try:
+            if form.validate_on_submit():
+                hashed_password = generate_password_hash(form.password.data, method='sha256')
+                new_user = User(email=form.email.data, password=hashed_password)
+                database.session.add(new_user)
+                database.session.commit()
+
+                return '<h1>User telah berhasil dibuat, silahkan coba untuk login \
+                       <a href=' + url_index + 'login>Login</a></h1>'
+                # return '<h1>' + form.username.data + ' ' + form.email.data + ' ' + form.password.data + '</h1>'
+        except:
+            return '<html><h2> Data yang di inputkan harus unique, sepertinya salah satu data yang Anda Masukan sudah terdaftar, ' \
+                   'Mohon ulangi input data dengan teliti...!!!  <br> <a href=' + url_index + 'signup>Ulangi Input Data</a></h2></html>'
+
+        return render_template('signup.html', form=form)
+
+    @flask_objek.route('/login', methods=['GET', 'POST'])
+    def login():
+        form = LoginFormView(request.form)
+        if request.method == 'POST':
+            if form.validate_on_submit():
+                session['email'] = request.form['email']
+                user = User.query.filter_by(email=form.email.data).first()
+                if verify_password(user.password, form.password.data):
+                    user.authenticated = True
+                    database.session.add(user)
+                    database.session.commit()
+                    login_user(user)
+                    login_user(user, remember=form.remember.data)
+                    return redirect(url_for('dashboard'))
+                else:
+                    return '<h1>Invalid username or password</h1>'
+            # return '<h1>' + form.username.data + ' ' + form.password.data + '</h1>'
+
+        return render_template('login.html', form=form)
+
+    @flask_objek.route('/dashboard')
+    @login_required
+    def dashboard():
+        if 'email' in session:
+            nama_homestay = current_user.homestay_name
+            all_user_homestay = Kamar.query.filter_by(user_id=current_user.id)
+            return render_template('dashboard.html', kamar=all_user_homestay, NAMA_HOMESTAY=nama_homestay)
+        else:
+            return redirect(url_for('index'))
+
+
+    @flask_objek.route('/add', methods=['GET', 'POST'])
+    @login_required
+    def tambah_kamar():
+        nama_homestay = current_user.homestay_name
+        form = AddKamarForm(request.form)
+        if request.method == 'POST' and 'photo' in request.files:
+            if form.validate_on_submit():
+                filename = photos.save(request.files['photo'])
+                new_kamar = Kamar(current_user.homestay_name, form.nama_kamar.data, form.keterangan_kamar.data, form.harga_kamar.data,
+                                  form.status.data, current_user.id, current_user.homestay_id, False, filename)
+                database.session.add(new_kamar)
+                database.session.commit()
+                return redirect(url_for('dashboard'))
+
+        return render_template('tambah_kamar.html', form=form, NAMA_HOMESTAY=nama_homestay)
+
+
+
+    @flask_objek.route('/user_profile')
+    @login_required
+    def user_profile():
+        return render_template('user_profile.html')
+
+    @flask_objek.route('/kamar_edit/<kamar_id>', methods=['GET', 'POST'])
+    def kamar_edit(kamar_id):
+        nama_homestay = current_user.homestay_name
+        data = database.session.query(Kamar, User).join(User).filter(Kamar.id_kamar == kamar_id).first()
+        form = EditKamarForm(request.form)
+        if request.method == 'POST':
+            if form.validate_on_submit():
+                if current_user.is_authenticated and data.Kamar.user_id == current_user.id:
+                    data = Kamar.query.filter_by(id_kamar=kamar_id).first()
+                    new_nama_kamar = form.nama_kamar.data
+                    new_keterangan_kamar = form.keterangan_kamar.data
+                    new_harga_kamar = form.harga_kamar.data
+                    new_status_kamar = form.status.data
+                    try:
+                        data.nama_kamar = new_nama_kamar
+                        data.keterangan_kamar = new_keterangan_kamar
+                        data.harga_kamar = new_harga_kamar
+                        data.status = new_status_kamar
+                        database.session.commit()
+
+                    except Exception as e:
+                        return {'error': str(e)}
+                return redirect(url_for('dashboard'))
+
+        return render_template('edit_kamar.html', form=form, kamar=data, NAMA_HOMESTAY=nama_homestay)
+
+    @flask_objek.route('/kamar_delete/<kamar_id>')
+    def kamar_delete(kamar_id):
+        data = database.session.query(Kamar, User).join(User).filter(Kamar.id_kamar == kamar_id).first()
+        if data.Kamar.is_public:
+            return render_template('kamar_detail.html', kamar=data)
+        else:
+            try:
+                if current_user.is_authenticated and data.Kamar.user_id == current_user.id:
+                    data = Kamar.query.filter_by(id_kamar=kamar_id).first()
+                    database.session.delete(data)
+                    database.session.commit()
+            except:
+                return 'Tidak bisa delete data kamar, karena kamar sedang digunakan'
+        return redirect(url_for('dashboard'))
+
+    @flask_objek.route('/kamar/<kamar_id>')
+    def kamar_details(kamar_id):
+        kamar_with_user = database.session.query(Kamar, User).join(User).filter(Kamar.id_kamar == kamar_id).first()
+        if kamar_with_user is not None:
+            if kamar_with_user.Kamar.is_public:
+                return render_template('kamar_detail.html', kamar=kamar_with_user)
+            else:
+                if current_user.is_authenticated and kamar_with_user.Kamar.user_id == current_user.id:
+                    return render_template('kamar_detail.html', kamar=kamar_with_user)
+                # else:
+                #    flash('Error! Incorrect permissions to access this mantan.', 'error')
+        else:
+            flash('Error! Recipe does not exist.', 'error')
+        return redirect(url_for('index'))
+
+    @flask_objek.route('/logout')
+    @login_required
+    def logout():
+        logout_user()
+        return redirect(url_for('index'))
 
     return flask_objek
 

@@ -1,0 +1,55 @@
+{% extends "theme.html" %}
+{% block body %}
+
+<div class="user-profile">
+  <div class="page-header">
+    <h2>ID : {{ kamar.Kamar.id_kamar }}</h2>
+  </div>
+
+  <div class="row">
+
+     <div class="panel panel-primary">
+        <div class="panel-heading">Nama Homestay</div>
+        <div class="panel-body">{{ kamar.Kamar.homestay_name }}</div>
+
+      </div>
+
+      <div class="panel panel-primary">
+        <div class="panel-heading">Nama Kamar</div>
+        <div class="panel-body">{{ kamar.Kamar.nama_kamar }}</div>
+
+      </div>
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">Keterangan Kamar</div>
+      <div class="panel-body">{{ kamar.Kamar.keterangan_kamar }}</div>
+    </div>
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">Harga Kamar</div>
+      <div class="panel-body">Rp.{{ kamar.Kamar.harga_kamar }},00</div>
+    </div>
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">Status Kamar</div>
+      <div class="panel-body">{{ kamar.Kamar.status }}</div>
+    </div>
+
+    <!--<div class="panel panel-primary">-->
+      <!--<div class="panel-heading">Public or Private</div>-->
+      <!--{% if kamar.Kamar.is_public %}-->
+        <!--<div class="panel-body">Public</div>-->
+      <!--{% else %}-->
+        <!--<div class="panel-body">Private</div>-->
+      <!--{% endif %}-->
+    <!--</div>-->
+
+    <!--<div class="panel panel-primary">-->
+      <!--<div class="panel-heading">User</div>-->
+      <!--<div class="panel-body">{{ kamar.User.email }}</div>-->
+    <!--</div>-->
+
+  </div>
+</div>`
+
+{% endblock %}

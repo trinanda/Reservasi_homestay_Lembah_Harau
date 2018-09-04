@@ -1,1 +1,0 @@
-GOOGLE_MAP_API = "AIzaSyATc2uRye5sztfUGup5KA69_Ru9dsAA8TQ"

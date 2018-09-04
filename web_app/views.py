@@ -18,6 +18,9 @@ from web_app.models import Kamar
 from flask_security import current_user
 
 from flask_admin.contrib.geoa import ModelView as GeoModelView
+from wtforms import StringField, PasswordField, BooleanField
+from wtforms.validators import InputRequired, Email, Length
+from flask_wtf import FlaskForm
 
 
 # cekdeitor
@@ -130,11 +133,11 @@ class MapView(GeoModelView):
     pass
 
 # Administrative views
-class PilihKamarView(UserAkses, MapView):
+class PilihKamarView(AdminAkses):
     form_overrides = dict(keterangan_kamar=CKEditorField)
     create_template = 'admin/ckeditor.html'
     edit_template = 'admin/ckeditor.html'
-    column_list = ('nama_kamar', 'room_images', 'harga_kamar', 'kamar_tersedia')
+    column_list = ('nama_kamar', 'room_images', 'harga_kamar', 'status')
     def _list_thumbnail(view, context, model, name):
         if not model.room_images:
             return ''
@@ -159,3 +162,15 @@ class MyModelView(AdminAkses):
     pass
 
 
+class HomestayView(AdminAkses, MapView):
+    pass
+
+
+class LoginFormView(FlaskForm):
+    email = StringField('email', validators=[InputRequired(), Length(min=5, max=50)])
+    password = PasswordField('password', validators=[InputRequired(), Length(min=5, max=80)])
+    remember = BooleanField('remember me')
+
+class RegisterFormView(FlaskForm):
+    email = StringField('email', validators=[InputRequired(), Email(message='Invalid email'), Length(max=50)])
+    password = PasswordField('password', validators=[InputRequired(), Length(min=5, max=80)])

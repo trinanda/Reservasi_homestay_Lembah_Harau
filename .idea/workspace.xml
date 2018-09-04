@@ -2,49 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fda5f8a-d2f4-4567-96cf-3ac732436be6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Tugas-Akhir.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Tugas-Akhir.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_app/templates/detail_kamar.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/templates/detail_kamar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_app/templates/penginapan.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/templates/penginapan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/api/gmail.storage" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/api/gmail.storage" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="692297156">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Tugas-Akhir" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web_app/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="299" lean-forward="true" selection-start-line="299" selection-end-line="299" />
+            <state relative-caret-position="-625">
+              <caret line="462" column="48" selection-start-line="462" selection-start-column="48" selection-end-line="462" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail_kamar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_app/templates/detail_kamar.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_app/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="86" column="27" lean-forward="true" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
-              <folding>
-                <element signature="n#style#0;n#label#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="540">
+              <caret line="36" column="34" selection-start-line="36" selection-end-line="36" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkout.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_app/templates/checkout.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="55" column="103" selection-start-line="55" selection-start-column="94" selection-end-line="55" selection-end-column="103" />
+            <state relative-caret-position="285">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -70,27 +76,25 @@
       <find>shapely</find>
       <find>location</find>
       <find />
-      <find />
       <find>UnicodeText</find>
-      <find />
       <find>cari</find>
-      <find />
       <find>halaman1</find>
       <find>halaman2</find>
       <find>session</find>
       <find>telepon</find>
       <find>62</find>
-      <find />
       <find>ACe211524106753eb639d9fae6ebd35bb2</find>
       <find>message</find>
       <find>msg_to_admin</find>
       <find>192</find>
-      <find />
       <find>penginapan</find>
-      <find />
       <find>redirect</find>
-      <find />
       <find>LAMA_HARI</find>
+      <find>anugrah</find>
+      <find>+6282174853636</find>
+      <find>2174853636</find>
+      <find>TWLIO_AUTH_TOKEN_UPGRADED_FOR_USER</find>
+      <find>update</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/web_app/templates/templates_from_grocery_shoppy_web</dir>
@@ -151,20 +155,19 @@
         <option value="$PROJECT_DIR$/01-percobaan/session/app.py" />
         <option value="$PROJECT_DIR$/01-percobaan/delete area code such +62 on phone number/app.py" />
         <option value="$PROJECT_DIR$/web_app/templates/checkout.html" />
-        <option value="$PROJECT_DIR$/web_app/settings.py" />
         <option value="$PROJECT_DIR$/01-percobaan/twilio any phone number/app.py" />
         <option value="$PROJECT_DIR$/web_app/models.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/web_app/templates/penginapan.html" />
         <option value="$PROJECT_DIR$/web_app/templates/detail_kamar.html" />
         <option value="$PROJECT_DIR$/web_app/app.py" />
+        <option value="$PROJECT_DIR$/web_app/settings.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="795" />
     <option name="width" value="1366" />
-    <option name="height" value="741" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -183,7 +186,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,19 +196,25 @@
             <path>
               <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
+              <item name="01-percobaan" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tugas-Akhir" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tugas-Akhir" type="462c0819:PsiDirectoryNode" />
               <item name="web_app" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../penjualan-ikan-online-irwan-santosa" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/web_app/templates/base-template.html" />
@@ -265,6 +273,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="app (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Tugas-Akhir" />
@@ -283,6 +294,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="app (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Tugas-Akhir" />
@@ -301,6 +315,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="app (4)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Tugas-Akhir" />
@@ -319,6 +336,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="app (5)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Tugas-Akhir" />
@@ -337,6 +357,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Tugas-Akhir" />
@@ -355,6 +378,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.app (1)" />
@@ -397,47 +423,49 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="795" width="1366" height="741" extended-state="6" />
+    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49761903" visible="true" weight="0.21385992" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51415795" side_tool="true" weight="0.4161074" />
+      <window_info id="Structure" order="0" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
+      <window_info id="Favorites" order="1" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49761903" visible="true" weight="0.21775417" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49850968" weight="0.32550335" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4880775" weight="0.26677853" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51415795" side_tool="true" weight="0.4161074" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32885906" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32550335" />
-      <window_info id="Structure" order="0" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.48584202" visible="true" weight="0.29194632" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
-      <window_info id="Favorites" order="1" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.48584202" visible="true" weight="0.11341853" />
+      <window_info anchor="right" id="R Graphics" />
+      <window_info anchor="right" id="R Packages" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49761903" visible="true" weight="0.22801788" />
       <window_info id="Structure" order="0" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49031296" weight="0.3557047" />
+      <window_info id="Favorites" order="1" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49761903" visible="true" weight="0.22801788" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49850968" weight="0.32550335" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49031296" weight="0.3557047" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4865872" visible="true" weight="0.32666665" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51341283" side_tool="true" weight="0.2147651" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32885906" />
-      <window_info id="Favorites" order="1" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49850968" weight="0.32550335" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32550335" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4865872" visible="true" weight="0.32666665" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
@@ -480,7 +508,6 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -528,9 +555,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html" />
     <entry file="file:///usr/local/lib/python3.6/dist-packages/flask/app.py" />
     <entry file="file:///usr/local/lib/python3.6/dist-packages/flask/templating.py" />
     <entry file="file://$PROJECT_DIR$/01-percobaan/cookie/templates/halaman2.html" />
@@ -628,13 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web_app/templates/base-template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -653,13 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="151" column="48" selection-start-line="151" selection-start-column="48" selection-end-line="151" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_app/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="96" column="109" selection-start-line="96" selection-start-column="109" selection-end-line="96" selection-end-column="109" />
         </state>
       </provider>
     </entry>
@@ -708,9 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -718,9 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="50" column="58" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -728,9 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="86" column="27" lean-forward="true" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#label#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -743,8 +745,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web_app/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="299" lean-forward="true" selection-start-line="299" selection-end-line="299" />
+        <state relative-caret-position="-625">
+          <caret line="462" column="48" selection-start-line="462" selection-start-column="48" selection-end-line="462" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_app/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="34" selection-start-line="36" selection-end-line="36" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>

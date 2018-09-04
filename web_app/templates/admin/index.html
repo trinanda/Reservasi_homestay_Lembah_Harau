@@ -12,13 +12,13 @@
                 <!--Silahkan Login Terlebih Dahulu-->
             <!--</p>-->
             {% if not current_user.is_authenticated %}
-            <p>Silahkan login, atau register jika belum mempunyai akun:
+            <!--<p>Silahkan login, atau register jika belum mempunyai akun:</p>-->
             <!--<ul>-->
                 <!--<li>send_email: <b>admin</b></li>-->
                 <!--<li>password: <b>admin</b></li>-->
             <!--</ul>-->
             <p>
-                <a class="btn btn-primary" href="{{ url_for('security.login') }}">login</a> <a class="btn btn-default" href="{{ url_for('security.register') }}">register</a>
+                <a class="btn btn-primary" href="{{ url_for('security.login') }}">login</a> {#<a class="btn btn-default" href="{{ url_for('security.register') }}">register</a>#}
             </p>
             {% endif %}
             <p>

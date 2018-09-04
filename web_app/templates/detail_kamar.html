@@ -22,7 +22,7 @@
 		<div class="container">
 	<!-- Single Page -->
 			<!-- tittle heading -->
-			<h3 class="tittle-w3l">Detail Kamar
+			<h3 class="tittle-w3l">{{ NAMA_HOMESTAY }}
 				<span class="heading-style">
 					<i></i>
 					<i></i>
@@ -55,6 +55,8 @@
 
 			<div class="col-md-7 single-right-left simpleCart_shelfItem">
 				<h3>{{ NAMA_KAMAR }}</h3>
+					<!--<p>Nilai "var": {{ var }}</p>-->
+
 				<h5><b class="blinking"><i>{{ KAMAR_TERSEDIA }}</i></b></h5>
 				<!--<p style="visibility: hidden;">{{ id_kamar }}</p>-->
 				<!--<div class="rating1">-->
@@ -73,6 +75,7 @@
 				<!--</div>-->
 			<div class="occasion-cart">
 					<div class="top_brand_home_details item_add single-item hvr-outline-out">
+						<!--<form action="{{ FORM_ACTION_FOR_DETAIL_KAMAR }}" method="post">-->
 						<form action="{{ FORM_ACTION_FOR_DETAIL_KAMAR }}" method="get">
 							<fieldset>
 								<!--<input type="value" name="cmd" value="_cart" />-->
@@ -146,16 +149,17 @@
 								}}
 
 							{% endwith %}
-							<input type="hidden" name="LATITUDE" value="{{ LATITUDE }}" style="width: 70px;">
-							<input type="hidden" name="LONGITUDE" value="{{ LONGITUDE }}" style="width: 70px;">
+							<!--<input type="hidden" name="LATITUDE" value="{{ LATITUDE }}" style="width: 70px;">-->
+							<!--<input type="hidden" name="LONGITUDE" value="{{ LONGITUDE }}" style="width: 70px;">-->
 							<li><a href="{{ LIHAT_LOKASI }}" target="_blank">Pergi ke lokasi <i><del>Code Review, (menunggu masukan dari Pak Arif terlebih dahulu)</del></i></a></li>
+
 						</ul>
 					</p>
 				</div>
-								<input type="hidden" name="id_kamar" value="{{ id_kamar }}" />
-								<input type="hidden" name="harga_kamar" value="{{ HARGA_KAMAR }}" />
-								<input type="hidden" name="nama_kamar" value="{{ NAMA_KAMAR }}" style="width: 70px;">
-								<input type="hidden" name="foto_kamar" value="{{ room_images }}" style="width: 70px;">
+								<!--<input type="hidden" name="id_kamar" value="{{ id_kamar }}" />-->
+								<!--<input type="hidden" name="harga_kamar" value="{{ HARGA_KAMAR }}" />-->
+								<!--<input type="hidden" name="nama_kamar" value="{{ NAMA_KAMAR }}" style="width: 70px;">-->
+								<!--<input type="hidden" name="foto_kamar" value="{{ room_images }}" style="width: 70px;">-->
 
 								<!--<input type="value" name="add" value="1" />-->
 								<!--<input type="value" name="business" value=" " />-->

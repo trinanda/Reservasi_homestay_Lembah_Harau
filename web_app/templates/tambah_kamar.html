@@ -1,0 +1,48 @@
+{% extends "theme.html" %}
+
+{% block title %}
+	{{ super() }}
+    Tambah Kamar
+{% endblock %}
+
+{% block body %}
+    {{ super() }}
+    <div class="row">
+    <div class="col-lg-12">
+        <!--<h2 class="page-header">Halaman Dashboard</h2>-->
+        <h2 class="page-header">{{ NAMA_HOMESTAY }}</h2>
+    </div>
+	</div>
+	<div class="row">
+	    <div class="col-lg-12">
+	        <div class="panel panel-info">
+	            <div class="panel-heading">
+
+	            </div>
+	            <!-- /.panel-heading -->
+	            <div class="panel-body">
+
+                    <div class="page-header">
+                        <h2>Tambahkan Kamar</h2>
+                    </div>
+
+                    <form action="{{url_for('tambah_kamar')}}" method="post" enctype="multipart/form-data">
+                        {{ form.csrf_token }}
+                        {{ form.nama_kamar(placeholder="Namar Kamar") }}
+                        {{ form.keterangan_kamar(placeholder="Keterangan Kamar") }}
+                        {{ form.harga_kamar(placeholder="Harga Kamar") }}
+                        {{ form.status(placeholder="Status Kamar") }}
+                        <input type=file name=photo>
+
+                        <button class="btn btn-sm btn-success" type="submit">Tambah Kamar</button>
+                    </form>
+
+
+                </div>
+	            <!-- /.panel-body -->
+	        </div>
+	        <!-- /.panel -->
+	    </div>
+	    <!-- /.col-lg-12-->
+	</div>
+{% endblock %}

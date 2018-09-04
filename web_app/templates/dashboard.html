@@ -1,0 +1,63 @@
+{% extends "theme.html" %}
+
+{% block title %}
+    Dashboard
+{% endblock %}
+
+{% block body %}
+
+    <div class="row">
+    <div class="col-lg-12">
+        <!--<h2 class="page-header">Halaman Dashboard</h2>-->
+		<h2 class="page-header">{{ NAMA_HOMESTAY }}</h2>
+    </div>
+	</div>
+	<div class="row">
+	    <div class="col-lg-12">
+	        <div class="panel panel-info">
+	            <div class="panel-heading">
+
+	            </div>
+	            <!-- /.panel-heading -->
+	            <div class="panel-body">
+					<div class="dataTable_wrapper">
+						<table class="table table-striped table-bordered table-hover" id="dataTables-example">
+							<thead>
+								<tr>
+									<th>Nama Kamar</th>
+									<th>Nama Homestay</th>
+									<th>Keterangan Kamar</th>
+									<th>Harga Kamar</th>
+                                    <th>Status</th>
+                                    <th>Photo</th>
+                                    <th>Action</th>
+								</tr>
+							</thead>
+							<tbody>
+							{% for list in kamar %}
+								<tr class="odd gradeX">
+									<td><a href="{{ url_for('kamar_details', kamar_id=list.id_kamar) }}">{{ list.nama_kamar }}</a></td>
+									<td>{{ list.homestay_name }}</td>
+									<td>{{ list.keterangan_kamar }}</td>
+									<td>Rp.{{ list.harga_kamar }},00</td>
+									<td>{{ list.status }}</td>
+									<td><img src="files/{{ list.room_images }}" alt="files/{{ list.room_images }}" style="width: 100px; height: 100px;"></td>
+
+                                    <td>
+                                        <a href="{{ url_for('kamar_delete', kamar_id=list.id_kamar) }}">Delete</a>
+                                        |
+                                        <a href="{{ url_for('kamar_edit', kamar_id=list.id_kamar) }}">Edit</a>
+                                    </td>
+								</tr>
+							{% endfor %}
+							</tbody>
+						</table>
+					</div>
+	            </div>
+	            <!-- /.panel-body -->
+	        </div>
+	        <!-- /.panel -->
+	    </div>
+	    <!-- /.col-lg-12-->
+	</div>
+{% endblock %}

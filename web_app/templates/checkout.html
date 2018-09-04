@@ -36,23 +36,13 @@
 						<tbody>
 							<tr class="rem1">
 								<!--<td class="invert">1</td>-->
-								<td class="invert">{{ NAMA_KAMAR }}</td>
+								<td class="invert">{{ NAMA_KAMAR }}<br><b>{{ NAMA_HOMESTAY }}</b></td>
 								<td class="thumb-image">
 									<a href="#">
 										<img src="{{ ROOM_IMAGES }}" alt="foto_kamar" class="img-responsive center-block" style="widht: 200px; height: 100px;">
 									</a>
 								</td>
-								<!--<td class="invert">-->
-									<!--<div class="quantity">-->
-										<!--<div class="quantity-select">-->
-											<!--<div class="entry value-minus">&nbsp;</div>-->
-											<!--<div class="entry value">-->
-												<!--<span>1</span>-->
-											<!--</div>-->
-											<!--<div class="entry value-plus active">&nbsp;</div>-->
-										<!--</div>-->
-									<!--</div>-->
-								<!--</td>-->
+
 								<td class="invert">Rp. {{ TOTAL_HARGA_PENGINAPAN }} Selama {{ LAMA_HARI }} Hari</td>
 								<td class="invert">
 									<div class="rem">
@@ -67,7 +57,9 @@
 			<div class="checkout-left">
 				<div class="address_form_agile">
 					<h4>Informasi Anda</h4>
-					<form action="http://192.168.100.3:7575/payment" method="get" class="creditly-card-form agileinfo_form">
+					<!--<form action="http://127.0.0.1:7575/payment" method="get" class="creditly-card-form agileinfo_form">-->
+					<!--<form action="{{ url_for('payment') }}" method="get" class="creditly-card-form agileinfo_form">-->
+					<form action="http://127.0.0.1:7575/payment" method="get" class="creditly-card-form agileinfo_form">
 						{{ captha.csrf_token }}
 						<div class="creditly-wrapper wthree, w3_agileits_wrapper">
 							<div class="information-wrapper">
@@ -86,36 +78,12 @@
 										<div class="w3_agileits_card_number_grid_right">
 											<div class="controls">
 												<span style="color: black; font-size: 16px; font-family: sans-serif;">Email :</span>
-												<input type="text" placeholder="Email" name="EMAIL_PEMESAN" required="" style="color: black;">
+												<input type="email" placeholder="Email" name="EMAIL_PEMESAN" required="" style="color: black;">
 											</div>
 										</div>
 										<div class="clear"> </div>
 									</div>
-									<div>
-										<input type="hidden" name="NAMA_KAMAR" value="{{ NAMA_KAMAR }}" style="color: black;">
-									</div>
-									<div>
-										<input type="hidden" name="LAMA_MENGINAP" value="{{ LAMA_MENGINAP }}" style="color: black;">
-									</div>
-									<div>
-										<input type="hidden" name="HARGA_KAMAR" value="{{ HARGA_KAMAR }}" style="color: black;">
-									</div>
-									<div>
-										<input type="hidden" name="ID_KAMAR" value="{{ ID_KAMAR }}" style="color: black;">
-									</div>
 
-									<!--<div class="controls">-->
-										<!--<input type="text" placeholder="Town/City" name="city" required="">-->
-									<!--</div>-->
-									<!--<div class="controls">-->
-										<!--<select class="option-w3ls">-->
-											<!--<option>Select Address type</option>-->
-											<!--<option>Office</option>-->
-											<!--<option>Home</option>-->
-											<!--<option>Commercial</option>-->
-
-										<!--</select>-->
-									<!--</div>-->
 								</div>
 								<!--<button class="submit check_out">Pilih Metode Pembayaran</button>-->
 								{{ captha.recaptcha }}

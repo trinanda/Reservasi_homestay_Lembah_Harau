@@ -16,7 +16,8 @@
 <!--<div class="agileinfo-ads-display col-md-7 w3l-rightpro">-->
 		<!--<div class="wrapper">-->
 				<!--<div class="product-sec1">-->
-					<form action="http://192.168.100.3:7575/detail_kamar/{{ ROOMS.id_kamar }}" method="get">
+					<!--<form action="http://127.0.0.1:7575/detail_kamar/{{ ROOMS.id_kamar }}" method="get">-->
+					<form action="http://127.0.0.1:7575/detail_kamar/{{ ROOMS.id_kamar }}" method="get">
 						<div class="col-xs-4 product-men">
 							<div class="simpleCart_shelfItem">
 								<div class="men-thumb-item">
@@ -39,13 +40,8 @@
 									<div class="snipcart-details">
 											<fieldset>
 												<input type="hidden" name="id_kamar" value="{{ ROOMS.id_kamar }}" />
-												<input type="hidden" name="nama_kamar" value="{{ ROOMS.nama_kamar }}" />
-												<input type="hidden" name="lokasi" value="{{ ROOMS.lokasi }}" />
-												<input type="hidden" name="harga_kamar" value="{{ ROOMS.harga_kamar }}" />
-												<input type="hidden" name="keterangan_kamar" value="{{ ROOMS.keterangan_kamar | striptags }}" />
-												<input type="hidden" name="room_images" value="http://192.168.100.3:7575/files/{{ ROOMS.room_images }}" />
-												<input type="hidden" name="kamar_tersedia" value="{{ ROOMS.kamar_tersedia }}" />
-                                                <!--<input type="hidden" name="fasilitas" value="USD" />-->
+												<!--<input type="hidden" name="lokasi" value="{{ ROOMS.lokasi }}" />-->
+												<input type="hidden" name="room_images" value="http://127.0.0.1:7575/files/{{ ROOMS.room_images }}" />
 												<input type="submit" name="submit" value="Lihat Detail" class="button" />
 
 											</fieldset>

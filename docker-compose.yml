@@ -20,7 +20,7 @@ services:
 
     environment:
       POSTGRES_USER: 'ta'
-      POSTGRES_PASSWORD: '12345'
+      POSTGRES_PASSWORD: 'your_db_password'
 
     volumes:
       - '/var/lib/postgresql/data'

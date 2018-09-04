@@ -32,7 +32,7 @@
 		<div class="container">
 			<!-- tittle heading -->
 			<h3 class="tittle-w3l">Payment
-				<span class="heading-style">
+                <span class="heading-style">
 					<i></i>
 					<i></i>
 					<i></i>
@@ -50,7 +50,9 @@
 
 						<div>
 							<div class="vertical_post">
-								<form action="http://192.168.100.3:7575/transfer" method="get" name="form_bank">
+								<!--<form action="http://127.0.0.1:7575/transfer" method="get" name="form_bank">-->
+								<form action="#" method="post" name="form_bank">
+								<!--<form action="{{ url_for('transfer') }}" method="post" name="form_bank">-->
 									<table border="0">
 										<tr>
 											<td style="width: 500px;">
@@ -90,30 +92,10 @@
 													<i></i>BNI</label>
 											</div>
 										</div>
-										<div>
-											<input type="hidden" name="NAMA_PEMESAN" value="{{ NAMA_PEMESAN }}">
-										</div>
-										<div>
-											<input type="hidden" name="NOMOR_TELEPON" value="{{ NOMOR_TELEPON }}">
-										</div>
-										<div>
-											<input type="hidden" name="EMAIL_PEMESAN" value="{{ EMAIL_PEMESAN }}">
-										</div>
-										<div>
-											<input type="hidden" name="NAMA_KAMAR" value="{{ NAMA_KAMAR }}">
-										</div>
-										<div>
-											<input type="hidden" name="LAMA_MENGINAP" value="{{ LAMA_MENGINAP }}">
-										</div>
-										<div>
-											<input type="hidden" name="HARGA_KAMAR" value="{{ HARGA_KAMAR }}">
-										</div>
-										<div>
-											<input type="hidden" name="ID_KAMAR" value="{{ ID_KAMAR }}">
-										</div>
+
 										<div class="clearfix"></div>
 									</div>
-									<input type="submit" value="PAY NOW">
+									<input type="submit" value="Bayar Sekarang">
 								</form>
 							</div>
 						</div>
@@ -127,7 +109,7 @@
 										<a class="btn btn-primary">Chgeckout via Paypal</a>
 									</div>
 									<div class="col-md-6 number-paymk">
-										<form class="cc-form" action="" method="post">
+										<form class="cc-form" action="" method="#">
 											<div class="clearfix">
 												<div class="form-group form-group-cc-number">
 													<label>Card Number</label>
