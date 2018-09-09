@@ -444,11 +444,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
       <window_info id="Favorites" order="1" sideWeight="0.50238097" side_tool="true" weight="0.23174366" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49761903" visible="true" weight="0.15022762" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49761903" visible="true" weight="0.15022762" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49850968" weight="0.32387313" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4880775" weight="0.26677853" />
@@ -460,7 +459,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32885906" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32550335" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.48584202" visible="true" weight="0.27712855" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.48584202" visible="true" weight="0.27712855" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
