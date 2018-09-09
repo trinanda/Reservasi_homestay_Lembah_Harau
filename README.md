@@ -33,7 +33,7 @@ $ sudo ./scripts/masuk_ke_docker.sh
 - and run the alembic migrations to make all table that you have declare on your models
 ```bash
 $ alembic revision --autogenerate -m 'initial_db'
-$ alembic upgrade head
+$ alembic upgrade head      # if you running this command on first section you will get some error
 ```
 - you will get some error if you run the upgrade command above, because until now the alembic version and geoalchemy2 version that doesn't matching.
 - And so.. the solution is :
@@ -53,9 +53,22 @@ $ alembic upgrade head
     - then run the update command inside the service
     ```bash
       $ apt-get update
+    ```
+    - Install postgis-scripts
+    ```bash
       $ apt-get install postgresql-9.6-postgis-scripts
+    ```
+    - Enter to psql
+    ```bash
       $ psql -h localhost -p 5432 -U ta -W 
           # the password just blank, so you can just hit the enter button
-      $ CREATE EXTENSION postgis;
     ```
-
+    - and then, create postgist extension by running this command
+    ```bash
+    $ CREATE EXTENSION postgis;
+    ```
+- Back to your Docker container terminal session, or if you have close that, enter to docker container again
+- And then.. running the upgrade command again
+    ```bash
+    $ alembic upgrade head
+    ```    
