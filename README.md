@@ -9,6 +9,7 @@
     - this feature is for user and admin :
         - admin notifications if someone orders room
         - user notifications to get orders informations
+- Form validation using Google Recaptcha
 - Download invoice as .pdf
 - and other feature that you can explore when running this app
 
