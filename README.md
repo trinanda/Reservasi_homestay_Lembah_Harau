@@ -37,7 +37,7 @@ $ alembic upgrade head      # if you running this command on first section you w
 ```
 - you will get some error if you run the upgrade command above, because until now the alembic version and geoalchemy2 version that doesn't matching.
 - And so.. the solution is :
-    - go to migrations/versions/ and open the versions file that you recently create
+    - go to migrations/versions/ directory and open the versions file that you recently create
         - import Geometry on the above of upgrade function
             ```
             from geoalchemy2.types import Geometry
