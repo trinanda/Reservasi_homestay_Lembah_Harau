@@ -1,6 +1,6 @@
 # Homestay Reservation Harau Valley
 
-### feature on this app
+### Feature on this app
 - Geo-Alchemy using MapBox 
     - this feature is for admin to set the homestay location
 - Google Maps views 
